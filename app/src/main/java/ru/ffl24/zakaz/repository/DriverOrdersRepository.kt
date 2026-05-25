@@ -46,14 +46,12 @@ class DriverOrdersRepository(
 
     suspend fun getDriverOrders(
         date: String,
-        driverId: Int,
         ready: String? = null,
         sort: String? = null
     ): Result<List<DriverOrderDto>> {
         return try {
             val response = driverApiService.getDriverOrders(
                 date = date,
-                driverId = driverId,
                 ready = ready,
                 sort = sort
             )
@@ -66,7 +64,7 @@ class DriverOrdersRepository(
                     Result.failure(IllegalStateException("The server returned an empty orders response."))
                 }
             } else {
-                Result.failure(IllegalStateException(toHttpErrorMessage(response.code())))
+                Result.failure(toHttpError(response.code()))
             }
         } catch (e: SocketTimeoutException) {
             Result.failure(IllegalStateException("The server took too long to respond. Please try again.", e))
@@ -97,6 +95,14 @@ class DriverOrdersRepository(
             404 -> "Driver orders were not found."
             in 500..599 -> "Server error. Please try again later."
             else -> "Request failed with code $code."
+        }
+    }
+
+    private fun toHttpError(code: Int): Throwable {
+        return if (code == 401) {
+            UnauthorizedException("Authorization required. Please sign in again.")
+        } else {
+            IllegalStateException(toHttpErrorMessage(code))
         }
     }
 

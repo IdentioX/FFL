@@ -8,6 +8,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import ru.ffl24.zakaz.model.DriverOrderDto
 import ru.ffl24.zakaz.repository.DriverOrdersRepository
+import ru.ffl24.zakaz.repository.UnauthorizedException
+import ru.ffl24.zakaz.data.auth.AuthSessionManager
 import java.net.ConnectException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -17,7 +19,7 @@ import java.net.UnknownHostException
 
 class DriverOrdersViewModel(
     private val repositoryProvider: () -> DriverOrdersRepository,
-    private val driverIdProvider: () -> Int
+    private val authSessionManager: AuthSessionManager
 ) : ViewModel() {
     private val testOrdersDate = LocalDate.of(2026, 5, 18)
 
@@ -54,8 +56,7 @@ class DriverOrdersViewModel(
 
             try {
                 val result = repositoryProvider().getDriverOrders(
-                    date = testOrdersDate.format(DateTimeFormatter.ISO_LOCAL_DATE),
-                    driverId = driverIdProvider()
+                    date = testOrdersDate.format(DateTimeFormatter.ISO_LOCAL_DATE)
                 )
 
                 result
@@ -63,7 +64,11 @@ class DriverOrdersViewModel(
                         _orders.value = loadedOrders
                     }
                     .onFailure { throwable ->
-                        _errorMessage.value = throwable.message ?: "Unable to load orders. Please try again."
+                        if (throwable is UnauthorizedException) {
+                            authSessionManager.clearSession()
+                        } else {
+                            _errorMessage.value = throwable.message ?: "Unable to load orders. Please try again."
+                        }
                     }
             } catch (e: IllegalArgumentException) {
                 _errorMessage.value = "The API base URL is invalid. Check it in Settings."

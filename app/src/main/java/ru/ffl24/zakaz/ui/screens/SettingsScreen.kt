@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
@@ -21,7 +20,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -39,9 +37,6 @@ fun SettingsScreen(
     val coroutineScope = rememberCoroutineScope()
     var apiBaseUrl by rememberSaveable {
         mutableStateOf(AppSettingsStore.getApiBaseUrl(context))
-    }
-    var driverIdText by rememberSaveable {
-        mutableStateOf(AppSettingsStore.getDriverId(context).toString())
     }
     var resultMessage by rememberSaveable { mutableStateOf<String?>(null) }
     var isErrorResult by rememberSaveable { mutableStateOf(false) }
@@ -70,37 +65,19 @@ fun SettingsScreen(
             singleLine = true
         )
 
-        OutlinedTextField(
-            value = driverIdText,
-            onValueChange = {
-                driverIdText = it.filter(Char::isDigit)
-                resultMessage = null
-            },
-            modifier = Modifier.fillMaxWidth(),
-            label = { Text("Driver ID") },
-            singleLine = true,
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
-        )
-
         Button(
             onClick = {
-                val parsedDriverId = driverIdText.toIntOrNull()
                 when {
                     apiBaseUrl.isBlank() -> {
                         isErrorResult = true
                         resultMessage = "API base URL is required."
                     }
 
-                    parsedDriverId == null -> {
-                        isErrorResult = true
-                        resultMessage = "Driver ID must be a number."
-                    }
-
                     else -> {
                         AppSettingsStore.saveSettings(
                             context = context,
                             apiBaseUrl = apiBaseUrl,
-                            driverId = parsedDriverId
+                            driverId = AppSettingsStore.getDriverId(context)
                         )
                         isErrorResult = false
                         resultMessage = "Settings saved."
