@@ -6,6 +6,8 @@ import com.google.gson.stream.MalformedJsonException
 import retrofit2.HttpException
 import ru.ffl24.zakaz.api.DriverApiService
 import ru.ffl24.zakaz.model.DriverOrderDto
+import ru.ffl24.zakaz.model.MarkDeliveredResponse
+import ru.ffl24.zakaz.model.OrderDetailsDto
 import java.io.IOException
 import java.net.ConnectException
 import java.net.NoRouteToHostException
@@ -61,46 +63,100 @@ class DriverOrdersRepository(
                 if (body != null) {
                     Result.success(body)
                 } else {
-                    Result.failure(IllegalStateException("The server returned an empty orders response."))
+                    Result.failure(IllegalStateException("Сервер вернул пустой список заказов."))
                 }
             } else {
                 Result.failure(toHttpError(response.code()))
             }
         } catch (e: SocketTimeoutException) {
-            Result.failure(IllegalStateException("The server took too long to respond. Please try again.", e))
+            Result.failure(IllegalStateException("Сервер не ответил вовремя. Попробуйте еще раз.", e))
         } catch (e: UnknownHostException) {
-            Result.failure(IllegalStateException("No internet connection or the server address could not be reached.", e))
+            Result.failure(IllegalStateException("Нет подключения или сервер недоступен.", e))
         } catch (e: ConnectException) {
-            Result.failure(IllegalStateException("Could not connect to the server. Check the API address and try again.", e))
+            Result.failure(IllegalStateException("Не удалось подключиться к серверу.", e))
         } catch (e: NoRouteToHostException) {
-            Result.failure(IllegalStateException("Network route to the server is unavailable. Check your connection and try again.", e))
+            Result.failure(IllegalStateException("Сеть недоступна. Проверьте подключение.", e))
         } catch (e: MalformedJsonException) {
-            Result.failure(IllegalStateException("The server returned unreadable data. Please try again later.", e))
+            Result.failure(IllegalStateException("Сервер вернул нечитаемые данные.", e))
         } catch (e: JsonSyntaxException) {
-            Result.failure(IllegalStateException("The server returned data in an unexpected format.", e))
+            Result.failure(IllegalStateException("Сервер вернул данные в неожиданном формате.", e))
         } catch (e: IOException) {
-            Result.failure(IllegalStateException("Network error. Please check your connection and try again.", e))
+            Result.failure(IllegalStateException("Ошибка сети. Проверьте подключение.", e))
         } catch (e: HttpException) {
             Result.failure(IllegalStateException(toHttpErrorMessage(e.code()), e))
         } catch (e: Exception) {
-            Result.failure(IllegalStateException("Something went wrong while loading orders. Please try again.", e))
+            Result.failure(IllegalStateException("Не удалось загрузить заказы. Попробуйте еще раз.", e))
+        }
+    }
+
+    suspend fun getOrderDetails(orderId: Int): Result<OrderDetailsDto> {
+        return try {
+            Result.success(driverApiService.getOrderDetails(orderId = orderId))
+        } catch (e: SocketTimeoutException) {
+            Result.failure(IllegalStateException("Сервер не ответил вовремя. Попробуйте еще раз.", e))
+        } catch (e: UnknownHostException) {
+            Result.failure(IllegalStateException("Нет подключения или сервер недоступен.", e))
+        } catch (e: ConnectException) {
+            Result.failure(IllegalStateException("Не удалось подключиться к серверу.", e))
+        } catch (e: NoRouteToHostException) {
+            Result.failure(IllegalStateException("Сеть недоступна. Проверьте подключение.", e))
+        } catch (e: MalformedJsonException) {
+            Result.failure(IllegalStateException("Сервер вернул нечитаемые данные.", e))
+        } catch (e: JsonSyntaxException) {
+            Result.failure(IllegalStateException("Сервер вернул данные в неожиданном формате.", e))
+        } catch (e: IOException) {
+            Result.failure(IllegalStateException("Ошибка сети. Проверьте подключение.", e))
+        } catch (e: HttpException) {
+            Result.failure(toHttpError(e.code()))
+        } catch (e: Exception) {
+            Result.failure(IllegalStateException("Не удалось загрузить заказ. Попробуйте еще раз.", e))
+        }
+    }
+
+    suspend fun markDelivered(orderId: Long): Result<MarkDeliveredResponse> {
+        return try {
+            val response = driverApiService.markDelivered(orderId = orderId)
+
+            if (response.isSuccessful) {
+                Result.success(response.body() ?: MarkDeliveredResponse())
+            } else {
+                Result.failure(toHttpError(response.code()))
+            }
+        } catch (e: SocketTimeoutException) {
+            Result.failure(IllegalStateException("Сервер не ответил вовремя. Попробуйте еще раз.", e))
+        } catch (e: UnknownHostException) {
+            Result.failure(IllegalStateException("Нет подключения или сервер недоступен.", e))
+        } catch (e: ConnectException) {
+            Result.failure(IllegalStateException("Не удалось подключиться к серверу.", e))
+        } catch (e: NoRouteToHostException) {
+            Result.failure(IllegalStateException("Сеть недоступна. Проверьте подключение.", e))
+        } catch (e: MalformedJsonException) {
+            Result.failure(IllegalStateException("Сервер вернул нечитаемые данные.", e))
+        } catch (e: JsonSyntaxException) {
+            Result.failure(IllegalStateException("Сервер вернул данные в неожиданном формате.", e))
+        } catch (e: IOException) {
+            Result.failure(IllegalStateException("Ошибка сети. Проверьте подключение.", e))
+        } catch (e: HttpException) {
+            Result.failure(IllegalStateException(toHttpErrorMessage(e.code()), e))
+        } catch (e: Exception) {
+            Result.failure(IllegalStateException("Не удалось отметить заказ сданным. Попробуйте еще раз.", e))
         }
     }
 
     private fun toHttpErrorMessage(code: Int): String {
         return when (code) {
-            400 -> "Invalid request. Please check request parameters."
-            401 -> "Authorization required. Please sign in again."
-            403 -> "Access denied."
-            404 -> "Driver orders were not found."
-            in 500..599 -> "Server error. Please try again later."
-            else -> "Request failed with code $code."
+            400 -> "Неверный запрос."
+            401 -> "Нужно войти заново."
+            403 -> "Доступ запрещен."
+            404 -> "Заказы не найдены."
+            in 500..599 -> "Ошибка сервера. Попробуйте позже."
+            else -> "Запрос не выполнен. Код $code."
         }
     }
 
     private fun toHttpError(code: Int): Throwable {
         return if (code == 401) {
-            UnauthorizedException("Authorization required. Please sign in again.")
+            UnauthorizedException("Нужно войти заново.")
         } else {
             IllegalStateException(toHttpErrorMessage(code))
         }

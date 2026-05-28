@@ -2,7 +2,9 @@ package ru.ffl24.zakaz.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -29,8 +31,14 @@ class DriverOrdersViewModel(
     private val _orders = MutableStateFlow<List<DriverOrderDto>>(emptyList())
     val orders: StateFlow<List<DriverOrderDto>> = _orders.asStateFlow()
 
+    private val _deliveringOrderIds = MutableStateFlow<Set<Long>>(emptySet())
+    val deliveringOrderIds: StateFlow<Set<Long>> = _deliveringOrderIds.asStateFlow()
+
     private val _errorMessage = MutableStateFlow<String?>(null)
     val errorMessage: StateFlow<String?> = _errorMessage.asStateFlow()
+
+    private val _toastMessages = MutableSharedFlow<String>()
+    val toastMessages: SharedFlow<String> = _toastMessages
 
     init {
         loadTodayOrders()
@@ -49,6 +57,47 @@ class DriverOrdersViewModel(
         }
     }
 
+    fun markDelivered(order: DriverOrderDto) {
+        if (order.isDelivered || !order.isReady || !order.canMarkDelivered) {
+            return
+        }
+
+        viewModelScope.launch {
+            _deliveringOrderIds.value = _deliveringOrderIds.value + order.orderId
+
+            try {
+                repositoryProvider().markDelivered(orderId = order.orderId)
+                    .onSuccess { response ->
+                        _orders.value = sortOrders(
+                            _orders.value.map { currentOrder ->
+                                if (currentOrder.orderId == order.orderId) {
+                                    currentOrder.copy(
+                                        isDelivered = true,
+                                        canMarkDelivered = false,
+                                        deliveredAt = response.deliveredAt
+                                    )
+                                } else {
+                                    currentOrder
+                                }
+                            }
+                        )
+                        _toastMessages.emit("Заказ сдан")
+                    }
+                    .onFailure { throwable ->
+                        if (throwable is UnauthorizedException) {
+                            authSessionManager.clearSession()
+                        } else {
+                            _toastMessages.emit("Не удалось сдать заказ. Повторите.")
+                        }
+                    }
+            } catch (e: Exception) {
+                _toastMessages.emit("Не удалось сдать заказ. Повторите.")
+            } finally {
+                _deliveringOrderIds.value = _deliveringOrderIds.value - order.orderId
+            }
+        }
+    }
+
     private fun loadTodayOrders() {
         viewModelScope.launch {
             _isLoading.value = true
@@ -61,30 +110,37 @@ class DriverOrdersViewModel(
 
                 result
                     .onSuccess { loadedOrders ->
-                        _orders.value = loadedOrders
+                        _orders.value = sortOrders(loadedOrders)
                     }
                     .onFailure { throwable ->
                         if (throwable is UnauthorizedException) {
                             authSessionManager.clearSession()
                         } else {
-                            _errorMessage.value = throwable.message ?: "Unable to load orders. Please try again."
+                            _errorMessage.value = throwable.message ?: "Не удалось загрузить заказы."
                         }
                     }
-            } catch (e: IllegalArgumentException) {
-                _errorMessage.value = "The API base URL is invalid. Check it in Settings."
+            } catch (_: IllegalArgumentException) {
+                _errorMessage.value = "Неверный адрес сервера. Проверьте настройки."
             } catch (e: SocketTimeoutException) {
-                _errorMessage.value = "The server took too long to respond. Please try again."
+                _errorMessage.value = "Сервер не ответил вовремя. Попробуйте еще раз."
             } catch (e: UnknownHostException) {
-                _errorMessage.value = "No internet connection or the server address could not be reached."
+                _errorMessage.value = "Нет подключения или сервер недоступен."
             } catch (e: ConnectException) {
-                _errorMessage.value = "Could not connect to the server. Check the API address and try again."
+                _errorMessage.value = "Не удалось подключиться к серверу."
             } catch (e: NoRouteToHostException) {
-                _errorMessage.value = "Network route to the server is unavailable. Check your connection and try again."
+                _errorMessage.value = "Сеть недоступна. Проверьте подключение."
             } catch (e: Exception) {
-                _errorMessage.value = e.message ?: "Unable to load orders. Please try again."
+                _errorMessage.value = e.message ?: "Не удалось загрузить заказы."
             } finally {
                 _isLoading.value = false
             }
         }
+    }
+
+    private fun sortOrders(orders: List<DriverOrderDto>): List<DriverOrderDto> {
+        return orders.sortedWith(
+            compareBy<DriverOrderDto> { it.isDelivered }
+                .thenBy { it.orderId }
+        )
     }
 }

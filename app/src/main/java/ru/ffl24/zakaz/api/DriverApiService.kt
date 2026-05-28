@@ -11,6 +11,8 @@ import ru.ffl24.zakaz.model.DriverOptionDto
 import ru.ffl24.zakaz.model.DriverOrderDto
 import ru.ffl24.zakaz.model.LoginRequest
 import ru.ffl24.zakaz.model.LoginResponse
+import ru.ffl24.zakaz.model.MarkDeliveredResponse
+import ru.ffl24.zakaz.model.OrderDetailsDto
 
 interface DriverApiService {
     @GET("health")
@@ -34,6 +36,11 @@ interface DriverApiService {
         @Query("sort") sort: String? = null
     ): Response<List<DriverOrderDto>>
 
+    @GET("api/driver/orders/{order_id}/details")
+    suspend fun getOrderDetails(
+        @Path("order_id") orderId: Int
+    ): OrderDetailsDto
+
     @POST("api/driver/orders/{order_id}/route-opened")
     suspend fun logRouteOpened(
         @Path("order_id") orderId: Long,
@@ -41,4 +48,9 @@ interface DriverApiService {
         @Query("driver_id") driverId: Long,
         @Query("source") source: String = "android"
     ): Response<Unit>
+
+    @POST("api/driver/orders/{order_id}/delivered")
+    suspend fun markDelivered(
+        @Path("order_id") orderId: Long
+    ): Response<MarkDeliveredResponse>
 }

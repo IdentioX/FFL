@@ -11,61 +11,60 @@ import ru.ffl24.zakaz.model.DriverOrderDto
 
 object YandexRouteNavigator {
     private const val YANDEX_MAPS_PACKAGE = "ru.yandex.yandexmaps"
-    private const val NO_ROUTE_DATA_MESSAGE = "Нет данных для маршрута"
+    private const val NO_ROUTE_DATA_MESSAGE = "Нет адреса для маршрута"
     private const val YANDEX_MAPS_NOT_FOUND_MESSAGE = "Яндекс Карты не найдены"
     private const val TAG = "YandexRouteNavigator"
 
     fun openRoute(context: Context, order: DriverOrderDto): Boolean {
-        val routeIntents = buildRouteIntents(context, order)
-        if (routeIntents.isEmpty()) {
+        return openRoute(
+            context = context,
+            routeText = order.routeText,
+            orderId = order.orderId
+        )
+    }
+
+    fun openRoute(context: Context, routeText: String?, orderId: Number? = null): Boolean {
+        val trimmedRouteText = routeText?.trim().orEmpty()
+        if (trimmedRouteText.isBlank()) {
+            Log.d(TAG, "routeText is blank for orderId=$orderId")
             Toast.makeText(context, NO_ROUTE_DATA_MESSAGE, Toast.LENGTH_SHORT).show()
             return false
         }
 
-        routeIntents.forEach { intent ->
-            try {
-                context.startActivity(intent)
-                return true
-            } catch (e: ActivityNotFoundException) {
-                Log.w(TAG, "Yandex Maps did not handle intent: ${intent.data}", e)
-            } catch (e: SecurityException) {
-                Log.w(TAG, "Security error while opening Yandex Maps: ${intent.data}", e)
-            } catch (e: Exception) {
-                Log.w(TAG, "Unexpected error while opening Yandex Maps: ${intent.data}", e)
+        val finalUri = buildRouteUri(trimmedRouteText)
+        Log.d(TAG, "routeText=$trimmedRouteText")
+        Log.d(TAG, "final Uri=$finalUri")
+
+        val intent = Intent(Intent.ACTION_VIEW, finalUri).apply {
+            `package` = YANDEX_MAPS_PACKAGE
+            addCategory(Intent.CATEGORY_BROWSABLE)
+            if (context !is Activity) {
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
         }
 
-        Toast.makeText(context, YANDEX_MAPS_NOT_FOUND_MESSAGE, Toast.LENGTH_SHORT).show()
-        return false
-    }
-
-    private fun buildRouteIntents(context: Context, order: DriverOrderDto): List<Intent> {
-        val routeData = buildRouteData(order) ?: return emptyList()
-        val uris = listOf(
-            Uri.parse("yandexmaps://maps.yandex.ru/?rtext=~$routeData&rtt=auto"),
-            Uri.parse("https://maps.yandex.ru/?rtext=~$routeData&rtt=auto")
-        )
-
-        return uris.map { uri ->
-            Intent(Intent.ACTION_VIEW, uri).apply {
-                `package` = YANDEX_MAPS_PACKAGE
-                addCategory(Intent.CATEGORY_BROWSABLE)
-                if (context !is Activity) {
-                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                }
-            }
+        return try {
+            context.startActivity(intent)
+            true
+        } catch (e: ActivityNotFoundException) {
+            Log.w(TAG, "Yandex Maps did not handle intent: $finalUri", e)
+            Toast.makeText(context, YANDEX_MAPS_NOT_FOUND_MESSAGE, Toast.LENGTH_SHORT).show()
+            false
+        } catch (e: SecurityException) {
+            Log.w(TAG, "Security error while opening Yandex Maps: $finalUri", e)
+            Toast.makeText(context, YANDEX_MAPS_NOT_FOUND_MESSAGE, Toast.LENGTH_SHORT).show()
+            false
+        } catch (e: Exception) {
+            Log.w(TAG, "Unexpected error while opening Yandex Maps: $finalUri", e)
+            Toast.makeText(context, YANDEX_MAPS_NOT_FOUND_MESSAGE, Toast.LENGTH_SHORT).show()
+            false
         }
     }
 
-    private fun buildRouteData(order: DriverOrderDto): String? {
-        return when {
-            hasCoordinates(order) -> "${order.lat},${order.lon}"
-            !order.routeText.isNullOrBlank() -> Uri.encode(order.routeText.trim())
-            else -> null
-        }
-    }
-
-    private fun hasCoordinates(order: DriverOrderDto): Boolean {
-        return order.lat != null && order.lon != null
+    private fun buildRouteUri(routeText: String): Uri {
+        // Для локальной проверки можно временно подставить:
+        // val debugRouteText = "Москва, Красная площадь, 1"
+        val encodedRouteText = Uri.encode(routeText.trim())
+        return Uri.parse("https://yandex.ru/maps/?rtext=~$encodedRouteText&rtt=auto")
     }
 }

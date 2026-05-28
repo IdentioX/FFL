@@ -47,6 +47,7 @@ The app expects these endpoints relative to the configured base URL:
 - `GET /health`
 - `GET /api/driver/orders?date=YYYY-MM-DD&driver_id=ID`
 - `POST /api/driver/orders/{order_id}/route-opened?order_id=ID&driver_id=ID&source=android`
+- `POST /api/driver/orders/{order_id}/delivered`
 
 `DriverOrderDto` expects these fields:
 
@@ -67,6 +68,19 @@ The app expects these endpoints relative to the configured base URL:
 - `hasRouteText`
 - `displayTitle`
 - `readinessLabel`
+- `quantityReadiness`
+- `quantityLabel`
+- `isDelivered`
+- `deliveredAt`
+- `canMarkDelivered`
+
+Readiness source-of-truth:
+
+- Backend must set `isReady` and `readinessLabel` from `reys.status`.
+- Backend must set `quantityReadiness` and `quantityLabel` from `reys.col_s`.
+- Android must trust these backend fields and must not calculate readiness from `col_s` or invoice counts.
+
+See `docs/READINESS_LOGIC.md` for the detailed mapping and example JSON.
 
 Latitude and longitude accept alternate JSON names through `@SerializedName`:
 
@@ -77,13 +91,19 @@ Latitude and longitude accept alternate JSON names through `@SerializedName`:
 
 Default backend URL is set in `app/build.gradle.kts` through the Gradle property `DRIVER_API_BASE_URL`.
 
-If the property is missing, the default is:
+The local project default in `gradle.properties` is:
+
+```text
+http://10.0.2.2:8000/
+```
+
+If the property is missing, the fallback in `app/build.gradle.kts` is:
 
 ```text
 http://10.0.2.2:8080/
 ```
 
-That value is suitable for an Android emulator talking to a backend running on the host machine.
+The `10.0.2.2` host is suitable for an Android emulator talking to a backend running on the host machine.
 
 You can override it from the command line:
 

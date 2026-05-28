@@ -62,10 +62,11 @@ Expected behavior:
   - `deliveryNote` or fallback text if missing
   - `readinessLabel`
   - `invoicesCount`
+  - `quantityLabel`
 - Card colors reflect readiness state:
-  - ready
-  - partial
-  - not ready
+  - ready when backend `isReady=true`
+  - warning/not ready when backend `isReady=false`
+- Android does not calculate readiness from `quantityReadiness`; it displays backend labels.
 
 ## 5. Verify Cyrillic displays correctly
 

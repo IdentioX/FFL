@@ -46,6 +46,7 @@ fun SetupAuthScreen(
     Column(
         modifier = modifier
             .fillMaxSize()
+            .background(MaterialTheme.colorScheme.background)
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
@@ -53,6 +54,23 @@ fun SetupAuthScreen(
             text = "Выберите водителя",
             style = MaterialTheme.typography.headlineMedium
         )
+
+        OutlinedTextField(
+            value = state.apiBaseUrl,
+            onValueChange = viewModel::updateApiBaseUrl,
+            modifier = Modifier.fillMaxWidth(),
+            label = { Text("Адрес API") },
+            singleLine = true,
+            textStyle = MaterialTheme.typography.bodyLarge
+        )
+
+        Button(
+            onClick = viewModel::saveApiBaseUrlAndReloadDrivers,
+            enabled = !state.isLoadingDrivers,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Сохранить адрес и обновить")
+        }
 
         OutlinedTextField(
             value = state.searchQuery,

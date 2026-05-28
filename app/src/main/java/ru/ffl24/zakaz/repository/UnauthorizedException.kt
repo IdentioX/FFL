@@ -1,5 +1,5 @@
 package ru.ffl24.zakaz.repository
 
 class UnauthorizedException(
-    message: String = "Authorization required."
+    message: String = "Нужно войти заново."
 ) : IllegalStateException(message)

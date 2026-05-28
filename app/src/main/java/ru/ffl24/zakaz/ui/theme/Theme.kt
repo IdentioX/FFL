@@ -1,53 +1,70 @@
 package ru.ffl24.zakaz.ui.theme
 
 import android.app.Activity
-import android.os.Build
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalView
+import androidx.core.view.WindowCompat
 
-private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+private val DriverColorScheme = lightColorScheme(
+    primary = AppPrimary,
+    onPrimary = AppOnPrimary,
+    secondary = AppGray,
+    onSecondary = AppTextDark,
+    tertiary = AppReady,
+    background = AppBackground,
+    onBackground = AppText,
+    surface = AppSurface,
+    onSurface = AppText,
+    surfaceVariant = AppSurfaceSoft,
+    onSurfaceVariant = AppTextMuted,
+    error = AppNotReady,
+    onError = AppOnPrimary,
+    primaryContainer = AppPrimaryDark,
+    onPrimaryContainer = AppOnPrimary,
+    errorContainer = AppNotReady,
+    onErrorContainer = AppOnPrimary
 )
 
-private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+private val DarkDriverColorScheme = darkColorScheme(
+    primary = AppPrimary,
+    onPrimary = AppOnPrimary,
+    secondary = AppGray,
+    onSecondary = AppTextDark,
+    tertiary = AppReady,
+    background = AppDarkBackground,
+    onBackground = AppDarkText,
+    surface = AppDarkSurface,
+    onSurface = AppDarkText,
+    surfaceVariant = AppDarkSurfaceSoft,
+    onSurfaceVariant = AppDarkTextMuted,
+    error = AppNotReady,
+    onError = AppOnPrimary,
+    primaryContainer = AppPrimaryDark,
+    onPrimaryContainer = AppOnPrimary,
+    errorContainer = AppNotReady,
+    onErrorContainer = AppOnPrimary
 )
 
 @Composable
 fun FFl24Theme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    darkTheme: Boolean = false,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-            val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+    val colorScheme = if (darkTheme) DarkDriverColorScheme else DriverColorScheme
+    val view = LocalView.current
+    if (!view.isInEditMode) {
+        val window = (LocalContext.current as? Activity)?.window
+        if (window != null) {
+            window.statusBarColor = android.graphics.Color.TRANSPARENT
+            window.navigationBarColor = android.graphics.Color.TRANSPARENT
+            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = false
+            WindowCompat.getInsetsController(window, view).isAppearanceLightNavigationBars = !darkTheme
         }
-
-        darkTheme -> DarkColorScheme
-        else -> LightColorScheme
     }
 
     MaterialTheme(

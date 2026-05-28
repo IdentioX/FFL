@@ -7,6 +7,7 @@ object AppSettingsStore {
     private const val PREFS_NAME = "driver_app_settings"
     private const val KEY_API_BASE_URL = "api_base_url"
     private const val KEY_DRIVER_ID = "driver_id"
+    private const val KEY_DARK_THEME_ENABLED = "dark_theme_enabled"
     const val DEFAULT_DRIVER_ID = 97
 
     fun getApiBaseUrl(context: Context): String {
@@ -18,14 +19,29 @@ object AppSettingsStore {
         return preferences(context).getInt(KEY_DRIVER_ID, DEFAULT_DRIVER_ID)
     }
 
+    fun isDarkThemeEnabled(context: Context): Boolean {
+        return preferences(context).getBoolean(KEY_DARK_THEME_ENABLED, false)
+    }
+
     fun saveSettings(
         context: Context,
         apiBaseUrl: String,
-        driverId: Int
+        driverId: Int,
+        darkThemeEnabled: Boolean = isDarkThemeEnabled(context)
     ) {
         preferences(context).edit()
             .putString(KEY_API_BASE_URL, normalizeBaseUrl(apiBaseUrl))
             .putInt(KEY_DRIVER_ID, driverId)
+            .putBoolean(KEY_DARK_THEME_ENABLED, darkThemeEnabled)
+            .apply()
+    }
+
+    fun saveDarkThemeEnabled(
+        context: Context,
+        enabled: Boolean
+    ) {
+        preferences(context).edit()
+            .putBoolean(KEY_DARK_THEME_ENABLED, enabled)
             .apply()
     }
 

@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import ru.ffl24.zakaz.settings.AppSettingsStore
 import ru.ffl24.zakaz.data.auth.AuthSession
 import ru.ffl24.zakaz.data.auth.AuthSessionManager
 import ru.ffl24.zakaz.model.DriverOptionDto
@@ -14,6 +15,7 @@ import ru.ffl24.zakaz.repository.AuthRepository
 import ru.ffl24.zakaz.repository.UnauthorizedException
 
 data class SetupAuthUiState(
+    val apiBaseUrl: String = "",
     val isLoadingDrivers: Boolean = false,
     val drivers: List<DriverOptionDto> = emptyList(),
     val searchQuery: String = "",
@@ -37,10 +39,13 @@ data class SetupAuthUiState(
 }
 
 class SetupAuthViewModel(
+    private val appContext: android.content.Context,
     private val authRepositoryProvider: () -> AuthRepository,
     private val authSessionManager: AuthSessionManager
 ) : ViewModel() {
-    private val _uiState = MutableStateFlow(SetupAuthUiState())
+    private val _uiState = MutableStateFlow(
+        SetupAuthUiState(apiBaseUrl = AppSettingsStore.getApiBaseUrl(appContext))
+    )
     val uiState: StateFlow<SetupAuthUiState> = _uiState.asStateFlow()
 
     init {
@@ -50,10 +55,17 @@ class SetupAuthViewModel(
     fun loadDrivers() {
         viewModelScope.launch {
             _uiState.update {
-                it.copy(isLoadingDrivers = true, errorMessage = null, loginSuccess = false)
+                it.copy(
+                    isLoadingDrivers = true,
+                    errorMessage = null,
+                    loginSuccess = false,
+                    drivers = emptyList(),
+                    selectedDriver = null
+                )
             }
 
-            authRepositoryProvider().getDrivers()
+            runCatching { authRepositoryProvider().getDrivers() }
+                .getOrElse { Result.failure(it) }
                 .onSuccess { drivers ->
                     _uiState.update {
                         it.copy(isLoadingDrivers = false, drivers = drivers, errorMessage = null)
@@ -68,6 +80,28 @@ class SetupAuthViewModel(
                     }
                 }
         }
+    }
+
+    fun updateApiBaseUrl(apiBaseUrl: String) {
+        _uiState.update { it.copy(apiBaseUrl = apiBaseUrl, errorMessage = null) }
+    }
+
+    fun saveApiBaseUrlAndReloadDrivers() {
+        val apiBaseUrl = _uiState.value.apiBaseUrl
+        if (apiBaseUrl.isBlank()) {
+            _uiState.update { it.copy(errorMessage = "Введите адрес API.") }
+            return
+        }
+
+        AppSettingsStore.saveSettings(
+            context = appContext,
+            apiBaseUrl = apiBaseUrl,
+            driverId = AppSettingsStore.getDriverId(appContext)
+        )
+        _uiState.update {
+            it.copy(apiBaseUrl = AppSettingsStore.getApiBaseUrl(appContext))
+        }
+        loadDrivers()
     }
 
     fun updateSearchQuery(query: String) {
@@ -101,8 +135,11 @@ class SetupAuthViewModel(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoggingIn = true, errorMessage = null) }
 
-            authRepositoryProvider()
-                .login(driverId = selectedDriver.driverId, password = state.password)
+            runCatching {
+                authRepositoryProvider()
+                    .login(driverId = selectedDriver.driverId, password = state.password)
+            }
+                .getOrElse { Result.failure(it) }
                 .onSuccess { response ->
                     authSessionManager.saveSession(
                         AuthSession(
