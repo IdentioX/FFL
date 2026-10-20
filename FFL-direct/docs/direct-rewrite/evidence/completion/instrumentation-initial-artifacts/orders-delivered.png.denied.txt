@@ -1,0 +1,1 @@
+cat: /sdcard/Android/data/ru.ffl24.direct.dev/files/completion-ui/orders-delivered.png: Permission denied

@@ -1,0 +1,10 @@
+{
+  "command": "python3 tools/dev_database.py test-restored --serial emulator-5558",
+  "exit": 1,
+  "completed_android_cases_passed": 4,
+  "failure_stage": "trigger-rollback fixture reset, before Android test",
+  "database_error": 1062,
+  "cause": "Existing reserved BF row collided with INSERT from original reset UPDATE trigger",
+  "fix": "Clean reserved BF prefix before and after fixture reset; original trigger unchanged",
+  "personal_values_published": false
+}

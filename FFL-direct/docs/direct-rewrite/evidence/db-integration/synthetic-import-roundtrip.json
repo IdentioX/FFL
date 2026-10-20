@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "tools/dev_database.py",
+    "up",
+    "--dump",
+    "/workspace/.ffl/direct-dev/synthetic-roundtrip.sql.gz",
+    "--port",
+    "19066"
+  ],
+  "start": "2026-10-17T08:45:42.066898+00:00",
+  "end": "2026-10-17T08:45:50.940800+00:00",
+  "exit": 0,
+  "stdout": "{\n  \"state\": \"ready\",\n  \"profile\": \"private-restored-dump\",\n  \"server_version\": \"10.6.25-MariaDB-ubu2204\",\n  \"tls_required_and_hostname_verified\": true,\n  \"table_row_counts\": {\n    \"drivers\": 2,\n    \"reys\": 3,\n    \"reys_den\": 1\n  },\n  \"port\": 19066,\n  \"image\": \"mariadb:10.6.25@sha256:6055d4ee6a6045626442cafe4feaf7419e878c65baf3af658265e24114af1cd7\"\n}\n",
+  "stderr": "",
+  "user_dump_used": false,
+  "synthetic_export_only": true
+}

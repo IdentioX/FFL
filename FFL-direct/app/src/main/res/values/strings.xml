@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FFL Driver Direct</string>
+    <string name="settings">Настройки</string>
+    <string name="back">Назад</string>
+    <string name="configuration_missing_title">Подключение не настроено</string>
+    <string name="configuration_missing_body">Приложение ещё не подключено к данным. Обратитесь к ответственному за настройку.</string>
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="configuration_invalid">Настройки подключения требуют проверки. Обратитесь к ответственному за настройку.</string>
+    <string name="connection_checking">Проверяем подключение…</string>
+    <string name="connection_checked">Подключение проверено.</string>
+    <string name="connection_failed">Не удалось подключиться. Проверьте сеть или обратитесь к ответственному за настройку.</string>
+    <string name="retry_connection">Повторить проверку</string>
+    <string name="auth_loading">Загрузка…</string>
+    <string name="select_driver">Выберите водителя</string>
+    <string name="search_driver">Поиск по имени</string>
+    <string name="no_active_drivers">Нет доступных водителей</string>
+    <string name="no_driver_matches">Ничего не найдено</string>
+    <string name="refresh_drivers">Обновить список</string>
+    <string name="login">Вход</string>
+    <string name="password">Пароль</string>
+    <string name="driver_password_title">Вход: %1$s</string>
+    <string name="invalid_credentials">Неверный пароль. Вход не выполнен.</string>
+    <string name="cancel">Отмена</string>
+    <string name="signed_in">Вход выполнен</string>
+    <string name="check_access">Проверить доступ</string>
+    <string name="logout">Выйти</string>
+    <string name="choose_another_driver">К выбору водителя</string>
+    <string name="driver_disabled">Недоступно</string>
+    <string name="driver_disabled_body">Доступ водителя отключён. Обратитесь к ответственному за доступ.</string>
+    <string name="auth_tls_failed">Не удалось установить защищённое соединение. Обратитесь к ответственному за настройку.</string>
+    <string name="auth_timeout">Время ожидания истекло. Повторите попытку.</string>
+    <string name="database_account_rejected">Подключение требует проверки настроек. Обратитесь к ответственному за настройку.</string>
+    <string name="auth_data_unavailable">Не удалось получить данные. Повторите попытку.</string>
+    <string name="auth_storage_unavailable">Не удалось сохранить или очистить сессию. Действия заблокированы; повторите попытку.</string>
+</resources>

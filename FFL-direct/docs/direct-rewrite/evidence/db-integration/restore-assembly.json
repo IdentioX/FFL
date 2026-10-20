@@ -1,0 +1,9 @@
+{
+  "exit": 0,
+  "parts": 5,
+  "all_zip_payload_gzip_sql_hashes_verified": true,
+  "source_sql_bytes": 52606346,
+  "source_sql_sha256": "04e481bdfa30e286e0b568e999763fab8fcf0cc91b192f564f74a039ee9e8c55",
+  "private_source_directory": "/workspace/.ffl/restore-source",
+  "data_not_published": true
+}

@@ -1,0 +1,15 @@
+{
+  "host_prepared_auth_sql_matches": {
+    "valid": true,
+    "wrong": false,
+    "empty": false,
+    "unknown_driver": false,
+    "injection": false,
+    "case_variant": true,
+    "trailing_space": true
+  },
+  "values_are_controlled_fictional_only": true,
+  "application_projects_parol": false,
+  "legacy_collation_accepts_case_or_trailing_variants": true,
+  "production_accessed": false
+}

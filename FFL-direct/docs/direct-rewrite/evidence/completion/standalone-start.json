@@ -1,0 +1,47 @@
+[
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "shell",
+      "run-as",
+      "ru.ffl24.direct.dev",
+      "rm",
+      "files/completion-db.json"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "shell",
+      "am",
+      "force-stop",
+      "ru.ffl24.direct.dev"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "shell",
+      "am",
+      "start",
+      "-W",
+      "-n",
+      "ru.ffl24.direct.dev/ru.ffl24.direct.MainActivity"
+    ],
+    "exit": 0,
+    "stdout": "Starting: Intent { cmp=ru.ffl24.direct.dev/ru.ffl24.direct.MainActivity }\nStatus: timeout\nLaunchState: UNKNOWN (-1)\nActivity: ru.ffl24.direct.dev/ru.ffl24.direct.MainActivity\nWaitTime: 11639\nComplete\n",
+    "stderr": ""
+  }
+]

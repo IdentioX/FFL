@@ -1,0 +1,5 @@
+{
+  "exit": 1,
+  "stdout": "",
+  "stderr": "adb: error: failed to stat remote object '/sdcard/Android/data/ru.ffl24.direct.dev/files/completion-ui': Permission denied\n"
+}

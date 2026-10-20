@@ -1,0 +1,12 @@
+{
+  "before": {
+    "animator_duration_scale": "0",
+    "transition_animation_scale": "0",
+    "window_animation_scale": "0"
+  },
+  "native_test": {
+    "animator_duration_scale": "1",
+    "transition_animation_scale": "1",
+    "window_animation_scale": "1"
+  }
+}

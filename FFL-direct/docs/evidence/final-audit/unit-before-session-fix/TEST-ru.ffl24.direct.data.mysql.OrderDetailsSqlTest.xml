@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-17T10:38:28.449Z" hostname="01939dccba12" time="0.023">
+  <properties/>
+  <testcase name="bothTablesBindOwnerRawHistoryAndTrimmedNumberCloseEveryResource" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.009"/>
+  <testcase name="blankNumberSkipsContactsUnknownAndNullStatusesAreIndependent" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.002"/>
+  <testcase name="ownershipChangeOrAccessRevocationDuringReadDoesNotReturnDetails" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.002"/>
+  <testcase name="missingOrForeignOrderNeverQueriesContactsOrHistory" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.001"/>
+  <testcase name="routeOpenedOnlyChecksAccessAndOwnershipAndPerformsNoWrite" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.002"/>
+  <testcase name="nullHistoryIdentityIsADataErrorRatherThanAnInventedDriverZero" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.001"/>
+  <testcase name="sqlFailureDoesNotExposeRawExceptionAndClosesResources" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.001"/>
+  <testcase name="ambiguousContactsDoNotUseParsedClientAddress" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.003"/>
+  <testcase name="disabledOrMissingDriverDoesNotReadOrders" classname="ru.ffl24.direct.data.mysql.OrderDetailsSqlTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

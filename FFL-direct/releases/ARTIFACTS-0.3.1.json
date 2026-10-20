@@ -1,0 +1,79 @@
+{
+  "version": "0.3.1-dev",
+  "version_code": 6,
+  "application_id": "ru.ffl24.direct.dev",
+  "readiness": "DEVELOPER_TEST_READY",
+  "apk": {
+    "file": "FFL-Driver-Direct-0.3.1-dev.apk",
+    "sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+    "bytes": 14355534,
+    "db_configuration": "empty BuildConfig; encrypted runtime profile via UI",
+    "signing": "Android local debug key",
+    "runtime_mode": "DIRECT_MYSQL"
+  },
+  "source": {
+    "file": "FFL-Driver-Direct-0.3.1-dev-source.zip",
+    "sha256": "ab7d9a3db9a5877897ffb653c157852380ec5a56ca058daf46e11ca9caf4a53d",
+    "bytes": 5152471,
+    "entries": 859,
+    "zip_crc_verified": true,
+    "entry_bytes_match_source": true
+  },
+  "screenshots": {
+    "file": "FFL-Driver-Direct-0.3.1-screenshots.zip",
+    "sha256": "69ed97f013ae0237fce602c3c238cfb157fd772b76a5185d27114b18ba5ad5de",
+    "bytes": 2516679,
+    "png_count": 22
+  },
+  "checks": {
+    "runtime_connection_verified": true,
+    "checks": {
+      "public_apk_has_empty_build_credentials": true,
+      "successful_debug_release_builds": true,
+      "direct_mode": true,
+      "frozen_production_sources": true,
+      "jvm_845_pass": true,
+      "ui": true,
+      "public-regression": true,
+      "small-regression": true,
+      "public_38_distinct_methods_pass_across_runs": true,
+      "runtime_7_same_public_apk": true,
+      "new_editor_screenshots": true,
+      "lint_no_errors": true,
+      "business_sql_and_tls_unchanged": true,
+      "legacy_104_hashes": true,
+      "legacy_git_clean": true,
+      "original_records_unchanged": true,
+      "native_system_notification_without_instrumentation": true,
+      "restored_12_distinct_cases_pass": true
+    },
+    "jvm": {
+      "tests": 845,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "public_apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+    "restored_regression_passed": true,
+    "restored_case_counts": {
+      "executed": 12,
+      "initial_passed": 11,
+      "latest_distinct_passed": 12
+    },
+    "instrumented_notification_animation_scale_0": "NEGATIVE; separate native system notification scale0 PASS; instrumented scale1 PASS",
+    "physical_device": "BLOCKED",
+    "production_accessed": false,
+    "security_rollout": "BLOCKED_SECURITY"
+  },
+  "privacy": {
+    "private_passwords_scanned_without_disclosure": 5,
+    "dump_included": false,
+    "configured_apks_included": false,
+    "private_keys_included": false
+  },
+  "public_unsigned_release_sha256": "2a50172d9240895068d0685c933fc5c226da0c2f7303a9f6e0b6b352f0bf43da",
+  "release_runtime_0_3_1": "NOT_TESTED",
+  "driver_rollout": "BLOCKED_SECURITY",
+  "physical_device_tested": false,
+  "production_accessed": false
+}

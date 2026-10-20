@@ -1,0 +1,12 @@
+{
+  "version": "0.2.1-dev",
+  "versionCode": 3,
+  "mode": "DIRECT_MYSQL",
+  "sha256": "53b78e9b9ad495b00b3d3980c7b77d91ceec28bdaa52af84b53c9278fc346ab1",
+  "matches_installed_base_apk": true,
+  "signature_exit": 0,
+  "private_configured_artifact": true,
+  "published": false,
+  "contains_only_disposable_local_db_credentials": true,
+  "compose_runtime": "1.10.6"
+}

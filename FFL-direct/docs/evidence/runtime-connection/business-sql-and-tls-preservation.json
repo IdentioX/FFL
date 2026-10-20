@@ -1,0 +1,47 @@
+[
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/AndroidTlsSocketPlugin.kt",
+    "sha256": "c0fd759367aa0ca578b3347f83afba56664e4fbf3b98550f27c4c439569e6db0",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/ConnectionPolicy.kt",
+    "sha256": "0d090e124d15b0aa76d4c0a311f9a2dd88293066efcd17f6c79a65a342a06881",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/DirectDeliveryDataSource.kt",
+    "sha256": "7bf77aaad160bc3371f11f8cd3641524b57aba109051154161500a74deb31fee",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/DirectMySqlDriverDataSource.kt",
+    "sha256": "12853d8e4cf7afeb522e78237395b8a3d032c7b277a1ab41d16683e3f73d7299",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/DirectMySqlOrderDetailsDataSource.kt",
+    "sha256": "c01d516122731f645eef8e0d755cb34ce61df3754454f2ed68c33814034d455b",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/DirectWorkspaceDataSource.kt",
+    "sha256": "3d3d762454b5d136362b18e5d465e960c05ddb5bf63b7094ea6424ad65d43c85",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/MySqlConnectionFactory.kt",
+    "sha256": "3bbc359786867a1b7065029387b56201936d81839ee366fb51a1275d56b5ebcb",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/MySqlReadExecutor.kt",
+    "sha256": "e3a0f81955de212a8964a132d46f95bc8a2e23fb5093d0983cbdb5455f2869d0",
+    "unchanged_from_runtime_settings_baseline": true
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/OrderContactResolver.kt",
+    "sha256": "2c25155e6935a2afed8cb9ea0545859fa5fb002ce9b2544f34e9f27d3c2bf5bb",
+    "unchanged_from_runtime_settings_baseline": true
+  }
+]

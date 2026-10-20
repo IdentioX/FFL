@@ -1,0 +1,65 @@
+{
+  "fixture_only": true,
+  "tables": {
+    "reys": [
+      {
+        "id": 1,
+        "nomer_z": "Fixture-first",
+        "id_v": 97,
+        "name_c": "Fixture client",
+        "col": 3,
+        "vremya": "\u0441 11:30 Fixture comment",
+        "date": "2026-05-18",
+        "status": 2,
+        "col_s": 1,
+        "sort_r": 1,
+        "st_vv": 1,
+        "date_att_log": "2026-10-17 07:30:43"
+      },
+      {
+        "id": 2,
+        "nomer_z": "Delivered-fixture",
+        "id_v": 97,
+        "name_c": "Delivered fixture",
+        "col": 1,
+        "vremya": "",
+        "date": "2026-05-18",
+        "status": 2,
+        "col_s": 2,
+        "sort_r": 2,
+        "st_vv": 1,
+        "date_att_log": "2026-05-18 12:00:00"
+      },
+      {
+        "id": 3,
+        "nomer_z": "Foreign-fixture",
+        "id_v": 98,
+        "name_c": "Foreign fixture",
+        "col": 1,
+        "vremya": "",
+        "date": "2026-05-18",
+        "status": 2,
+        "col_s": 2,
+        "sort_r": 3,
+        "st_vv": 0,
+        "date_att_log": null
+      }
+    ],
+    "reys_den": [
+      {
+        "id": 1,
+        "nomer_z": "Fixture-second",
+        "id_v": 97,
+        "name_c": "Second fixture client",
+        "col": 2,
+        "vremya": "Fixture second comment",
+        "date": "2026-05-18",
+        "status": 2,
+        "col_s": 2,
+        "sort_r": 1,
+        "st_vv": 1,
+        "date_att_log": "2026-10-17 07:30:47"
+      }
+    ]
+  }
+}

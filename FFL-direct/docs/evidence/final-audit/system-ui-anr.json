@@ -1,0 +1,6 @@
+{
+  "overlay": "System UI is not responding",
+  "wait_selected_on_owned_emulator": true,
+  "application_anr_claimed": false,
+  "copy_test_failed_focus_wait": true
+}

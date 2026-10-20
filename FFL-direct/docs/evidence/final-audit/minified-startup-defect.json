@@ -1,0 +1,15 @@
+{
+  "actual_release_startup_failed": true,
+  "debug_runtime_unaffected": true,
+  "failure": "InitializationProvider: WorkDatabase_Impl no-arg constructor removed by R8",
+  "exception": "NoSuchMethodException",
+  "fix": "Keep only generated WorkManager Room database class constructor; retain app minification",
+  "independent_framework_harness": true,
+  "initial_attempt_passed": false,
+  "observed_errors": [
+    "java.lang.RuntimeException: Unable to get provider androidx.startup.InitializationProvider: oo: java.lang.NoSuchMethodException: androidx.work.impl.WorkDatabase_Impl.<init> []",
+    "Caused by: oo: java.lang.NoSuchMethodException: androidx.work.impl.WorkDatabase_Impl.<init> []",
+    "Caused by: java.lang.NoSuchMethodException: androidx.work.impl.WorkDatabase_Impl.<init> []"
+  ],
+  "constructor_removal_observed_in_r8_usage": true
+}

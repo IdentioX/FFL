@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.ContactParsingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-17T08:48:09.124Z" hostname="2a290805ec4d" time="0.014">
+  <properties/>
+  <testcase name="rawNumbersPreservedAndDatesTimesExcluded" classname="ru.ffl24.direct.ContactParsingTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

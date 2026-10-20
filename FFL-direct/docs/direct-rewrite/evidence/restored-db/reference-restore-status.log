@@ -1,0 +1,18 @@
+{
+  "state": "ready",
+  "profile": "private-restored-dump",
+  "server_version": "10.6.25-MariaDB-ubu2204",
+  "tls_required_and_hostname_verified": true,
+  "table_row_counts": {
+    "drivers": 54,
+    "reys": 26802,
+    "reys_den": 1882
+  },
+  "delivery_storage_engines": {
+    "reys_den": "InnoDB",
+    "reys": "InnoDB"
+  },
+  "innodb_delivery_tables": true,
+  "port": 19067,
+  "image": "mariadb:10.6.25@sha256:6055d4ee6a6045626442cafe4feaf7419e878c65baf3af658265e24114af1cd7"
+}

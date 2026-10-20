@@ -1,0 +1,1 @@
+<testsuite tests="2" failures="0" errors="0" skipped="0" time="147.413"><testcase classname="ru.ffl24.direct.WorkspaceNavigationTest" name="loginListDetailsDirectorySettingsAndLogoutUseRealNavigation"></testcase><testcase classname="ru.ffl24.direct.DesignImplementationTest" name="visualWalkthroughUsesAllEightApprovedScreenTypes"></testcase></testsuite>

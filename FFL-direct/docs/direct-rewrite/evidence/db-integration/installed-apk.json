@@ -1,0 +1,8 @@
+{
+  "package": "ru.ffl24.direct.dev",
+  "mode": "DIRECT_MYSQL",
+  "configured_for_owned_local_database": true,
+  "sha256": "6c272c0ca85a494f1fa192682f81edb08ae1bb19769f96a45b0a9f266780177f",
+  "matches_private_build": true,
+  "apk_published": false
+}

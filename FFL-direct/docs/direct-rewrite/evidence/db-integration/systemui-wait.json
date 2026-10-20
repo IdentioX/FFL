@@ -1,0 +1,9 @@
+{
+  "owned_read_only_avd": true,
+  "action": "Wait on System UI ANR, no app assertions removed",
+  "point": [
+    239,
+    462
+  ],
+  "exit": 0
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.OrderResolverContextTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-16T15:04:14.530Z" hostname="2a290805ec4d" time="0.002">
+  <properties/>
+  <testcase name="closePositiveScoresRemainAmbiguous" classname="ru.ffl24.direct.data.mysql.OrderResolverContextTest" time="0.001"/>
+  <testcase name="sameOrderNumberCandidatesAreRescoredForEachClientText" classname="ru.ffl24.direct.data.mysql.OrderResolverContextTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

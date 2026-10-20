@@ -1,0 +1,5 @@
+{
+  "test_plaintext_inputs_absent": true,
+  "encrypted_profile_retained": true,
+  "production_accessed": false
+}

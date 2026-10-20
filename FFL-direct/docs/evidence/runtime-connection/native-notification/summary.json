@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "public_apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+  "test_apk_sha256": "ab0c7102a03e1edd90804f101d1e01ec862f0cf94f1ffd43b8ddf960659ccb25",
+  "setup_command": [
+    "adb",
+    "-s",
+    "emulator-5558",
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "listener",
+    "ru.ffl24.direct.CompletionRunListener",
+    "-e",
+    "class",
+    "ru.ffl24.direct.ConfiguredNotificationTest#prepareSystemNotificationForNativeHostTap",
+    "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+  ],
+  "setup_junit": {
+    "tests": "1",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "17.427"
+  },
+  "setup_is_fixture_only": true,
+  "instrumentation_ended_before_tap": true,
+  "real_os_notification_found": true,
+  "native_notification_clicked": true,
+  "notification_intent_received": true,
+  "controlled_second_order_visible": true,
+  "app_package_visible": true,
+  "animations": {
+    "animator_duration_scale": "0",
+    "transition_animation_scale": "0",
+    "window_animation_scale": "0"
+  },
+  "native_wait_seconds": 45.94,
+  "total_seconds": 87.6,
+  "production_accessed": false
+}

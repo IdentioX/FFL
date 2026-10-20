@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bash",
+    "gradlew",
+    "--offline",
+    "--no-daemon",
+    "--max-workers=2",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    "--rerun",
+    ":app:lintDebug",
+    ":app:verifyDirectRuntime",
+    ":app:assembleDebugAndroidTest",
+    ":app:assembleRelease"
+  ],
+  "exit": 0,
+  "tests_forced_fresh": true
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.AuthSessionAcceptanceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:12:14.197Z" hostname="01939dccba12" time="0.062">
+  <properties/>
+  <testcase name="activeListNeverProjectsPasswordAndLoginBindsItOnlyAsParameter" classname="ru.ffl24.direct.data.mysql.AuthSessionAcceptanceTest" time="0.057"/>
+  <testcase name="revokedSessionIsClearedAndCannotBeRestoredOfflineAsAuthenticated" classname="ru.ffl24.direct.data.mysql.AuthSessionAcceptanceTest" time="0.002"/>
+  <testcase name="supersededLoginReturnsASafeFailureInsteadOfStrandingTheUi" classname="ru.ffl24.direct.data.mysql.AuthSessionAcceptanceTest" time="0.002"/>
+  <testcase name="logoutRemovesLocalSessionAndProtectedAccess" classname="ru.ffl24.direct.data.mysql.AuthSessionAcceptanceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

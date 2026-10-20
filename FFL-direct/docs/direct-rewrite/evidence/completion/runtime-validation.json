@@ -1,0 +1,19 @@
+{
+  "developer_runtime": "POSITIVE",
+  "android": {
+    "tests": "28",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "301.611"
+  },
+  "installed_apk_sha256": "413bbdc09a289e5621704a46b76b23406abbcdd49eb45d2733f2b5fbf07ee10c",
+  "real_disposable_mysql": "POSITIVE",
+  "ui_to_mysql_read_and_write": "POSITIVE",
+  "only_expected_columns_changed": true,
+  "legacy_database": "BLOCKED_NOT_CONFIGURED",
+  "physical_device": "BLOCKED_UNAVAILABLE",
+  "measured_background_doze_reboot": "BLOCKED_NOT_RUN",
+  "production_write": false,
+  "driver_rollout": "BLOCKED_SECURITY"
+}

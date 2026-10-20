@@ -1,0 +1,58 @@
+INSTRUMENTATION_STATUS: class=ru.ffl24.direct.AuditLayoutTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+ru.ffl24.direct.AuditLayoutTest:
+INSTRUMENTATION_STATUS: test=smallLightPhoneKeepsAllActionsInsideTheScreen
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=ru.ffl24.direct.AuditLayoutTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=smallLightPhoneKeepsAllActionsInsideTheScreen
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=ru.ffl24.direct.AuditLayoutTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=ru.ffl24.direct.AuditLayoutTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action must have visible width: ↑
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ru.ffl24.direct.AuditLayoutTest.checkActions(AuditLayoutTest.kt:42)
+	at ru.ffl24.direct.AuditLayoutTest.smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen(AuditLayoutTest.kt:23)
+
+INSTRUMENTATION_STATUS: stream=
+Error in smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen(ru.ffl24.direct.AuditLayoutTest):
+java.lang.AssertionError: Action must have visible width: ↑
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ru.ffl24.direct.AuditLayoutTest.checkActions(AuditLayoutTest.kt:42)
+	at ru.ffl24.direct.AuditLayoutTest.smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen(AuditLayoutTest.kt:23)
+
+INSTRUMENTATION_STATUS: test=smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 27.098
+There was 1 failure:
+1) smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen(ru.ffl24.direct.AuditLayoutTest)
+java.lang.AssertionError: Action must have visible width: ↑
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ru.ffl24.direct.AuditLayoutTest.checkActions(AuditLayoutTest.kt:42)
+	at ru.ffl24.direct.AuditLayoutTest.smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen(AuditLayoutTest.kt:23)
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

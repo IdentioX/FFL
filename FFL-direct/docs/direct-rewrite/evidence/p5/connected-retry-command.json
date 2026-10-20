@@ -1,0 +1,18 @@
+{
+  "cwd": "/workspace/FFL-direct",
+  "command": [
+    "bash",
+    "gradlew",
+    "--offline",
+    "--no-daemon",
+    "--max-workers=2",
+    "-Dddmlib.getprop.timeout.sec=30",
+    ":app:connectedDebugAndroidTest",
+    "-Pandroid.testInstrumentationRunnerArguments.class=ru.ffl24.direct.OrderDetailsUiTest,ru.ffl24.direct.StartupTest#coldStartAndNavigationHaveNoConnectionInput,ru.ffl24.direct.StartupTest#recreationPreservesNavigationAndThemeWithoutSetupFlow"
+  ],
+  "exit": 1,
+  "started_epoch": 1792163335.4512596,
+  "ended_epoch": 1792163530.2107406,
+  "android_serial": "emulator-5556",
+  "live_db_used": false
+}

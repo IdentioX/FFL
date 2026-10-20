@@ -1,0 +1,17 @@
+{
+  "repositories": [
+    {
+      "path": "/workspace/FFL",
+      "head": "047458aa416465dea772ee65082c093f26064699",
+      "status_porcelain": ""
+    },
+    {
+      "path": "/workspace/FFL-backend",
+      "head": "68b82b09c4f66b2408e563b71a0c7baf9fa0085a",
+      "status_porcelain": ""
+    }
+  ],
+  "reference_files_unchanged": 104,
+  "checked_by": "tools/verify_completion.py",
+  "direct_git_initialized": false
+}

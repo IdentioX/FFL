@@ -1,0 +1,8 @@
+{
+  "file_id": "file_0000000067348210bc0174cd9879b432",
+  "downloaded": false,
+  "reason": "file exceeds the executor transfer limit of 32 MiB",
+  "only_known_server_header": "5.5.5-10.6.25-MariaDB-cll-lve-log",
+  "restored": false,
+  "timestamp": "2026-10-17T08:40:49.625004+00:00"
+}

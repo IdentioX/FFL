@@ -1,0 +1,36 @@
+{
+  "time_utc": "2026-10-16T11:25:28.701320+00:00",
+  "p1_result": "POSITIVE",
+  "reference_files_unchanged": 104,
+  "apk_sha256": "e24923d04f533cd6a13b1979ad6e0c0b5fb92b9b21a900c67e0fbc577bced2a7",
+  "historical_xml_counts": {
+    "unit-tests.xml": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "instrumentation-tests.xml": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "environment_config_present": {
+    "DIRECT_MYSQL_HOST": false,
+    "DIRECT_MYSQL_PORT": false,
+    "DIRECT_MYSQL_DATABASE": false,
+    "DIRECT_MYSQL_USER": false,
+    "DIRECT_MYSQL_PASSWORD": false,
+    "DIRECT_MYSQL_USE_SSL": false
+  },
+  "local_config_present": {
+    "DIRECT_MYSQL_HOST": false,
+    "DIRECT_MYSQL_PORT": false,
+    "DIRECT_MYSQL_DATABASE": false,
+    "DIRECT_MYSQL_USER": false,
+    "DIRECT_MYSQL_PASSWORD": false,
+    "DIRECT_MYSQL_USE_SSL": false
+  }
+}

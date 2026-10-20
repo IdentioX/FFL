@@ -1,0 +1,23 @@
+[
+  {
+    "cwd": "/workspace/FFL",
+    "command": "source /workspace/.ffl/env.sh && bash gradlew --offline --no-daemon --max-workers=4 :app:assembleDebug :app:testDebugUnitTest",
+    "exit_code": 0,
+    "log": "legacy-android-build.log",
+    "note": "44 tasks UP-TO-DATE, no fresh test execution in this command"
+  },
+  {
+    "cwd": "/workspace/FFL",
+    "command": "source /workspace/.ffl/env.sh && bash gradlew --offline --no-daemon --max-workers=4 :app:testDebugUnitTest --rerun",
+    "exit_code": 0,
+    "log": "legacy-android-tests.log",
+    "report": "legacy-android-tests.xml"
+  },
+  {
+    "cwd": "/workspace/FFL-backend",
+    "command": "/workspace/.ffl/backend-venv/bin/python -m pytest -q --junitxml=/workspace/FFL-direct/docs/direct-rewrite/evidence/backend-tests.xml",
+    "exit_code": 0,
+    "log": "backend-tests.log",
+    "report": "backend-tests.xml"
+  }
+]

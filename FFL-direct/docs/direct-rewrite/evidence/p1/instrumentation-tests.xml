@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="2" failures="0" errors="0" skipped="0" time="66.962" timestamp="2026-10-16T10:58:44" hostname="localhost">
+  <testsuite name="ru.ffl24.direct.StartupTest" tests="2" failures="0" errors="0" skipped="0" time="51.131" timestamp="2026-10-16T10:58:44" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5556 - 11" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="coldStartAndNavigationHaveNoConnectionInput" classname="ru.ffl24.direct.StartupTest" time="35.903" />
+    <testcase name="recreationPreservesNavigationAndThemeWithoutSetupFlow" classname="ru.ffl24.direct.StartupTest" time="15.228" />
+  </testsuite>
+</testsuites>

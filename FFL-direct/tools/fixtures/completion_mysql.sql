@@ -1,0 +1,22 @@
+-- DISPOSABLE SYNTHETIC TEST DATABASE ONLY. Never run against a legacy/production server.
+SET NAMES utf8mb4;
+USE fixture;
+CREATE TABLE __hr_typepos(posTypeId BIGINT PRIMARY KEY,posTypeName VARCHAR(100),fio VARCHAR(100),mobile VARCHAR(100),whatsapp VARCHAR(100),parol VARCHAR(100),access INT);
+INSERT INTO __hr_typepos VALUES(97,'Fixture driver','Fixture driver','+70000000000',NULL,'driver-fixture-only',1),(98,'Inactive fixture',NULL,NULL,NULL,'not-used',0);
+CREATE TABLE reys(id BIGINT PRIMARY KEY,nomer_z VARCHAR(100),id_v BIGINT,name_c VARCHAR(200),col INT,vremya VARCHAR(200),date DATE,status INT,col_s INT,sort_r INT,st_vv INT,date_att_log DATETIME) ENGINE=InnoDB;
+CREATE TABLE reys_den LIKE reys;
+INSERT INTO reys VALUES(1,'Fixture-first',97,'Fixture client',3,'с 11:30 Fixture comment','2026-05-18',2,1,1,0,NULL),(2,'Delivered-fixture',97,'Delivered fixture',1,'','2026-05-18',2,2,2,1,'2026-05-18 12:00:00'),(3,'Foreign-fixture',98,'Foreign fixture',1,'','2026-05-18',2,2,3,0,NULL);
+INSERT INTO reys_den VALUES(1,'Fixture-second',97,'Second fixture client',2,'Fixture second comment','2026-05-18',2,2,1,0,NULL);
+CREATE TABLE meneger_ffl(id BIGINT PRIMARY KEY,meneger VARCHAR(100),tel VARCHAR(100),short_tel VARCHAR(100));
+CREATE TABLE meneger_contr_ffl(id BIGINT PRIMARY KEY,nomer_z VARCHAR(100),link VARCHAR(300),ooo VARCHAR(200),adress VARCHAR(200),tell_klient VARCHAR(100),tell_gruzchik VARCHAR(100),id_m BIGINT);
+INSERT INTO meneger_contr_ffl VALUES(1,'Fixture-first',NULL,'Fixture client','Synthetic test address','+70000000000',NULL,NULL);
+CREATE TABLE nastroiki(variable VARCHAR(100),value VARCHAR(200));
+INSERT INTO nastroiki VALUES('imya_karta','Fixture holder');
+CREATE TABLE phone(name VARCHAR(100),nomer_full VARCHAR(100));
+INSERT INTO phone VALUES('Fixture dispatcher','+70000000000');
+CREATE FUNCTION name_v(driver BIGINT) RETURNS VARCHAR(100) DETERMINISTIC RETURN (SELECT posTypeName FROM __hr_typepos WHERE posTypeId=driver LIMIT 1);
+REVOKE ALL PRIVILEGES,GRANT OPTION FROM 'fixture_read'@'%';
+GRANT SELECT ON fixture.* TO 'fixture_read'@'%';
+GRANT EXECUTE ON FUNCTION fixture.name_v TO 'fixture_read'@'%';
+GRANT UPDATE(st_vv,date_att_log) ON fixture.reys TO 'fixture_read'@'%';
+GRANT UPDATE(st_vv,date_att_log) ON fixture.reys_den TO 'fixture_read'@'%';

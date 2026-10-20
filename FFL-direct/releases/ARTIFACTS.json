@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0-dev",
+  "package": "ru.ffl24.direct.dev",
+  "mode": "DIRECT_MYSQL",
+  "database_configured": false,
+  "apk_signing": "Android debug/v2",
+  "source_files": 482,
+  "artifacts": [
+    {
+      "name": "FFL-Driver-Direct-0.2.0-dev.apk",
+      "sha256": "413bbdc09a289e5621704a46b76b23406abbcdd49eb45d2733f2b5fbf07ee10c",
+      "bytes": 13988983
+    },
+    {
+      "name": "FFL-Driver-Direct-0.2.0-dev-source.zip",
+      "sha256": "947d8e0413321bea934e1c3da6f56d67a2c6d1078288ceff1eeba2f2f32233e7",
+      "bytes": 1658639
+    }
+  ],
+  "unit_passed": 831,
+  "android_passed": 28,
+  "real_test_mysql": "8.4.11",
+  "legacy_db_tested": false,
+  "physical_device_tested": false
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.WorkspaceSqlTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-17T08:48:09.936Z" hostname="2a290805ec4d" time="0.012">
+  <properties/>
+  <testcase name="summaryCountsAndLongSecondRouteIdsUseDriverAndDate" classname="ru.ffl24.direct.data.mysql.WorkspaceSqlTest" time="0.003"/>
+  <testcase name="listBindsBothTablesRetainsSourcesAndDeliveredSection" classname="ru.ffl24.direct.data.mysql.WorkspaceSqlTest" time="0.002"/>
+  <testcase name="directoryPreservesRawPhonesMissingCardAndUsesMobileFallback" classname="ru.ffl24.direct.data.mysql.WorkspaceSqlTest" time="0.002"/>
+  <testcase name="queryErrorsAreSafeAndResourcesClose" classname="ru.ffl24.direct.data.mysql.WorkspaceSqlTest" time="0.001"/>
+  <testcase name="disabledMissingAndRevokedAccessNeverPublishProtectedData" classname="ru.ffl24.direct.data.mysql.WorkspaceSqlTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

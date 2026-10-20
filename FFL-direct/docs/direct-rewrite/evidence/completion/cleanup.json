@@ -1,0 +1,137 @@
+[
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "shell",
+      "run-as",
+      "ru.ffl24.direct.dev",
+      "test",
+      "!",
+      "-f",
+      "files/completion-db.json"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "reverse",
+      "--remove",
+      "tcp:19061"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "reverse",
+      "--remove",
+      "tcp:19062"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "reverse",
+      "--remove",
+      "tcp:19063"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "reverse",
+      "--remove",
+      "tcp:19064"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "reverse",
+      "--remove",
+      "tcp:19065"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "shell",
+      "rm",
+      "-f",
+      "/data/local/tmp/ffl-completion-window.xml"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "inspect",
+      "--format",
+      "{{.Id}} {{.Name}}",
+      "ffl-completion-mysql"
+    ],
+    "exit": 0,
+    "stdout": "c7bf4ff4468de80b30eef17897d47165c6b05f1b5b54f8b3a89b935e593a6249 /ffl-completion-mysql\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "rm",
+      "-f",
+      "-v",
+      "c7bf4ff4468de80b30eef17897d47165c6b05f1b5b54f8b3a89b935e593a6249"
+    ],
+    "exit": 0,
+    "stdout": "c7bf4ff4468de80b30eef17897d47165c6b05f1b5b54f8b3a89b935e593a6249\n",
+    "stderr": ""
+  },
+  {
+    "owned_process": "tls-fixture-process.json",
+    "pid": 69186,
+    "signal": "SIGTERM"
+  },
+  {
+    "owned_process": "emulator-read-only-process.json",
+    "pid": 68476,
+    "signal": "SIGTERM"
+  },
+  {
+    "task_private_db_config_removed": true,
+    "preexisting_p2_fixture_preserved": true,
+    "reference_projects_not_modified": true
+  }
+]

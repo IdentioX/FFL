@@ -1,0 +1,267 @@
+[
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/ConfiguredNotificationTest.kt",
+    "change": "modified",
+    "sha256": "ca804a34453395c28684ff51cc55da8795bdbcef1a6557d147144a34ae575993"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/ConnectionSettingsUiTest.kt",
+    "change": "added",
+    "sha256": "c534de665029abd05f7df64b2b8d84b976cb427f59031f4849ec93c94f7e08fb"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/DesignImplementationTest.kt",
+    "change": "modified",
+    "sha256": "01756f72d55810aa736f32a6831853b72df8df62349cf6e53ea796af0cf653de"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/LiveConnectionSettingsUiTest.kt",
+    "change": "added",
+    "sha256": "895a544068616197734a10c8edd8501df17085aac28d8620bbca737df834f884"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/OwnedTestDatabase.kt",
+    "change": "modified",
+    "sha256": "10810a545cb8153ac1a9982391f29a2a24db26fd3f4e00f3d081c1c1be845c7c"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/RestoredDatabaseFlowTest.kt",
+    "change": "modified",
+    "sha256": "feb2af56d4bf9d56129195359603604a0625fae592dde078effda7c49d1c898a"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/RuntimeConnectionTest.kt",
+    "change": "added",
+    "sha256": "0a68f3d6445584215538108033edf88d75379f73fe4a47e6bab4e559a779bb3a"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/StartupTest.kt",
+    "change": "modified",
+    "sha256": "50896b84fbf60a7cc04a7882e8e0af011f723903aff8edfa5e4b1febd8b52c73"
+  },
+  {
+    "file": "app/src/androidTest/java/ru/ffl24/direct/WorkspaceNavigationTest.kt",
+    "change": "modified",
+    "sha256": "8daa9178e273e089e0c1f740b45e97dd02841222b00567618ec02d2384e70dbb"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/AppGraph.kt",
+    "change": "modified",
+    "sha256": "a9f36f390df552790b6395aee6f2adc6786bd772bb9d9ac1f354d486e104be4b"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/DirectApplication.kt",
+    "change": "modified",
+    "sha256": "68bf2134f4f493343743d353b10c90229cd929e11ae4843492d89109b1666a81"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/MainActivity.kt",
+    "change": "modified",
+    "sha256": "86f485858eced34149278455a7f111c514ce7b553679180e1d12468063e534f0"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/config/ConnectionProfileStore.kt",
+    "change": "added",
+    "sha256": "23fcb55d3e8e9eedf29da522694c15be0768396fcdf739afe7d7b05c2144ed70"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/config/RuntimeProfiles.kt",
+    "change": "added",
+    "sha256": "e360d1bd9b8371b88d7bcc65f465432d23f97efef5ba4ba6f23e0814d07b0c00"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/DirectDbError.kt",
+    "change": "modified",
+    "sha256": "e47d235220727147294d7e738ef769ef51d2cefa9fd6b89c2f31f520323329b0"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/DirectMySqlConfig.kt",
+    "change": "modified",
+    "sha256": "f45a8862c5eaad0fa59e536d37070d806e4f46a75d03461149605362a71af732"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/MySqlConnectionProbe.kt",
+    "change": "modified",
+    "sha256": "12259cb70fec54b895764d40864623396d63a391e05568b2f7e638eee5e0f20c"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/mysql/RetiringConnector.kt",
+    "change": "added",
+    "sha256": "0196f984f6a6c492eb5ba17b13c8415644e513a540b064829c2117663a966d9e"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/data/repository/DirectAuthRepository.kt",
+    "change": "modified",
+    "sha256": "ff0aa0e11af67824f7bab4611ffbce1eadefd3e2a0329bff4b2098c0a9f2c4e5"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/local/WorkspacePreferences.kt",
+    "change": "modified",
+    "sha256": "c345b966d6cee08f62d658503413a1a8389784eed9727856b294bc050aa25169"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/notifications/SecondRouteNotifications.kt",
+    "change": "modified",
+    "sha256": "790d4767827c2c8c12080c9efec720a42106ad0699f3b656d02330a6332dbadb"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/session/DataStoreDriverSessionStore.kt",
+    "change": "modified",
+    "sha256": "c922c1bde9cc0c51106dfab236448e517c1544278ea8bcdda22cf260c8a60b12"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/ui/ConnectionSettingsScreen.kt",
+    "change": "added",
+    "sha256": "85b4779649f5d8d8032de1732929b33a20bfdccb01818bef3be00c09d6aa8524"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/ui/DirectApp.kt",
+    "change": "modified",
+    "sha256": "422072d060fa40aa9aca749fa3faae359e994bbf93e4dfa22bf931af99859826"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/ui/FflDesignSystem.kt",
+    "change": "modified",
+    "sha256": "58d61163dcb11d7dea888d4c2f65b4b3a375ab5849cf57f6644439fd0e503f70"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/ui/RuntimeHost.kt",
+    "change": "added",
+    "sha256": "a82b2753e924f6e4f13bdfa95e8e4f4904ad2a69c2f312025b54aa73a6c0fc89"
+  },
+  {
+    "file": "app/src/main/java/ru/ffl24/direct/ui/WorkspaceSettings.kt",
+    "change": "modified",
+    "sha256": "992e2548d71c76923cc443108a6d1b28ed38e1290f77c1ffd5f9f6ca4bb9b953"
+  },
+  {
+    "file": "app/src/test/java/ru/ffl24/direct/data/mysql/MySqlConnectionProbeTest.kt",
+    "change": "modified",
+    "sha256": "1c26fedf3824a6c092bf680c934d0a3ded99905cdc4a29b5bd0c237a009d9f95"
+  },
+  {
+    "file": "app/src/test/java/ru/ffl24/direct/data/mysql/RetiringConnectorTest.kt",
+    "change": "added",
+    "sha256": "fca1e38d7ecfa2e7b9fe52dd4f98f774f50c1eb5f0c6a6508a4f163838ca0124"
+  },
+  {
+    "file": "tools/check_restored_integrity.py",
+    "change": "added",
+    "sha256": "21989236df854cf75ab8981ea1983367523ae7635de3f46646379af6dcbb7a39"
+  },
+  {
+    "file": "tools/completion_collect_android.py",
+    "change": "added",
+    "sha256": "580e3d6f2240f033b5efa6eaba559ea98b034b22626db184732ce88e1ef2697f"
+  },
+  {
+    "file": "tools/dev_database.py",
+    "change": "added",
+    "sha256": "0f849a98e867ade69324aefb2408967f5138a7f88ea0678d356488e15c7ea6d5"
+  },
+  {
+    "file": "tools/fixtures/ReleaseSmokeInstrumentation.java",
+    "change": "added",
+    "sha256": "61e78134e5ff3ac60c3e2257407428f83b2342a67fbac81e79f0f6fc737268da"
+  },
+  {
+    "file": "tools/fixtures/completion_mysql.sql",
+    "change": "added",
+    "sha256": "d06d671f2830ccf2665049d1075ff4a0cb05de7e6e353627835f46448fe630e4"
+  },
+  {
+    "file": "tools/fixtures/restored_e2e.sql",
+    "change": "added",
+    "sha256": "9efe6945b86e3ff16e9582c0f4fac792574977e6ac79fb881e196777b0a741a2"
+  },
+  {
+    "file": "tools/p2_tls_fixture.py",
+    "change": "added",
+    "sha256": "25f5b977554b99a32d7f64bc79af74d044d6d34af4233b6dc15dfa3e61a86c0a"
+  },
+  {
+    "file": "tools/p5_generate_golden.py",
+    "change": "added",
+    "sha256": "aad680fe5d89e58666b57cf6e8df3a0e64ec976ade3aa556b738a5a321e30f67"
+  },
+  {
+    "file": "tools/requirements-db-check.txt",
+    "change": "added",
+    "sha256": "717df355044876c89125a135b47595ca5732eeaa670a13fb2e0b9feb6b4badd8"
+  },
+  {
+    "file": "tools/run_audit_android.py",
+    "change": "added",
+    "sha256": "b74e03f0a61aadd4a4ce55f4f1a5d9efb75246895b447dc9b98bb477e1a37ac3"
+  },
+  {
+    "file": "tools/run_design_android.py",
+    "change": "added",
+    "sha256": "3ef88ee41ea8f2b9149f41ed31fa409593449e662a71bc5a6eda5153956e69cb"
+  },
+  {
+    "file": "tools/run_minified_audit.py",
+    "change": "added",
+    "sha256": "82ad520485a4e711a9557b003fc928e89039abb622062b651e67dc69ce4751af"
+  },
+  {
+    "file": "tools/run_native_notification.py",
+    "change": "added",
+    "sha256": "41f3bb167925c1e9222ca01a63f86c8c313d759c89b64e5735e2014c337b63c8"
+  },
+  {
+    "file": "tools/run_runtime_connections.py",
+    "change": "added",
+    "sha256": "5739435d67cc68913c2589a3057d066c79bbe806a310452e868924c28a88cde3"
+  },
+  {
+    "file": "tools/verify_completion.py",
+    "change": "added",
+    "sha256": "177405bff038b8c07b8473f1832bc399e4d270057976ce90b3503e2b68b92fc5"
+  },
+  {
+    "file": "tools/verify_final_audit.py",
+    "change": "added",
+    "sha256": "06b4e325d4fa948420f5611f847326b49874591c064504cad60e53ef6cd8d358"
+  },
+  {
+    "file": "tools/verify_p2.py",
+    "change": "added",
+    "sha256": "2387dbfce48fe3f66855ed4816a2de0316d60105c9a9484f0915163ea80318aa"
+  },
+  {
+    "file": "tools/verify_p2_buildconfig.py",
+    "change": "added",
+    "sha256": "1e50ec7a8cad5efeed3a868560da2d03ae14fbc3db8d5622ad909be119b7f74a"
+  },
+  {
+    "file": "tools/verify_p5.py",
+    "change": "added",
+    "sha256": "09a2d635c5333a4f1a817155faab5f94ea327b27effe98059aae1847b3ab9313"
+  },
+  {
+    "file": "tools/verify_restored_artifacts.py",
+    "change": "added",
+    "sha256": "166827638f5ff681fb94f780e512d22cf838d11d8951f1a9ac0413e9ff513e43"
+  },
+  {
+    "file": "tools/verify_runtime_connection.py",
+    "change": "added",
+    "sha256": "908174b09525cac3172852101d1166969b7906df9de867e1c81da3306008a6f9"
+  },
+  {
+    "file": "tools/verify_runtime_evidence.py",
+    "change": "added",
+    "sha256": "dc03ffd844e3c5895bcc48f022fc679e07a90adb16f38a6f2f0474cbdff6775f"
+  },
+  {
+    "file": "tools/verify_ui_design.py",
+    "change": "added",
+    "sha256": "32d2383451d82f096a3670bc612e4b1f1797205cf374e83b2b98de14cc27ee74"
+  },
+  {
+    "file": "app/build.gradle.kts",
+    "change": "added",
+    "sha256": "06dc8b7d9e7e5a1e5c733814fb9beae0870f106ea14b7c0581edb6cb988ec5ad"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "source /workspace/.ffl/env.sh; exec bash gradlew --offline --no-daemon --max-workers=2 :app:assembleDebugAndroidTest"
+  ],
+  "cwd": "/workspace/FFL-direct",
+  "exit": 0,
+  "start": "2026-10-17T07:14:50.177585+00:00",
+  "end": "2026-10-17T07:15:07.599878+00:00"
+}

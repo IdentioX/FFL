@@ -1,0 +1,8 @@
+{
+  "ordinary_app_session_restored": true,
+  "settings_page_reached": true,
+  "logout_visible": true,
+  "fixture_defect": "scrollTo awaited scroll container before settings appeared; all content fits, so container is not scrollable",
+  "fix": "Await visible target OR scrollable container, then scroll only when necessary",
+  "app_changes_required": false
+}

@@ -1,0 +1,10 @@
+{
+  "serial": "emulator-5556",
+  "sdk": "30",
+  "android": "11",
+  "abi": "x86_64",
+  "apk_sha256": "8b1aebe4620a78d70bb7a79215e33f24c2daa195b7674ee2a1a0c3751f1db185",
+  "installed_apk_sha256": "8b1aebe4620a78d70bb7a79215e33f24c2daa195b7674ee2a1a0c3751f1db185",
+  "physical_device": false,
+  "hardware_acceleration": false
+}

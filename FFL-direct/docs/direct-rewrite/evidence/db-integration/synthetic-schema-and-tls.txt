@@ -1,0 +1,27 @@
+COLUMN_NAME	DATA_TYPE	IS_NULLABLE
+id	bigint	NO
+nomer_z	varchar	YES
+id_v	bigint	YES
+name_c	varchar	YES
+col	int	YES
+vremya	varchar	YES
+date	date	YES
+status	int	YES
+col_s	int	YES
+sort_r	int	YES
+st_vv	int	YES
+date_att_log	datetime	YES
+id	bigint	NO
+nomer_z	varchar	YES
+id_v	bigint	YES
+name_c	varchar	YES
+col	int	YES
+vremya	varchar	YES
+date	date	YES
+status	int	YES
+col_s	int	YES
+sort_r	int	YES
+st_vv	int	YES
+date_att_log	datetime	YES
+Variable_name	Value
+Ssl_cipher	TLS_AES_256_GCM_SHA384

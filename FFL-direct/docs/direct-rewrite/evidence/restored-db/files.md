@@ -1,0 +1,23 @@
+# Изменённые файлы продолжения
+
+- `.gitignore`
+- `README.md`
+- `app/build.gradle.kts`
+- `app/src/androidTest/java/ru/ffl24/direct/ConfiguredNotificationTest.kt`
+- `app/src/androidTest/java/ru/ffl24/direct/ConfiguredRuntimeTest.kt`
+- `app/src/androidTest/java/ru/ffl24/direct/DirectDatabaseFlowTest.kt`
+- `app/src/androidTest/java/ru/ffl24/direct/DirectDatabaseUiTest.kt`
+- `app/src/androidTest/java/ru/ffl24/direct/OwnedTestDatabase.kt`
+- `app/src/androidTest/java/ru/ffl24/direct/RestoredDatabaseFlowTest.kt`
+- `docs/direct-rewrite/LOCAL_DATABASE.md`
+- `docs/direct-rewrite/MASTER_CONTEXT.md`
+- `docs/direct-rewrite/PROGRESS.md`
+- `docs/direct-rewrite/RESTORED_DATABASE.md`
+- `docs/direct-rewrite/SECURITY_RISKS.md`
+- `docs/direct-rewrite/UI_PARITY.md`
+- `gradle/libs.versions.toml`
+- `tools/check_restored_integrity.py`
+- `tools/dev_database.py`
+- `tools/fixtures/restored_e2e.sql`
+- `tools/requirements-db-check.txt`
+- `tools/verify_restored_artifacts.py`

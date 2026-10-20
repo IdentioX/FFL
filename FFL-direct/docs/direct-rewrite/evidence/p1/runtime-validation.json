@@ -1,0 +1,24 @@
+{
+  "time_moscow": "2026-10-16T14:01:30.198642+03:00",
+  "result": "POSITIVE",
+  "basis": "2 passing real instrumentation UI tests and final rendered UI hierarchy",
+  "device": {
+    "serial": "emulator-5556",
+    "sdk": "30",
+    "android": "11",
+    "abi": "x86_64",
+    "installed_apk_sha256": "e24923d04f533cd6a13b1979ad6e0c0b5fb92b9b21a900c67e0fbc577bced2a7",
+    "hardware_acceleration": false
+  },
+  "instrumentation": {
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "final_ui_backend_input": false,
+  "cold_start_am_status": "timeout; later rendered UI and passing tests verified, not a fast-start performance pass",
+  "initial_system_ui_anr": true,
+  "live_db_used": false,
+  "p2_started": false
+}

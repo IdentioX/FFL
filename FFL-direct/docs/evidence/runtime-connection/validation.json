@@ -1,0 +1,40 @@
+{
+  "runtime_connection_verified": true,
+  "checks": {
+    "public_apk_has_empty_build_credentials": true,
+    "successful_debug_release_builds": true,
+    "direct_mode": true,
+    "frozen_production_sources": true,
+    "jvm_845_pass": true,
+    "ui": true,
+    "public-regression": true,
+    "small-regression": true,
+    "public_38_distinct_methods_pass_across_runs": true,
+    "runtime_7_same_public_apk": true,
+    "new_editor_screenshots": true,
+    "lint_no_errors": true,
+    "business_sql_and_tls_unchanged": true,
+    "legacy_104_hashes": true,
+    "legacy_git_clean": true,
+    "original_records_unchanged": true,
+    "native_system_notification_without_instrumentation": true,
+    "restored_12_distinct_cases_pass": true
+  },
+  "jvm": {
+    "tests": 845,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "public_apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+  "restored_regression_passed": true,
+  "restored_case_counts": {
+    "executed": 12,
+    "initial_passed": 11,
+    "latest_distinct_passed": 12
+  },
+  "instrumented_notification_animation_scale_0": "NEGATIVE; separate native system notification scale0 PASS; instrumented scale1 PASS",
+  "physical_device": "BLOCKED",
+  "production_accessed": false,
+  "security_rollout": "BLOCKED_SECURITY"
+}

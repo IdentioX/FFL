@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "label": "connection-layer",
+      "passed": true,
+      "junit": {
+        "tests": "5",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "36.105"
+      },
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.RuntimeConnectionTest#actualMysqlSelectAndSafeFailureCategories,ru.ffl24.direct.RuntimeConnectionTest#switchingProfilesInvalidatesSessionClosesOldGraphAndIsolatesOrder,ru.ffl24.direct.RuntimeConnectionTest#failedSaveKeepsWorkingGraphAndEncryptedProfile,ru.ffl24.direct.RuntimeConnectionTest#encryptedProfileSurvivesFreshManagerAndDriverMustReauthenticate,ru.ffl24.direct.RuntimeConnectionTest#cancelledProbeDoesNotPublishOrReplaceConfiguration",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "elapsed_seconds": 46.45
+    },
+    {
+      "label": "cold-process-profile",
+      "passed": true,
+      "junit": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "2.337"
+      },
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.RuntimeConnectionTest#actualProcessRestartUsesSavedRuntimeProfile",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "elapsed_seconds": 13.26
+    },
+    {
+      "label": "live-settings-ui",
+      "passed": true,
+      "junit": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "39.482"
+      },
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.LiveConnectionSettingsUiTest",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "elapsed_seconds": 49.6
+    }
+  ],
+  "apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+  "configured_build": false,
+  "android_os_hw_timeout_multiplier": "5",
+  "production_accessed": false,
+  "cold_start_readiness": {
+    "am_start_status": "timeout",
+    "accessible_application_ready": true,
+    "elapsed_seconds": 28.28,
+    "deadline_seconds": 60
+  },
+  "test_apk_sha256": "dadbf3545fd0991b277336e7b61a7bfa94d137aab74ee1f82ee844682b6613d7"
+}

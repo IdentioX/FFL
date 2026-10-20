@@ -1,0 +1,25 @@
+{
+  "fixture_only": true,
+  "only_expected_two_columns_changed": true,
+  "changes": {
+    "reys": [
+      {
+        "id": 1,
+        "fields": [
+          "date_att_log",
+          "st_vv"
+        ]
+      }
+    ],
+    "reys_den": [
+      {
+        "id": 1,
+        "fields": [
+          "date_att_log",
+          "st_vv"
+        ]
+      }
+    ]
+  },
+  "other_rows_unchanged": true
+}

@@ -1,0 +1,2 @@
+fd644d1e249351db8c8952cb9efb23f50b56383ffd02a76fe931e05ebaef3fdf  FFL-Driver-Direct-0.2.2-dev.apk
+440be659aaf4a4d96dc7bada69fe1743a8bf3d692a5e966620eed1d33d1208f8  FFL-Driver-Direct-0.2.2-dev-source.zip

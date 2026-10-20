@@ -1,0 +1,29 @@
+{
+  "source": "/workspace/FFL-backend/app/repositories/orders_repository.py",
+  "source_sha256": "f4bca0ec2e489a33368ed1b802e27ec9ebd1006415a813dd2c8ba74a34441a80",
+  "source_functions": [
+    "_address_fields_from_row",
+    "_address_match_tokens",
+    "_address_result_from_candidate",
+    "_blank_to_none",
+    "_delivery_fields",
+    "_manager_phone",
+    "_manual_address_result",
+    "_normalize_match_text",
+    "_normalize_spaces",
+    "_order_identity",
+    "_order_number",
+    "_readiness_fields",
+    "_score_address_candidate",
+    "_section_fields",
+    "_select_order_contact_and_route",
+    "_usable_route_url",
+    "map_order_details",
+    "map_previous_driver_row",
+    "parse_order_text"
+  ],
+  "resolver_cases": 119,
+  "text_cases": 644,
+  "fixture_sha256": "dcdafa5b98503b7bd0469d810a38591ffbd2587322714909dd28cca7e711eb29",
+  "live_db_used": false
+}

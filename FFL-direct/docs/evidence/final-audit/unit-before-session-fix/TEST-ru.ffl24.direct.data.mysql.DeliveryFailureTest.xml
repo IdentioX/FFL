@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.DeliveryFailureTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-17T10:38:28.137Z" hostname="01939dccba12" time="0.019">
+  <properties/>
+  <testcase name="brokenServiceLoaderBecomesASafeError" classname="ru.ffl24.direct.data.mysql.DeliveryFailureTest" time="0.014"/>
+  <testcase name="refusedConnectionIsDefiniteFailureRatherThanAnUnknownWrite" classname="ru.ffl24.direct.data.mysql.DeliveryFailureTest" time="0.002"/>
+  <testcase name="rejectedTlsIsDefiniteFailureRatherThanAnUnknownWrite" classname="ru.ffl24.direct.data.mysql.DeliveryFailureTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,34 @@
+{
+  "local_subset_result": "POSITIVE",
+  "full_p5_result": "BLOCKED",
+  "emulator": "emulator-5556",
+  "api": 30,
+  "abi": "x86_64",
+  "software_emulation": true,
+  "tests": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test_cases": [],
+  "p5_ui_intent_art_tests": 6,
+  "startup_tests": 2,
+  "other_instrumentation_cases_unrun": 9,
+  "apk_sha256": "60ada8215b13f1cf46b0599ebabc8bf91d6c6e7bd0f811b8e71b637e6c7b04cf",
+  "installed_sha256": "60ada8215b13f1cf46b0599ebabc8bf91d6c6e7bd0f811b8e71b637e6c7b04cf",
+  "post_utp_install_command": [
+    "adb",
+    "-s",
+    "emulator-5556",
+    "install",
+    "-r",
+    "app/build/outputs/apk/debug/app-debug.apk"
+  ],
+  "post_utp_install_exit": 0,
+  "live_db_used": false,
+  "physical_device": false,
+  "actual_yandex_apps_opened": false,
+  "actual_calls_made": false,
+  "unrun": "live details/history/contact queries; real app handlers; physical device; API24/36 and minified runtime; P4 list-to-details integration"
+}

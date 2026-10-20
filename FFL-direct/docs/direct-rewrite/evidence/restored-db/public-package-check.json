@@ -1,0 +1,21 @@
+{
+  "signature": {
+    "command": [
+      "/workspace/.ffl/android-sdk/build-tools/36.0.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/workspace/FFL-direct/releases/FFL-Driver-Direct-0.2.1-dev.apk"
+    ],
+    "exit": 0
+  },
+  "badging": {
+    "command": [
+      "/workspace/.ffl/android-sdk/build-tools/36.0.0/aapt",
+      "dump",
+      "badging",
+      "/workspace/FFL-direct/releases/FFL-Driver-Direct-0.2.1-dev.apk"
+    ],
+    "exit": 0
+  }
+}

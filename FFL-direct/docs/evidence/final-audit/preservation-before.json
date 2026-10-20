@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-10-17T10:26:17.184866+00:00",
+  "direct_is_git_repository": false,
+  "references": {
+    "FFL": {
+      "head": "047458aa416465dea772ee65082c093f26064699",
+      "status": ""
+    },
+    "FFL-backend": {
+      "head": "68b82b09c4f66b2408e563b71a0c7baf9fa0085a",
+      "status": ""
+    }
+  },
+  "source_files_snapshotted": 611
+}

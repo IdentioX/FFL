@@ -1,0 +1,123 @@
+[
+  {
+    "command": [
+      "shell",
+      "getprop",
+      "sys.boot_completed"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": "",
+    "elapsed": 3.0
+  },
+  {
+    "command": [
+      "shell",
+      "service",
+      "check",
+      "activity"
+    ],
+    "exit": 0,
+    "stdout": "Service activity: not found",
+    "stderr": "",
+    "elapsed": 3.05
+  },
+  {
+    "command": [
+      "shell",
+      "service",
+      "check",
+      "package"
+    ],
+    "exit": 0,
+    "stdout": "Service package: not found",
+    "stderr": "",
+    "elapsed": 2.21
+  },
+  {
+    "command": [
+      "reverse",
+      "tcp:19061",
+      "tcp:19061"
+    ],
+    "exit": 0,
+    "stdout": "19061",
+    "stderr": "",
+    "elapsed": 0.05
+  },
+  {
+    "command": [
+      "reverse",
+      "tcp:19062",
+      "tcp:19062"
+    ],
+    "exit": 0,
+    "stdout": "19062",
+    "stderr": "",
+    "elapsed": 0.01
+  },
+  {
+    "command": [
+      "reverse",
+      "tcp:19063",
+      "tcp:19063"
+    ],
+    "exit": 0,
+    "stdout": "19063",
+    "stderr": "",
+    "elapsed": 0.02
+  },
+  {
+    "command": [
+      "reverse",
+      "tcp:19064",
+      "tcp:19064"
+    ],
+    "exit": 0,
+    "stdout": "19064",
+    "stderr": "",
+    "elapsed": 0.03
+  },
+  {
+    "command": [
+      "shell",
+      "settings",
+      "put",
+      "global",
+      "window_animation_scale",
+      "0"
+    ],
+    "exit": 20,
+    "stdout": "",
+    "stderr": "cmd: Can't find service: settings",
+    "elapsed": 3.26
+  },
+  {
+    "command": [
+      "shell",
+      "settings",
+      "put",
+      "global",
+      "transition_animation_scale",
+      "0"
+    ],
+    "exit": 20,
+    "stdout": "",
+    "stderr": "cmd: Can't find service: settings",
+    "elapsed": 3.53
+  },
+  {
+    "command": [
+      "shell",
+      "settings",
+      "put",
+      "global",
+      "animator_duration_scale",
+      "0"
+    ],
+    "exit": 20,
+    "stdout": "",
+    "stderr": "cmd: Can't find service: settings",
+    "elapsed": 2.87
+  }
+]

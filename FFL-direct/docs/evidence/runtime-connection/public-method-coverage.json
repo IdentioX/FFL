@@ -1,0 +1,200 @@
+{
+  "mode": "distinct methods across immutable initial and targeted runs",
+  "initial_tests": 38,
+  "initial_passed": 37,
+  "targeted_tests": 2,
+  "distinct_methods": 38,
+  "all_latest_results_pass": true,
+  "cases": [
+    {
+      "class": "ru.ffl24.direct.AuditLayoutTest",
+      "method": "smallDarkPhoneWithLargeFontKeepsAllActionsInsideTheScreen",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.AuditLayoutTest",
+      "method": "smallLightPhoneKeepsAllActionsInsideTheScreen",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.AuditPreferencesTest",
+      "method": "independentWorkerInstancesObserveEachNewIdOnlyOnce",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "contextualRefreshUsesTheIncomingEntryWhileItsQueryIsPending",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "directorySearchAndPasswordVisibilityAreRealControls",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "refreshCannotUndoADragWhilePreferenceCommitIsSuspended",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "refreshDeduplicatesKeepsCachedRowsAndRemovesThemOnAccessRevocation",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "smallKeyboardLoginCanFinishWithImeAction",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "smallScreenLargeFontKeepsFiveActionsCenteredAndReachable",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "sortingDragPersistsSourceAwareSectionOrderAcrossNewGraph",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "visualWalkthroughUsesAllEightApprovedScreenTypes",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.DesignImplementationTest",
+      "method": "workspaceViewModelRejectsDuplicateRefreshWithoutClearingGoodData",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.OrderDetailsUiTest",
+      "method": "actualAndroidIntentsKeepPackageSchemesAndUseDialRatherThanCall",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.OrderDetailsUiTest",
+      "method": "ambiguousAddressShowsManualRouteWithoutCandidateContacts",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.OrderDetailsUiTest",
+      "method": "manualDialogOffersBothYandexAppsAndCopyWithoutInventingDestination",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.OrderDetailsUiTest",
+      "method": "secondTableAndHistoryAndOriginalCommentAreRendered",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.OrderDetailsUiTest",
+      "method": "unicodeTimeParsingRunsOnArt",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.OrderDetailsUiTest",
+      "method": "yandexSpecificLinkDoesNotOfferIncompatibleApplication",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.StartupTest",
+      "method": "coldStartHasNoConnectionInputOrAuthNavigationPanel",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.StartupTest",
+      "method": "incompleteConfigHasNoSetupInputs",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.StartupTest",
+      "method": "recreationPreservesUnconfiguredStateWithoutSetupFlow",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.StartupTest",
+      "method": "refusedConnectionShowsSafeMessageAndRetryWithoutCredentials",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceNavigationTest",
+      "method": "loginListDetailsDirectorySettingsAndLogoutUseRealNavigation",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "bothRoutesDeliveredAndSourceIdentityAreVisible",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "deliveryRequiresFiveSecondConfirmationAndNeverFiresOnOpening",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "directoryMissingCardRawPhoneCopyAndActiveDriverRows",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "errorAndDisabledNeverRenderPriorOrders",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "localPreferencesKeepDriverDateSectionOrderAndScrollSeparate",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "notificationChannelPendingIntentAndSchedulerAreRealAndroidObjects",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "pullToRefreshRequestsNewRead",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.WorkspaceUiTest",
+      "method": "reorderAndDetailsCallbacksKeepFullSourceId",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.data.mysql.ConnectionLayerTest",
+      "method": "callerOnMainNeverPerformsNetworkOnMain",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.data.mysql.ConnectionLayerTest",
+      "method": "driverLoadsAndRefusedConnectionIsSafe",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.data.mysql.ConnectionLayerTest",
+      "method": "missingAndPartialConfigRemainSafeOnArt",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.data.mysql.ConnectionLayerTest",
+      "method": "stalledGreetingUsesSocketTimeout",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.data.mysql.ConnectionLayerTest",
+      "method": "trustedTlsGetsPastHandshakeButFixtureIsNotADatabase",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.data.mysql.ConnectionLayerTest",
+      "method": "untrustedCaIsRejectedByRealJdbcTls",
+      "passed": true
+    },
+    {
+      "class": "ru.ffl24.direct.data.mysql.ConnectionLayerTest",
+      "method": "wrongHostnameIsRejectedByRealJdbcTls",
+      "passed": true
+    }
+  ]
+}

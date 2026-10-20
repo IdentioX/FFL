@@ -1,0 +1,1 @@
+<testsuite tests="1" failures="0" errors="0" skipped="0" time="59.925"><testcase classname="ru.ffl24.direct.ConfiguredNotificationTest" name="realWorkManagerPollsMysqlDeduplicatesAndOpensSecondRoute"></testcase></testsuite>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="8" failures="1" errors="0" skipped="0" time="127.128" timestamp="2026-10-16T15:12:09" hostname="localhost">
+  <testsuite name="ru.ffl24.direct.OrderDetailsUiTest" tests="6" failures="1" errors="0" skipped="0" time="75.957" timestamp="2026-10-16T15:12:09" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5556 - 11" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="ambiguousAddressShowsManualRouteWithoutCandidateContacts" classname="ru.ffl24.direct.OrderDetailsUiTest" time="28.441" />
+    <testcase name="secondTableAndHistoryAndOriginalCommentAreRendered" classname="ru.ffl24.direct.OrderDetailsUiTest" time="11.0" />
+    <testcase name="yandexSpecificLinkDoesNotOfferIncompatibleApplication" classname="ru.ffl24.direct.OrderDetailsUiTest" time="13.94" />
+    <testcase name="manualDialogOffersBothYandexAppsAndCopyWithoutInventingDestination" classname="ru.ffl24.direct.OrderDetailsUiTest" time="10.471" />
+    <testcase name="actualAndroidIntentsKeepPackageSchemesAndUseDialRatherThanCall" classname="ru.ffl24.direct.OrderDetailsUiTest" time="4.75" />
+    <testcase name="unicodeTimeParsingRunsOnArt" classname="ru.ffl24.direct.OrderDetailsUiTest" time="7.355">
+      <failure>java.lang.ExceptionInInitializerError
+at ru.ffl24.direct.OrderDetailsUiTest.unicodeTimeParsingRunsOnArt(OrderDetailsUiTest.kt:83)
+... 65 trimmed
+Caused by: java.lang.IllegalArgumentException: Unsupported flags: 256
+at java.util.regex.Pattern.&lt;init&gt;(Pattern.java:1394)
+at java.util.regex.Pattern.compile(Pattern.java:985)
+at ru.ffl24.direct.domain.OrderTextParsing.&lt;clinit&gt;(OrderTextParsing.kt:34)
+... 67 more
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ru.ffl24.direct.StartupTest" tests="2" failures="0" errors="0" skipped="0" time="34.353" timestamp="2026-10-16T15:12:09" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5556 - 11" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="coldStartAndNavigationHaveNoConnectionInput" classname="ru.ffl24.direct.StartupTest" time="17.784" />
+    <testcase name="recreationPreservesNavigationAndThemeWithoutSetupFlow" classname="ru.ffl24.direct.StartupTest" time="16.569" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://repo.maven.apache.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.10/mariadb-java-client-3.5.10.pom",
+    "sha256": "343f75be969182eb577f7730ca2656d9b7b8cc82d61d19ead63ab2301a7417f2",
+    "official_sha1_verified": true,
+    "bytes": 36130
+  },
+  {
+    "url": "https://repo.maven.apache.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.10/mariadb-java-client-3.5.10.jar",
+    "sha256": "919b8c1c771d9ee3465811462f242c9543ab401e140c64988ddbf1d8abcb18b2",
+    "official_sha1_verified": true,
+    "bytes": 791739
+  },
+  {
+    "url": "https://repo.maven.apache.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.10/mariadb-java-client-3.5.10-sources.jar",
+    "sha256": "72f28882a0f60a299c07272d573aebef171380d23ea3ee21860ad76807ee7982",
+    "official_sha1_verified": true,
+    "bytes": 542759
+  },
+  {
+    "url": "https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/26.7.0/mysql-connector-j-26.7.0.pom",
+    "sha256": "0a9a1b8493dbf5a711909595d2cc54373897f2a1c4a1810da71079e3ca6aa544",
+    "official_sha1_verified": true,
+    "bytes": 3170
+  },
+  {
+    "url": "https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/26.7.0/mysql-connector-j-26.7.0.jar",
+    "sha256": "69084713593a4aa8d07c383619b9639276f08bccf8faf1c562178147d389b1e1",
+    "official_sha1_verified": true,
+    "bytes": 2613206
+  },
+  {
+    "url": "https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/26.7.0/mysql-connector-j-26.7.0-sources.jar",
+    "sha256": "55a21f8ff35b149ca7d3f209d53142f04579ae21737903a391702be03662267c",
+    "official_sha1_verified": true,
+    "bytes": 1788605
+  }
+]

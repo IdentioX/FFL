@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "install",
+      "-r",
+      "-t",
+      "app/build/outputs/apk/debug/app-debug.apk"
+    ],
+    "exit": 0,
+    "stdout": "Performing Streamed Install\nSuccess\n",
+    "stderr": "",
+    "start": "2026-10-17T07:01:55.551498+00:00"
+  },
+  {
+    "command": [
+      "install",
+      "-r",
+      "-t",
+      "app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk"
+    ],
+    "exit": 0,
+    "stdout": "Performing Streamed Install\nSuccess\n",
+    "stderr": "",
+    "start": "2026-10-17T07:01:58.978421+00:00"
+  }
+]

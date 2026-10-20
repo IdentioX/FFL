@@ -1,0 +1,32 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/workspace/.ffl/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Duser.home=/workspace/.ffl/user-home
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugNavigationResources'.
+> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+   > Could not resolve com.squareup.okio:okio:3.4.0.
+     Required by:
+         project ':app' > androidx.datastore:datastore-preferences:1.1.1 > androidx.datastore:datastore-preferences-android:1.1.1 > androidx.datastore:datastore:1.1.1 > androidx.datastore:datastore-android:1.1.1
+         project ':app' > androidx.datastore:datastore-preferences:1.1.1 > androidx.datastore:datastore-preferences-android:1.1.1 > androidx.datastore:datastore-preferences-core:1.1.1 > androidx.datastore:datastore-preferences-core-jvm:1.1.1
+         project ':app' > androidx.datastore:datastore-preferences:1.1.1 > androidx.datastore:datastore-preferences-android:1.1.1 > androidx.datastore:datastore-core-okio:1.1.1 > androidx.datastore:datastore-core-okio-jvm:1.1.1
+      > No cached version of com.squareup.okio:okio:3.4.0 available for offline mode.
+      > No cached version of com.squareup.okio:okio:3.4.0 available for offline mode.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 21s
+4 actionable tasks: 4 executed

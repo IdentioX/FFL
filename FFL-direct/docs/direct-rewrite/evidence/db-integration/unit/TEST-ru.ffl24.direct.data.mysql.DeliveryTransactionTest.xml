@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.DeliveryTransactionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-17T08:48:09.565Z" hostname="2a290805ec4d" time="0.009">
+  <properties/>
+  <testcase name="alreadyDeliveredDoesNotUpdateOrChangeTimestamp" classname="ru.ffl24.direct.data.mysql.DeliveryTransactionTest" time="0.004"/>
+  <testcase name="disabledOrMissingOwnerRollsBackWithoutUpdate" classname="ru.ffl24.direct.data.mysql.DeliveryTransactionTest" time="0.001"/>
+  <testcase name="bothTablesCommitOnlyTwoColumnsWithOwnerAndPostconditions" classname="ru.ffl24.direct.data.mysql.DeliveryTransactionTest" time="0.001"/>
+  <testcase name="zeroAffectedRowsAndBadPostconditionRollback" classname="ru.ffl24.direct.data.mysql.DeliveryTransactionTest" time="0.002"/>
+  <testcase name="changedSessionNeverWrites" classname="ru.ffl24.direct.data.mysql.DeliveryTransactionTest" time="0.001"/>
+  <testcase name="lostCommitResponseIsUnknownAndNeverRetries" classname="ru.ffl24.direct.data.mysql.DeliveryTransactionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

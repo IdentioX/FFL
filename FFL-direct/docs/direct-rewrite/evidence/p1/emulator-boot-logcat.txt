@@ -1,0 +1,37 @@
+--------- beginning of system
+10-16 10:48:39.881   533   533 I PackageManager: /system/priv-app/MusicFX changed; collecting certs
+10-16 10:48:39.916   533   533 D CompatibilityChangeReporter: Compat change id reported: 135549675; UID 10077; state: ENABLED
+10-16 10:48:39.917   533   533 I PackageManager: /system/priv-app/DownloadProviderUi changed; collecting certs
+10-16 10:48:39.945   533   533 E PackageManager: Adding duplicate app id: 10061 name=com.android.providers.downloads.ui
+10-16 10:48:39.957   533   533 I PackageManager: /system/priv-app/Telecom changed; collecting certs
+10-16 10:48:39.982   533   533 E PackageManager: Adding duplicate shared id: 1000 name=com.android.server.telecom
+10-16 10:48:39.989   533   533 I PackageManager: /system/priv-app/DownloadProvider changed; collecting certs
+10-16 10:48:40.016   533   533 E PackageManager: Adding duplicate app id: 10061 name=com.android.providers.downloads
+10-16 10:48:40.125   533   533 I PackageManager: /system/app/PacProcessor changed; collecting certs
+10-16 10:48:40.169   533   599 I PackageParser2: Parse times for '/system/app/SafetyRegulatoryInfo': parse=69ms, update_cache=49 ms
+10-16 10:48:40.211   533   602 I PackageParser2: Parse times for '/system/app/SecureElement': parse=145ms, update_cache=16 ms
+10-16 10:48:40.259   533   533 D CompatibilityChangeReporter: Compat change id reported: 135549675; UID 10078; state: ENABLED
+10-16 10:48:40.260   533   533 I PackageManager: /system/app/SafetyRegulatoryInfo changed; collecting certs
+10-16 10:48:40.264   533   601 I PackageParser2: Parse times for '/system/app/BluetoothMidiService': parse=83ms, update_cache=47 ms
+10-16 10:48:40.285   533   600 I PackageParser2: Parse times for '/system/app/PresencePolling': parse=211ms, update_cache=28 ms
+10-16 10:48:40.376   533   599 I PackageParser2: Parse times for '/system/app/ExtShared': parse=169ms, update_cache=2 ms
+10-16 10:48:40.428   533   601 I PackageParser2: Parse times for '/system/app/PartnerBookmarksProvider': parse=148ms, update_cache=16 ms
+10-16 10:48:40.430   533   533 D CompatibilityChangeReporter: Compat change id reported: 143539591; UID -1; state: DISABLED
+10-16 10:48:40.470   533   533 D CompatibilityChangeReporter: Compat change id reported: 135549675; UID 10079; state: DISABLED
+10-16 10:48:40.481   533   533 I PackageManager: /system/app/SecureElement changed; collecting certs
+10-16 10:48:40.581   533   533 E PackageManager: Adding duplicate shared id: 1068 name=com.android.se
+10-16 10:48:40.603   533   599 I PackageParser2: Parse times for '/system/app/BasicDreams': parse=168ms, update_cache=57 ms
+10-16 10:48:40.630   533   601 I PackageParser2: Parse times for '/system/app/SimAppDialog': parse=156ms, update_cache=16 ms
+10-16 10:48:40.659   533   533 D CompatibilityChangeReporter: Compat change id reported: 135549675; UID 1068; state: ENABLED
+10-16 10:48:40.660   533   533 I PackageManager: /system/app/BluetoothMidiService changed; collecting certs
+10-16 10:48:40.760   533   599 I PackageParser2: Parse times for '/system/app/PrintRecommendationService': parse=149ms, update_cache=7 ms
+--------- beginning of kernel
+10-16 10:48:40.845     0     0 D logd    : logdr: UID=2000 GID=2000 PID=620 n tail=35 logMask=99 pid=0 start=0ns timeout=0ns
+10-16 10:48:40.868   533   600 I PackageParser2: Parse times for '/system/app/Bluetooth': parse=500ms, update_cache=68 ms
+10-16 10:48:40.870   533   533 D CompatibilityChangeReporter: Compat change id reported: 135549675; UID 10080; state: DISABLED
+10-16 10:48:40.871   533   533 I PackageManager: /system/app/PresencePolling changed; collecting certs
+10-16 10:48:40.912   533   601 I PackageParser2: Parse times for '/system/app/CaptivePortalLogin': parse=248ms, update_cache=33 ms
+10-16 10:48:40.936   533   533 E PackageManager: Adding duplicate shared id: 1001 name=com.android.service.ims.presence
+10-16 10:48:41.023   533   533 I PackageManager: /system/app/ExtShared changed; collecting certs
+10-16 10:48:41.046   533   599 I PackageParser2: Parse times for '/system/app/PrintSpooler': parse=242ms, update_cache=15 ms
+10-16 10:48:41.086   533   602 I PackageParser2: Parse times for '/system/app/Traceur': parse=848ms, update_cache=25 ms

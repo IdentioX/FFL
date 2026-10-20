@@ -1,0 +1,36 @@
+{
+  "data_retained": true,
+  "same_owned_volume": true,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tools/dev_database.py",
+        "stop"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"stopped\": true,\n  \"data_preserved\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "tools/dev_database.py",
+        "start"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"state\": \"ready\",\n  \"profile\": \"private-restored-dump\",\n  \"server_version\": \"10.6.25-MariaDB-ubu2204\",\n  \"tls_required_and_hostname_verified\": true,\n  \"table_row_counts\": {\n    \"drivers\": 61,\n    \"reys\": 26811,\n    \"reys_den\": 1884\n  },\n  \"delivery_storage_engines\": {\n    \"reys_den\": \"InnoDB\",\n    \"reys\": \"InnoDB\"\n  },\n  \"innodb_delivery_tables\": true,\n  \"port\": 19066,\n  \"image\": \"mariadb:10.6.25@sha256:6055d4ee6a6045626442cafe4feaf7419e878c65baf3af658265e24114af1cd7\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "tools/dev_database.py",
+        "status"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"state\": \"ready\",\n  \"profile\": \"private-restored-dump\",\n  \"server_version\": \"10.6.25-MariaDB-ubu2204\",\n  \"tls_required_and_hostname_verified\": true,\n  \"table_row_counts\": {\n    \"drivers\": 61,\n    \"reys\": 26811,\n    \"reys_den\": 1884\n  },\n  \"delivery_storage_engines\": {\n    \"reys_den\": \"InnoDB\",\n    \"reys\": \"InnoDB\"\n  },\n  \"innodb_delivery_tables\": true,\n  \"port\": 19066,\n  \"image\": \"mariadb:10.6.25@sha256:6055d4ee6a6045626442cafe4feaf7419e878c65baf3af658265e24114af1cd7\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

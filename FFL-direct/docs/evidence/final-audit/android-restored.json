@@ -1,0 +1,350 @@
+{
+  "restored_dump": true,
+  "original_rows_write_target": false,
+  "cases": [
+    {
+      "label": "legacy-parity",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.RestoredDatabaseFlowTest#legacyRecordsMatchSqlDtoOrderAndSummaryWithoutPublishingPersonalData",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "6.544"
+      },
+      "passed": true,
+      "started_unix": 1792258212.3820589,
+      "finished_unix": 1792258229.2673585
+    },
+    {
+      "label": "compiled-login",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.ConfiguredRuntimeTest#freshLoginOrdersDetailsDeliveryAndDirectoryUseCompiledConfiguration",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "95.705"
+      },
+      "passed": true,
+      "started_unix": 1792258229.5860002,
+      "finished_unix": 1792258335.511784
+    },
+    {
+      "label": "cold-restore",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.ConfiguredRuntimeTest#coldProcessRestoresPersistedSessionAndDateThenLogsOut",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "36.199"
+      },
+      "passed": true,
+      "started_unix": 1792258336.240964,
+      "finished_unix": 1792258382.3027866
+    },
+    {
+      "label": "restored-transactions",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.RestoredDatabaseFlowTest#controlledRecordsOnRestoredSchemaValidateContactsHistoryRollbackAndBothDeliveries",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "13.439"
+      },
+      "passed": true,
+      "started_unix": 1792258382.6933944,
+      "finished_unix": 1792258406.243385
+    },
+    {
+      "label": "trigger-rollback",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.RestoredDatabaseFlowTest#pairedLegacyTriggerRollsBackAndIdempotentRepeatDoesNotDuplicate",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "4.942"
+      },
+      "passed": true,
+      "started_unix": 1792258406.6310573,
+      "finished_unix": 1792258421.0403867
+    },
+    {
+      "label": "audit-concurrency",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.AuditDatabaseTest#concurrentIndependentConnectionsDeliverEachSourceOnlyOnce",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "4.389"
+      },
+      "passed": true,
+      "started_unix": 1792258421.402804,
+      "finished_unix": 1792258435.077864
+    },
+    {
+      "label": "audit-access-lock",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.AuditDatabaseTest#accessRowIsLockedUntilTheDeliveryTransactionCommits",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "3.5"
+      },
+      "passed": true,
+      "started_unix": 1792258435.4613614,
+      "finished_unix": 1792258449.266803
+    },
+    {
+      "label": "audit-connection-loss",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.AuditDatabaseTest#connectionLossAfterRealUpdateIsUnknownAndServerRollsBack",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "2.876"
+      },
+      "passed": true,
+      "started_unix": 1792258449.6640375,
+      "finished_unix": 1792258463.2939105
+    },
+    {
+      "label": "audit-session",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.AuditDatabaseTest#simultaneousRestoresKeepThePersistentSessionAndLogoutWins",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "3.988"
+      },
+      "passed": true,
+      "started_unix": 1792258463.6787055,
+      "finished_unix": 1792258477.2365131
+    },
+    {
+      "label": "audit-revoke",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.AuditDatabaseTest#operatorRevocationAfterLoginBlocksReadsAndDelivery",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "5.262"
+      },
+      "passed": true,
+      "started_unix": 1792258477.6009977,
+      "finished_unix": 1792258496.4971988
+    },
+    {
+      "label": "mysql-notifications",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.ConfiguredNotificationTest#realWorkManagerPollsMysqlDeduplicatesAndOpensSecondRoute",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "50.494"
+      },
+      "passed": true,
+      "started_unix": 1792258496.8763325,
+      "finished_unix": 1792258557.7638462
+    }
+  ],
+  "raw_logs_and_xml_kept_private": true,
+  "configured_apk_sha256": "3d103e035d631bee4d0a5a57a37b401d46574c868ed75a56671d4ab0c855d2d9",
+  "installed_apk_sha256": "3d103e035d631bee4d0a5a57a37b401d46574c868ed75a56671d4ab0c855d2d9"
+}

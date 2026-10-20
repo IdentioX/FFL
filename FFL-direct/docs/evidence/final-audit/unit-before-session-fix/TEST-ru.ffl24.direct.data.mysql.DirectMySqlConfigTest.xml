@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-17T10:38:28.177Z" hostname="01939dccba12" time="0.092">
+  <properties/>
+  <testcase name="rejectRootAndWhitespaceAccountButPreserveExactPassword" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.001"/>
+  <testcase name="driverPropertiesCannotDisableTlsOrEnableRedirectAndKeyRetrieval" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.084"/>
+  <testcase name="tlsAndExplicitCaAreMandatory" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.0"/>
+  <testcase name="timeoutPolicyCannotDisableLimits" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.001"/>
+  <testcase name="emptyIsMissingAndPartialIsInvalid" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.001"/>
+  <testcase name="portsMustBeExplicitAndInRange" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.001"/>
+  <testcase name="requiresAllSixProperties" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.002"/>
+  <testcase name="diagnosticStringsDoNotExposeSettings" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.001"/>
+  <testcase name="endpointCannotInjectOptionsOrAdditionalServers" classname="ru.ffl24.direct.data.mysql.DirectMySqlConfigTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

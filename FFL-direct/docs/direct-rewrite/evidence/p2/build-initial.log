@@ -1,0 +1,39 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/workspace/.ffl/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Duser.home=/workspace/.ffl/user-home
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+e: file:///workspace/FFL-direct/app/build.gradle.kts:7:34: Unresolved reference 'util'.
+e: file:///workspace/FFL-direct/app/build.gradle.kts:8:79: Cannot infer type for type parameter 'R'. Specify it explicitly.
+e: file:///workspace/FFL-direct/app/build.gradle.kts:8:85: Unresolved reference 'load'.
+e: file:///workspace/FFL-direct/app/build.gradle.kts:11:56: Unresolved reference 'getProperty'.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/workspace/FFL-direct/app/build.gradle.kts' line: 7
+
+* What went wrong:
+Script compilation errors:
+
+  Line 07: val directLocalProperties = java.util.Properties().apply {
+                                            ^ Unresolved reference 'util'.
+
+  Line 08:     rootProject.file("local.properties").takeIf { it.isFile }?.inputStream()?.use { load(it) }
+                                                                                         ^ Cannot infer type for type parameter 'R'. Specify it explicitly.
+
+  Line 08:     rootProject.file("local.properties").takeIf { it.isFile }?.inputStream()?.use { load(it) }
+                                                                                               ^ Unresolved reference 'load'.
+
+  Line 11:     .orElse(providers.provider { directLocalProperties.getProperty(name, "") }).get()
+                                                                  ^ Unresolved reference 'getProperty'.
+
+4 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 15s

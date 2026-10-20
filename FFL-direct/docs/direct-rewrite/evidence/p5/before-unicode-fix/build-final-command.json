@@ -1,0 +1,20 @@
+{
+  "cwd": "/workspace/FFL-direct",
+  "command": [
+    "bash",
+    "gradlew",
+    "--offline",
+    "--no-daemon",
+    "--max-workers=2",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    ":app:verifyDirectRuntime",
+    ":app:assembleDebugAndroidTest",
+    ":app:assembleRelease"
+  ],
+  "exit": 0,
+  "started_epoch": 1792163028.2570848,
+  "ended_epoch": 1792163180.5407846,
+  "reason": "Scope Compose state by driver and source-aware order identity"
+}

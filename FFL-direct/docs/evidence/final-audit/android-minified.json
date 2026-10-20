@@ -1,0 +1,78 @@
+{
+  "private_configured_r8_apk_sha256": "267824c3faa2b567f192246a6460ef6def129db78c55c0e6a7dd249b0ca5de50",
+  "installed_apk_sha256": "267824c3faa2b567f192246a6460ef6def129db78c55c0e6a7dd249b0ca5de50",
+  "apk_debuggable": false,
+  "r8_obfuscation_confirmed": true,
+  "debug_signed_for_internal_test_only": true,
+  "signature_verified": true,
+  "cases": [
+    {
+      "method": "loginAndDelivery",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "fflOwnedLocalRelease",
+        "true",
+        "-e",
+        "method",
+        "loginAndDelivery",
+        "ru.ffl24.audit.smoke/ru.ffl24.audit.ReleaseSmokeInstrumentation"
+      ],
+      "exit": 0,
+      "junit": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "21.761"
+      },
+      "passed": true,
+      "sql_delivery_verified": true,
+      "started_unix": 1792259634.8891375,
+      "finished_unix": 1792259663.307145
+    },
+    {
+      "method": "coldRestoreAndLogout",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "fflOwnedLocalRelease",
+        "true",
+        "-e",
+        "method",
+        "coldRestoreAndLogout",
+        "ru.ffl24.audit.smoke/ru.ffl24.audit.ReleaseSmokeInstrumentation"
+      ],
+      "exit": 0,
+      "junit": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "11.725"
+      },
+      "passed": true,
+      "sql_delivery_verified": true,
+      "started_unix": 1792259663.9904523,
+      "finished_unix": 1792259681.1916857
+    }
+  ],
+  "passed": true,
+  "raw_logs_private": true,
+  "personal_rows_written": false,
+  "production_accessed": false
+}

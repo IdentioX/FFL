@@ -1,0 +1,43 @@
+[
+  {
+    "command": [
+      "bash",
+      "gradlew",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:generateDebugBuildConfig"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "javac",
+      "--release",
+      "11",
+      "-d",
+      "/tmp/ffl-p2-literal-fw9y0gk6",
+      "/workspace/FFL-direct/app/build/generated/source/buildConfig/debug/ru/ffl24/direct/BuildConfig.java",
+      "/tmp/ffl-p2-literal-fw9y0gk6/LiteralCheck.java"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "java",
+      "-cp",
+      "/tmp/ffl-p2-literal-fw9y0gk6",
+      "LiteralCheck"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "bash",
+      "gradlew",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:generateDebugBuildConfig"
+    ],
+    "exit": 0
+  }
+]

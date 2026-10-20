@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "junit": {
+    "tests": "3",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "66.166"
+  },
+  "command": [
+    "adb",
+    "-s",
+    "emulator-5558",
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "listener",
+    "ru.ffl24.direct.CompletionRunListener",
+    "-e",
+    "class",
+    "ru.ffl24.direct.ConnectionSettingsUiTest",
+    "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+  ],
+  "exit": 0,
+  "elapsed_seconds": 78.59,
+  "main_apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+  "installed_apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+  "test_apk_sha256": "dadbf3545fd0991b277336e7b61a7bfa94d137aab74ee1f82ee844682b6613d7",
+  "screenshots": [
+    "10-db-settings-fields.png",
+    "10b-db-settings-success-synthetic.png"
+  ],
+  "data": "fictional UI fixtures; not DB E2E",
+  "android_os_hw_timeout_multiplier": "5",
+  "emulator_api": 30,
+  "class_counts": {
+    "ru.ffl24.direct.ConnectionSettingsUiTest": 3
+  },
+  "display_size": "Physical size: 480x800\nOverride size: 432x960",
+  "display_density": "Physical density: 160\nOverride density: 192"
+}

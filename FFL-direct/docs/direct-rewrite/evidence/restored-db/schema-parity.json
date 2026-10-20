@@ -1,0 +1,410 @@
+{
+  "total_tables_in_dump": 101,
+  "required_tables": {
+    "__hr_typepos": {
+      "engine": "InnoDB",
+      "columns": [
+        {
+          "name": "posTypeId",
+          "type": "int(11)",
+          "nullable": false
+        },
+        {
+          "name": "posTypeName",
+          "type": "varchar(255)",
+          "nullable": true
+        },
+        {
+          "name": "tel",
+          "type": "int(100)",
+          "nullable": true
+        },
+        {
+          "name": "mobile",
+          "type": "varchar(50)",
+          "nullable": true
+        },
+        {
+          "name": "fio",
+          "type": "varchar(100)",
+          "nullable": true
+        },
+        {
+          "name": "order",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "nomer_m",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "whatsapp",
+          "type": "varchar(70)",
+          "nullable": true
+        },
+        {
+          "name": "telegram_id",
+          "type": "varchar(100)",
+          "nullable": true
+        },
+        {
+          "name": "access",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "parol",
+          "type": "varchar(20)",
+          "nullable": true
+        },
+        {
+          "name": "device_id",
+          "type": "varchar(255)",
+          "nullable": true
+        },
+        {
+          "name": "is_active",
+          "type": "int(1)",
+          "nullable": true
+        }
+      ]
+    },
+    "meneger_contr_ffl": {
+      "engine": "InnoDB",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int(11)",
+          "nullable": false
+        },
+        {
+          "name": "nomer_z",
+          "type": "varchar(100)",
+          "nullable": false
+        },
+        {
+          "name": "id_m",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "link",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "ooo",
+          "type": "varchar(350)",
+          "nullable": true
+        },
+        {
+          "name": "adress",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "tell_klient",
+          "type": "varchar(30)",
+          "nullable": true
+        },
+        {
+          "name": "tell_gruzchik",
+          "type": "varchar(30)",
+          "nullable": true
+        }
+      ]
+    },
+    "meneger_ffl": {
+      "engine": "InnoDB",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int(11)",
+          "nullable": false
+        },
+        {
+          "name": "meneger",
+          "type": "varchar(100)",
+          "nullable": true
+        },
+        {
+          "name": "short_tel",
+          "type": "varchar(50)",
+          "nullable": true
+        },
+        {
+          "name": "tel",
+          "type": "varchar(60)",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "id_person",
+          "type": "int(11)",
+          "nullable": true
+        }
+      ]
+    },
+    "nastroiki": {
+      "engine": "InnoDB",
+      "columns": [
+        {
+          "name": "variable",
+          "type": "varchar(250)",
+          "nullable": true
+        },
+        {
+          "name": "value",
+          "type": "varchar(250)",
+          "nullable": true
+        }
+      ]
+    },
+    "phone": {
+      "engine": "InnoDB",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int(11)",
+          "nullable": false
+        },
+        {
+          "name": "name",
+          "type": "varchar(100)",
+          "nullable": true
+        },
+        {
+          "name": "nomer",
+          "type": "varchar(100)",
+          "nullable": true
+        },
+        {
+          "name": "nomer_full",
+          "type": "varchar(255)",
+          "nullable": true
+        },
+        {
+          "name": "access",
+          "type": "int(2)",
+          "nullable": true
+        }
+      ]
+    },
+    "reys": {
+      "engine": "InnoDB",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int(11)",
+          "nullable": false
+        },
+        {
+          "name": "nomer_z",
+          "type": "varchar(50)",
+          "nullable": true
+        },
+        {
+          "name": "id_v",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "name_c",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "col",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "p",
+          "type": "int(4)",
+          "nullable": false
+        },
+        {
+          "name": "vremya",
+          "type": "varchar(150)",
+          "nullable": true
+        },
+        {
+          "name": "date",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "sort_r",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "col_s",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "print",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "st_vv",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "date_att_log",
+          "type": "datetime",
+          "nullable": true
+        },
+        {
+          "name": "bf_vv",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "reys_vv",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "pri",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "bd",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "bd_new",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "date_print_lod",
+          "type": "datetime",
+          "nullable": true
+        }
+      ]
+    },
+    "reys_den": {
+      "engine": "InnoDB",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int(11)",
+          "nullable": false
+        },
+        {
+          "name": "nomer_z",
+          "type": "varchar(50)",
+          "nullable": true
+        },
+        {
+          "name": "id_v",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "name_c",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "col",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "p",
+          "type": "int(4)",
+          "nullable": true
+        },
+        {
+          "name": "vremya",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "date",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "sort_r",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "col_s",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "print",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "st_vv",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "date_att_log",
+          "type": "datetime",
+          "nullable": true
+        },
+        {
+          "name": "bf_vv",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "reys_vv",
+          "type": "int(11)",
+          "nullable": true
+        },
+        {
+          "name": "pri",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "bd",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "bd_new",
+          "type": "int(2)",
+          "nullable": true
+        },
+        {
+          "name": "date_print_lod",
+          "type": "datetime",
+          "nullable": true
+        }
+      ]
+    }
+  }
+}

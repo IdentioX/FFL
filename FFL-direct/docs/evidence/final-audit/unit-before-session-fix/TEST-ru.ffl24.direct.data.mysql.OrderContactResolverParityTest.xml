@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" tests="119" skipped="0" failures="0" errors="0" timestamp="2026-10-17T10:38:28.411Z" hostname="01939dccba12" time="0.037">
+  <properties/>
+  <testcase name="matchesUnchangedBackendPureFunction[0: no candidates]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.002"/>
+  <testcase name="matchesUnchangedBackendPureFunction[1: single empty candidate]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.003"/>
+  <testcase name="matchesUnchangedBackendPureFunction[2: single link http://example.invalid/a]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[3: single link HTTPS://example.invalid/a]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[4: single link yandexmaps://maps.example/a]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[5: single link yandexnavi://build_route_on_map?lat_to=0&amp;lon_to=0]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[6: single link None]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[7: single link ]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[8: single link javascript:bad]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[9: single link ftp://example.invalid]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[10: single link https://]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[11: equal score ids do not break ambiguity]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.004"/>
+  <testcase name="matchesUnchangedBackendPureFunction[12: full match]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[13: all zero]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[14: organization branch 100]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[15: punctuation yo]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[16: cap three tokens tie]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[17: substring token medium]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[18: python digit tokens]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.002"/>
+  <testcase name="matchesUnchangedBackendPureFunction[19: seeded 0]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[20: seeded 1]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[21: seeded 2]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[22: seeded 3]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[23: seeded 4]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[24: seeded 5]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[25: seeded 6]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[26: seeded 7]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[27: seeded 8]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[28: seeded 9]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[29: seeded 10]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[30: seeded 11]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[31: seeded 12]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[32: seeded 13]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[33: seeded 14]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[34: seeded 15]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[35: seeded 16]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[36: seeded 17]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[37: seeded 18]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[38: seeded 19]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[39: seeded 20]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[40: seeded 21]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[41: seeded 22]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[42: seeded 23]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[43: seeded 24]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[44: seeded 25]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[45: seeded 26]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[46: seeded 27]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[47: seeded 28]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[48: seeded 29]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[49: seeded 30]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[50: seeded 31]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[51: seeded 32]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[52: seeded 33]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[53: seeded 34]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[54: seeded 35]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[55: seeded 36]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[56: seeded 37]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[57: seeded 38]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[58: seeded 39]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[59: seeded 40]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[60: seeded 41]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[61: seeded 42]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[62: seeded 43]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[63: seeded 44]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[64: seeded 45]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[65: seeded 46]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[66: seeded 47]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[67: seeded 48]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[68: seeded 49]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[69: seeded 50]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[70: seeded 51]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[71: seeded 52]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[72: seeded 53]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[73: seeded 54]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[74: seeded 55]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[75: seeded 56]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[76: seeded 57]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[77: seeded 58]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[78: seeded 59]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[79: seeded 60]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[80: seeded 61]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[81: seeded 62]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[82: seeded 63]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[83: seeded 64]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[84: seeded 65]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[85: seeded 66]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[86: seeded 67]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[87: seeded 68]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[88: seeded 69]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[89: seeded 70]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[90: seeded 71]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[91: seeded 72]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[92: seeded 73]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[93: seeded 74]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[94: seeded 75]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[95: seeded 76]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[96: seeded 77]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[97: seeded 78]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[98: seeded 79]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[99: seeded 80]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[100: seeded 81]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[101: seeded 82]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[102: seeded 83]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[103: seeded 84]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[104: seeded 85]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[105: seeded 86]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[106: seeded 87]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[107: seeded 88]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[108: seeded 89]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[109: seeded 90]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[110: seeded 91]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[111: seeded 92]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[112: seeded 93]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[113: seeded 94]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[114: seeded 95]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[115: seeded 96]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[116: seeded 97]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <testcase name="matchesUnchangedBackendPureFunction[117: seeded 98]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.001"/>
+  <testcase name="matchesUnchangedBackendPureFunction[118: seeded 99]" classname="ru.ffl24.direct.data.mysql.OrderContactResolverParityTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

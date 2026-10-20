@@ -1,0 +1,87 @@
+{
+  "checked_epoch": 1792163038.1168587,
+  "checks": [
+    {
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5556",
+        "shell",
+        "getprop",
+        "sys.boot_completed"
+      ],
+      "exit": 0,
+      "output": "1"
+    },
+    {
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5556",
+        "shell",
+        "getprop",
+        "ro.build.version.sdk"
+      ],
+      "exit": 0,
+      "output": "30"
+    },
+    {
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5556",
+        "shell",
+        "getprop",
+        "ro.product.cpu.abi"
+      ],
+      "exit": 0,
+      "output": "x86_64"
+    },
+    {
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5556",
+        "shell",
+        "settings",
+        "put",
+        "global",
+        "window_animation_scale",
+        "0"
+      ],
+      "exit": 20,
+      "output": ""
+    },
+    {
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5556",
+        "shell",
+        "settings",
+        "put",
+        "global",
+        "transition_animation_scale",
+        "0"
+      ],
+      "exit": 20,
+      "output": ""
+    },
+    {
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5556",
+        "shell",
+        "settings",
+        "put",
+        "global",
+        "animator_duration_scale",
+        "0"
+      ],
+      "exit": 20,
+      "output": ""
+    }
+  ],
+  "physical_device": false
+}

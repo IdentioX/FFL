@@ -1,0 +1,11 @@
+{
+  "owned_test_copy_only": true,
+  "production_accessed": false,
+  "status_update_denied": true,
+  "auth_update_denied": true,
+  "delete_denied": true,
+  "insert_denied": true,
+  "shared_account_can_bypass_client_owner_guard": true,
+  "controlled_foreign_probe_rolled_back": true,
+  "driver_rollout": "BLOCKED_SECURITY"
+}

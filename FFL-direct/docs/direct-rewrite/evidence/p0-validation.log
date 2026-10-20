@@ -1,0 +1,45 @@
+{
+  "date_moscow": "2026-10-16T13:39:26.204675+03:00",
+  "result": "POSITIVE",
+  "required_documents": 7,
+  "phases": 12,
+  "links_checked": 9,
+  "tracked_reference_files_unchanged": 104,
+  "report_exact_copy": true,
+  "no_new_runtime": true,
+  "references": [
+    {
+      "path": "/workspace/FFL",
+      "head": "047458aa416465dea772ee65082c093f26064699",
+      "clean": true
+    },
+    {
+      "path": "/workspace/FFL-backend",
+      "head": "68b82b09c4f66b2408e563b71a0c7baf9fa0085a",
+      "clean": true
+    }
+  ],
+  "fresh_test_results": {
+    "backend-tests": {
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "legacy-android-tests": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "legacy_apk": {
+    "path": "/workspace/FFL/app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "80634a4260f91d6d47a6b55bf1db01ddf0ac8241f7a4419cbefec3a692e9f828",
+    "size": 20136140,
+    "installed_in_p0": false
+  },
+  "direct_apk_exists": false,
+  "live_db_used": false,
+  "driver_rollout": "BLOCKED_SECURITY"
+}

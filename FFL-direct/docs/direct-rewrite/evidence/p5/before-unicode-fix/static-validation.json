@@ -1,0 +1,194 @@
+{
+  "static_check": "POSITIVE_LOCAL",
+  "phase_result": "BLOCKED",
+  "p4_gate": "BLOCKED_USER_WAIVED_FOR_P5_IMPLEMENTATION",
+  "existing_files_changed": [
+    "app/src/main/java/ru/ffl24/direct/AppGraph.kt",
+    "app/src/main/java/ru/ffl24/direct/ui/DirectApp.kt",
+    "docs/direct-rewrite/DIRECT_REWRITE_PLAN.md",
+    "docs/direct-rewrite/DIRECT_UI_CONTRACT.md",
+    "docs/direct-rewrite/MASTER_CONTEXT.md",
+    "docs/direct-rewrite/SECURITY_RISKS.md"
+  ],
+  "reference_files_unchanged": 104,
+  "unit": {
+    "executed": 754,
+    "passed": 754,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "disabled": 0,
+    "p5_tests": 728,
+    "prior_connection_graph_tests": 26,
+    "suites": [
+      {
+        "name": "ru.ffl24.direct.AppGraphTest",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.OrderDetailsRepositoryTest",
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.OrderIdentityAndActionsTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.OrderTextParsingParityTest",
+        "tests": 588,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.data.mysql.DirectDbErrorTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.data.mysql.DirectMySqlConfigTest",
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest",
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.data.mysql.OrderContactResolverParityTest",
+        "tests": 119,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.data.mysql.OrderDetailsSqlTest",
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "name": "ru.ffl24.direct.data.mysql.OrderResolverContextTest",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ]
+  },
+  "golden": {
+    "source": "/workspace/FFL-backend/app/repositories/orders_repository.py",
+    "source_sha256": "f4bca0ec2e489a33368ed1b802e27ec9ebd1006415a813dd2c8ba74a34441a80",
+    "source_functions": [
+      "_address_fields_from_row",
+      "_address_match_tokens",
+      "_address_result_from_candidate",
+      "_blank_to_none",
+      "_delivery_fields",
+      "_manager_phone",
+      "_manual_address_result",
+      "_normalize_match_text",
+      "_normalize_spaces",
+      "_order_identity",
+      "_order_number",
+      "_readiness_fields",
+      "_score_address_candidate",
+      "_section_fields",
+      "_select_order_contact_and_route",
+      "_usable_route_url",
+      "map_order_details",
+      "map_previous_driver_row",
+      "parse_order_text"
+    ],
+    "resolver_cases": 119,
+    "text_cases": 588,
+    "fixture_sha256": "0d3ec531e3805a24c61137b206cad6518b7714e620d49be02bd42d28e4bc3dae",
+    "live_db_used": false
+  },
+  "runtime_components": {
+    "debug": 132,
+    "release": 131
+  },
+  "lint": [
+    {
+      "id": "OldTargetApi",
+      "severity": "Warning"
+    },
+    {
+      "id": "GradleDependency",
+      "severity": "Warning"
+    },
+    {
+      "id": "GradleDependency",
+      "severity": "Warning"
+    },
+    {
+      "id": "GradleDependency",
+      "severity": "Warning"
+    },
+    {
+      "id": "NewerVersionAvailable",
+      "severity": "Warning"
+    },
+    {
+      "id": "NewerVersionAvailable",
+      "severity": "Warning"
+    },
+    {
+      "id": "TrustAllX509TrustManager",
+      "severity": "Warning"
+    },
+    {
+      "id": "TrustAllX509TrustManager",
+      "severity": "Warning"
+    },
+    {
+      "id": "UnusedResources",
+      "severity": "Warning"
+    },
+    {
+      "id": "UnusedResources",
+      "severity": "Warning"
+    },
+    {
+      "id": "NotShrinkingResources",
+      "severity": "Warning"
+    },
+    {
+      "id": "UseKtx",
+      "severity": "Warning"
+    }
+  ],
+  "apk": {
+    "path": "/workspace/FFL-direct/app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "f5bf8be168dddc590ccb24f3a4d8eac8677e67cec8c4558a4b9d8b7754a651dc",
+    "bytes": 13376890,
+    "package": "ru.ffl24.direct.dev"
+  },
+  "release": {
+    "path": "/workspace/FFL-direct/app/build/outputs/apk/release/app-release-unsigned.apk",
+    "sha256": "6f3b0837eac8ef73a294beba91db32775521f350d0ea9a35d83446bf560f5ebb",
+    "runtime_tested": false,
+    "signed": false
+  },
+  "live_db_used": false,
+  "physical_device_checked": false,
+  "p6_started": false
+}

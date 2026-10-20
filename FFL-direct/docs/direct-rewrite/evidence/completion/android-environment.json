@@ -1,0 +1,8 @@
+{
+  "ro.build.version.sdk": "30",
+  "ro.build.version.release": "11",
+  "ro.product.cpu.abi": "x86_64",
+  "ro.product.model": "Android SDK built for x86_64",
+  "ro.kernel.qemu": "1",
+  "adb_devices": "List of devices attached\nemulator-5558\tdevice\n\n"
+}

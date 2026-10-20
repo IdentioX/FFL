@@ -1,0 +1,49 @@
+{
+  "signature": {
+    "command": [
+      "/workspace/.ffl/android-sdk/build-tools/36.0.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/workspace/FFL-direct/app/build/outputs/apk/debug/app-debug.apk"
+    ],
+    "exit": 0
+  },
+  "badging": {
+    "command": [
+      "/workspace/.ffl/android-sdk/build-tools/36.0.0/aapt",
+      "dump",
+      "badging",
+      "/workspace/FFL-direct/app/build/outputs/apk/debug/app-debug.apk"
+    ],
+    "exit": 0
+  },
+  "manifest": {
+    "command": [
+      "/workspace/.ffl/android-sdk/build-tools/36.0.0/aapt",
+      "dump",
+      "xmltree",
+      "/workspace/FFL-direct/app/build/outputs/apk/debug/app-debug.apk",
+      "AndroidManifest.xml"
+    ],
+    "exit": 0
+  },
+  "installed": {
+    "command": [
+      "/workspace/.ffl/android-sdk/platform-tools/adb",
+      "-s",
+      "emulator-5558",
+      "shell",
+      "pm",
+      "path",
+      "ru.ffl24.direct.dev"
+    ],
+    "exit": 0
+  },
+  "installed_sha256": "413bbdc09a289e5621704a46b76b23406abbcdd49eb45d2733f2b5fbf07ee10c",
+  "main_sha256": "413bbdc09a289e5621704a46b76b23406abbcdd49eb45d2733f2b5fbf07ee10c",
+  "lint_issues": {
+    "Warning": 13,
+    "Hint": 1
+  }
+}

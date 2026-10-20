@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/workspace/.ffl/android-sdk/platform-tools/adb",
+    "-s",
+    "emulator-5558",
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "listener",
+    "ru.ffl24.direct.CompletionRunListener",
+    "-e",
+    "class",
+    "ru.ffl24.direct.WorkspaceUiTest",
+    "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+  ],
+  "exit": 0,
+  "start": "2026-10-17T09:51:56.564767+00:00",
+  "end": "2026-10-17T09:53:32.541109+00:00",
+  "xml": {
+    "tests": "8",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "81.652"
+  },
+  "fixtures_only": true
+}

@@ -1,0 +1,20 @@
+{
+  "cwd": "/workspace/FFL-direct",
+  "command": [
+    "bash",
+    "gradlew",
+    "--offline",
+    "--no-daemon",
+    "--max-workers=2",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    ":app:verifyDirectRuntime",
+    ":app:assembleDebugAndroidTest",
+    ":app:assembleRelease"
+  ],
+  "exit": 0,
+  "started_epoch": 1792163569.5600798,
+  "ended_epoch": 1792163705.0916035,
+  "reason": "Fix ART unsupported regex flag and Python Unicode word-boundary parity"
+}

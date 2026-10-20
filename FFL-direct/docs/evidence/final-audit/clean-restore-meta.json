@@ -1,0 +1,14 @@
+{
+  "fresh_independent_restore": true,
+  "source": {
+    "sql_sha256": "04e481bdfa30e286e0b568e999763fab8fcf0cc91b192f564f74a039ee9e8c55",
+    "sql_bytes": 52606346,
+    "input_sha256": "fbd81f4fe11f61c13967b3cff3a53c682ac81046bf37924dd4e474e37c3cf94d",
+    "complete_import_exit": 0
+  },
+  "table_count": 101,
+  "row_count": 359540,
+  "previous_baseline_independently_confirmed": true,
+  "local_objects_rebound_preserving_definitions": 9,
+  "own_private_copy_only": true
+}

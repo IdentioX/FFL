@@ -1,0 +1,60 @@
+{
+  "owned_test_copy_only": true,
+  "source_dump_unchanged": true,
+  "routines": [
+    {
+      "routine": "add_v",
+      "kind": "PROCEDURE",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "27607a130f80d6d4a4e22b135aef5eb44223d90b169edb136bf129e6d13085b2"
+    },
+    {
+      "routine": "name_meneger",
+      "kind": "FUNCTION",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "b9f9a04dd4c3c1c19497ce3c889a11e9bec8fc9616f01d33459de8670b240408"
+    },
+    {
+      "routine": "name_v",
+      "kind": "FUNCTION",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "19a9e6e4cad05b121ab8ae82da8a5070ecdf478ee5b07f7f92e70500f1fe8aba"
+    },
+    {
+      "routine": "nomer_meneger",
+      "kind": "FUNCTION",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "338d1c500da536ac7ff10f9dd0f24dd27358bae1b485434c5ef2af4fc46598e9"
+    },
+    {
+      "routine": "bf_to_ffl_reys",
+      "kind": "TRIGGER",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "4be785de24061379ee0832a1fcfe5a288d8d125e85246731ffcaace04f0cff62"
+    },
+    {
+      "routine": "bf_to_log",
+      "kind": "TRIGGER",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "23c949f9035b526431743cb8cc78be8510055a962b6cd77948105a9aab53a0d1"
+    },
+    {
+      "routine": "den_to_log",
+      "kind": "TRIGGER",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "44c4478472229d8bcc08b72f72dee591e8e5c643789e95c0133d6886e380c02f"
+    },
+    {
+      "routine": "ffl_to_bf_reys",
+      "kind": "TRIGGER",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "8d54aaea80d74e56ad1db6f68e903eb6c51b7f9e41845293f67c30004cebf2fd"
+    },
+    {
+      "routine": "ffl_to_log",
+      "kind": "TRIGGER",
+      "body_and_attributes_unchanged": true,
+      "definition_without_definer_sha256": "bb3d9f86fb05f1312d062243ac89da5176df56d41c8b658635d278162b3fa460"
+    }
+  ]
+}

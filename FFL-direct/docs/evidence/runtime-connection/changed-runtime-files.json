@@ -1,0 +1,20 @@
+[
+  "app/src/main/java/ru/ffl24/direct/AppGraph.kt",
+  "app/src/main/java/ru/ffl24/direct/DirectApplication.kt",
+  "app/src/main/java/ru/ffl24/direct/MainActivity.kt",
+  "app/src/main/java/ru/ffl24/direct/local/WorkspacePreferences.kt",
+  "app/src/main/java/ru/ffl24/direct/notifications/SecondRouteNotifications.kt",
+  "app/src/main/java/ru/ffl24/direct/session/DataStoreDriverSessionStore.kt",
+  "app/src/main/java/ru/ffl24/direct/ui/DirectApp.kt",
+  "app/src/main/java/ru/ffl24/direct/ui/WorkspaceSettings.kt",
+  "app/src/main/java/ru/ffl24/direct/ui/ConnectionSettingsScreen.kt",
+  "app/src/main/java/ru/ffl24/direct/ui/FflDesignSystem.kt",
+  "app/src/main/java/ru/ffl24/direct/ui/RuntimeHost.kt",
+  "app/src/main/java/ru/ffl24/direct/config/ConnectionProfileStore.kt",
+  "app/src/main/java/ru/ffl24/direct/config/RuntimeProfiles.kt",
+  "app/src/main/java/ru/ffl24/direct/data/mysql/DirectDbError.kt",
+  "app/src/main/java/ru/ffl24/direct/data/mysql/DirectMySqlConfig.kt",
+  "app/src/main/java/ru/ffl24/direct/data/mysql/MySqlConnectionProbe.kt",
+  "app/src/main/java/ru/ffl24/direct/data/mysql/RetiringConnector.kt",
+  "app/src/main/java/ru/ffl24/direct/data/repository/DirectAuthRepository.kt"
+]

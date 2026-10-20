@@ -1,0 +1,54 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/workspace/.ffl/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Duser.home=/workspace/.ffl/user-home
+Error in /workspace/.ffl/android-sdk/platforms/android-36/android.jar:
+java.nio.file.NoSuchFileException: /workspace/.ffl/android-sdk/platforms/android-36/android.jar
+Error in /workspace/.ffl/android-sdk/platforms/android-36/android.jar:
+java.nio.file.NoSuchFileException: /workspace/.ffl/android-sdk/platforms/android-36/android.jar
+Compilation failed with an internal error.
+Exception in thread "main" java.lang.RuntimeException: com.android.tools.r8.CompilationFailedException: Compilation failed to complete, origin: /workspace/.ffl/android-sdk/platforms/android-36/android.jar
+	at com.android.tools.r8.internal.lv.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:131)
+	at com.android.tools.r8.D8.main(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:5)
+Caused by: com.android.tools.r8.CompilationFailedException: Compilation failed to complete, origin: /workspace/.ffl/android-sdk/platforms/android-36/android.jar
+	at Version.fakeStackEntry(Version_8.10.9-dev.java:0)
+	at com.android.tools.r8.Q.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:5)
+	at com.android.tools.r8.internal.lv.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:82)
+	at com.android.tools.r8.internal.lv.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:32)
+	at com.android.tools.r8.internal.lv.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:31)
+	at com.android.tools.r8.BaseCommand$Builder.build(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:2)
+	at com.android.tools.r8.D8.b(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:2)
+	at com.android.tools.r8.D8.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:28)
+	at com.android.tools.r8.internal.lv.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:118)
+	... 1 more
+Caused by: java.nio.file.NoSuchFileException: /workspace/.ffl/android-sdk/platforms/android-36/android.jar
+	at com.android.tools.r8.internal.ZI.c(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:7)
+	at com.android.tools.r8.internal.ZI.<init>(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:27)
+	at com.android.tools.r8.internal.ZI.<init>(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:1)
+	at com.android.tools.r8.utils.i$a.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:128)
+	at com.android.tools.r8.utils.i$a.b(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:4)
+	at com.android.tools.r8.BaseCommand$Builder.b(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:5)
+	at com.android.tools.r8.BaseCommand$Builder.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:16)
+	at com.android.tools.r8.BaseCommand$Builder.addLibraryFiles(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:3)
+	at com.android.tools.r8.BaseCommand$Builder.addLibraryFiles(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:1)
+	at com.android.tools.r8.m.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:131)
+	at com.android.tools.r8.q.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:162)
+	at com.android.tools.r8.D8Command.parse(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:1)
+	... 4 more
+	Suppressed: java.lang.RuntimeException: com.android.tools.r8.internal.g: java.nio.file.NoSuchFileException: /workspace/.ffl/android-sdk/platforms/android-36/android.jar
+		at com.android.tools.r8.internal.Cf0.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:27)
+		at com.android.tools.r8.BaseCommand$Builder.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:3)
+		at com.android.tools.r8.internal.lv.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:28)
+		at com.android.tools.r8.BaseCommand$Builder.build(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:2)
+		... 4 more
+	Caused by: com.android.tools.r8.internal.g: java.nio.file.NoSuchFileException: /workspace/.ffl/android-sdk/platforms/android-36/android.jar
+		at com.android.tools.r8.internal.Cf0.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:21)
+		at com.android.tools.r8.internal.Cf0.error(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:1)
+		at com.android.tools.r8.utils.i$a.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:132)
+		at com.android.tools.r8.utils.i$a.b(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:4)
+		at com.android.tools.r8.BaseCommand$Builder.b(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:5)
+		at com.android.tools.r8.BaseCommand$Builder.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:16)
+		at com.android.tools.r8.BaseCommand$Builder.addLibraryFiles(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:3)
+		at com.android.tools.r8.BaseCommand$Builder.addLibraryFiles(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:1)
+		at com.android.tools.r8.m.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:131)
+		at com.android.tools.r8.q.a(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:162)
+		at com.android.tools.r8.D8Command.parse(R8_8.10.9-dev_f905a40d39f4d794ae8b29cac7aab17845d8afd626bb44dcc4e5b8898367cac3:1)
+		... 4 more
+	Caused by: [CIRCULAR REFERENCE: java.nio.file.NoSuchFileException: /workspace/.ffl/android-sdk/platforms/android-36/android.jar]

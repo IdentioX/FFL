@@ -1,0 +1,43 @@
+{
+  "version": "0.2.1-dev",
+  "version_code": 3,
+  "package": "ru.ffl24.direct.dev",
+  "mode": "DIRECT_MYSQL",
+  "artifacts": {
+    "FFL-Driver-Direct-0.2.1-dev.apk": {
+      "sha256": "4ac15504c8d85fd0bd304ab723d3c5a1323b4f7d20af32d6cd46905e56f4bf34",
+      "bytes": 13862754
+    },
+    "FFL-Driver-Direct-0.2.1-dev-source.zip": {
+      "sha256": "bad9de8f1413e9c25049b9f5443a9352fb9c25e204f049bc31b32dace438263b",
+      "bytes": 1862298
+    }
+  },
+  "source_entries": 611,
+  "public_apk_database_configured": false,
+  "public_apk_runtime_installed_this_run": false,
+  "private_configured_apk_installed_sha256": "53b78e9b9ad495b00b3d3980c7b77d91ceec28bdaa52af84b53c9278fc346ab1",
+  "private_configured_apk_included": false,
+  "tests": {
+    "jvm_passed": 831,
+    "restored_database_android_passed": 6,
+    "fixture_android_passed": 8,
+    "failures": 0,
+    "skipped": 0
+  },
+  "original_data_integrity": {
+    "tables": 101,
+    "rows": 359540,
+    "unchanged": true
+  },
+  "build_exit": 0,
+  "lint_errors": 0,
+  "physical_device_tested": false,
+  "windows_executed": false,
+  "measured_periodic_doze_reboot_tested": false,
+  "production_accessed": false,
+  "driver_rollout": "BLOCKED_SECURITY",
+  "source_private_credentials_scan": "PASS",
+  "dump_included": false,
+  "raw_personal_data_logs_included": false
+}

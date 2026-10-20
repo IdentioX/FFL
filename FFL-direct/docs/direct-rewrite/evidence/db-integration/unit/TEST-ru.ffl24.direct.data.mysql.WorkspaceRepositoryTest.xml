@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.WorkspaceRepositoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-17T08:48:09.924Z" hostname="2a290805ec4d" time="0.011">
+  <properties/>
+  <testcase name="concurrentDeliveryIsSerializedAndSecondCallDoesNotUpdateAgain" classname="ru.ffl24.direct.data.mysql.WorkspaceRepositoryTest" time="0.006"/>
+  <testcase name="sessionChangedDuringReadDoesNotPublishRows" classname="ru.ffl24.direct.data.mysql.WorkspaceRepositoryTest" time="0.004"/>
+  <testcase name="invalidDateAndMissingSessionCannotOpenConnection" classname="ru.ffl24.direct.data.mysql.WorkspaceRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

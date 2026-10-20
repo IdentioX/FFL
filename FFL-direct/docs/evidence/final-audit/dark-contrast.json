@@ -1,0 +1,7 @@
+{
+  "dark_text_button_contrast_before": 2.8393564641727194,
+  "dark_text_button_contrast_after": 11.968179254367506,
+  "dark_filled_button_text_contrast_after": 11.968179254367506,
+  "required": 4.5,
+  "palette_roles_also_checked_by_android_tests": true
+}

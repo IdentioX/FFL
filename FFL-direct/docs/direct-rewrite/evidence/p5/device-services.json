@@ -1,0 +1,37 @@
+[
+  {
+    "command": [
+      "shell",
+      "service",
+      "check",
+      "activity"
+    ],
+    "exit": 0,
+    "output": "Service activity: not found",
+    "error": ""
+  },
+  {
+    "command": [
+      "shell",
+      "service",
+      "check",
+      "package"
+    ],
+    "exit": 0,
+    "output": "Service package: not found",
+    "error": ""
+  },
+  {
+    "command": [
+      "shell",
+      "settings",
+      "put",
+      "global",
+      "window_animation_scale",
+      "0"
+    ],
+    "exit": 20,
+    "output": "",
+    "error": "cmd: Can't find service: settings"
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "action": "Wait on diagnosed System UI ANR dialog",
+  "exit": 0
+}

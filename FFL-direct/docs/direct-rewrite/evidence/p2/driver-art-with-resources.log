@@ -1,0 +1,2 @@
+org.mariadb.jdbc.Driver: LOADED; refusal handled as SQLException; state=08000
+com.mysql.cj.jdbc.Driver: LOADED; refusal handled as SQLException; state=08S01

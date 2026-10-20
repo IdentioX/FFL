@@ -1,0 +1,14 @@
+{
+  "owned_processes": {
+    "emulator_kill_exit": 0,
+    "emulator": "stop requested for verified owned process",
+    "tls_wire_fixture": "stop requested for verified owned process"
+  },
+  "main_restored_state_preserved": true,
+  "synthetic_state_preserved": true,
+  "source_input_preserved": true,
+  "reference_copy_removed_after_baseline": true,
+  "unknown_processes_touched": false,
+  "owned_runtime_processes_stopped": true,
+  "owned_wire_ports_closed": true
+}

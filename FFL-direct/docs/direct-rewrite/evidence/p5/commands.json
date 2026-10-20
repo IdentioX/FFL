@@ -1,0 +1,176 @@
+[
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      ":app:verifyDirectRuntime",
+      ":app:assembleDebugAndroidTest",
+      ":app:assembleRelease"
+    ],
+    "exit": 0,
+    "started_epoch": 1792163028.2570848,
+    "ended_epoch": 1792163180.5407846,
+    "reason": "Scope Compose state by driver and source-aware order identity",
+    "metadata_file": "before-unicode-fix/build-final-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      ":app:verifyDirectRuntime",
+      ":app:assembleDebugAndroidTest",
+      ":app:assembleRelease"
+    ],
+    "exit": 0,
+    "started_epoch": 1792162685.6012294,
+    "ended_epoch": 1792162865.1047645,
+    "metadata_file": "build-before-navkey-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      ":app:verifyDirectRuntime",
+      ":app:assembleDebugAndroidTest",
+      ":app:assembleRelease"
+    ],
+    "exit": 0,
+    "started_epoch": 1792163747.3220403,
+    "ended_epoch": 1792163876.6655967,
+    "reason": "Final source including null history identity validation",
+    "metadata_file": "build-final-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=4",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      ":app:verifyDirectRuntime"
+    ],
+    "exit": 1,
+    "started_epoch": 1792162410.7051067,
+    "ended_epoch": 1792162432.233798,
+    "metadata_file": "build-initial-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--no-daemon",
+      "--max-workers=4",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      ":app:verifyDirectRuntime"
+    ],
+    "exit": 0,
+    "started_epoch": 1792162503.3203661,
+    "ended_epoch": 1792162615.305131,
+    "metadata_file": "build-second-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      ":app:verifyDirectRuntime",
+      ":app:assembleDebugAndroidTest",
+      ":app:assembleRelease"
+    ],
+    "exit": 0,
+    "started_epoch": 1792163569.5600798,
+    "ended_epoch": 1792163705.0916035,
+    "reason": "Fix ART unsupported regex flag and Python Unicode word-boundary parity",
+    "metadata_file": "build-unicode-fix-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=2",
+      "-Dddmlib.getprop.timeout.sec=30",
+      ":app:connectedDebugAndroidTest",
+      "-Pandroid.testInstrumentationRunnerArguments.class=ru.ffl24.direct.OrderDetailsUiTest,ru.ffl24.direct.StartupTest#coldStartAndNavigationHaveNoConnectionInput,ru.ffl24.direct.StartupTest#recreationPreservesNavigationAndThemeWithoutSetupFlow"
+    ],
+    "exit": 0,
+    "started_epoch": 1792163876.6661758,
+    "ended_epoch": 1792164045.5858684,
+    "android_serial": "emulator-5556",
+    "live_db_used": false,
+    "metadata_file": "connected-final-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:connectedDebugAndroidTest",
+      "-Pandroid.testInstrumentationRunnerArguments.class=ru.ffl24.direct.OrderDetailsUiTest,ru.ffl24.direct.StartupTest#coldStartAndNavigationHaveNoConnectionInput,ru.ffl24.direct.StartupTest#recreationPreservesNavigationAndThemeWithoutSetupFlow"
+    ],
+    "exit": 1,
+    "started_epoch": 1792163208.8770044,
+    "ended_epoch": 1792163228.9475515,
+    "android_serial": "emulator-5556",
+    "live_db_used": false,
+    "metadata_file": "connected-initial-command.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--offline",
+      "--no-daemon",
+      "--max-workers=2",
+      "-Dddmlib.getprop.timeout.sec=30",
+      ":app:connectedDebugAndroidTest",
+      "-Pandroid.testInstrumentationRunnerArguments.class=ru.ffl24.direct.OrderDetailsUiTest,ru.ffl24.direct.StartupTest#coldStartAndNavigationHaveNoConnectionInput,ru.ffl24.direct.StartupTest#recreationPreservesNavigationAndThemeWithoutSetupFlow"
+    ],
+    "exit": 1,
+    "started_epoch": 1792163335.4512596,
+    "ended_epoch": 1792163530.2107406,
+    "android_serial": "emulator-5556",
+    "live_db_used": false,
+    "metadata_file": "connected-retry-command.json"
+  }
+]

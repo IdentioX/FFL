@@ -1,0 +1,17 @@
+{
+  "name_v_on_controlled_driver": true,
+  "password_column_readable_by_shared_account": true,
+  "foreign_original_order_rows_readable": true,
+  "forbidden_operations_denied": {
+    "access_update": true,
+    "business_status_update": true,
+    "insert": true,
+    "delete": true
+  },
+  "foreign_fictional_delivery_update_bypasses_client_owner_check": true,
+  "foreign_probe_rolled_back": true,
+  "tls_version_host_probe": "TLSv1.3",
+  "original_rows_written": false,
+  "production_accessed": false,
+  "driver_rollout": "BLOCKED_SECURITY"
+}

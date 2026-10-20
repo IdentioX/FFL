@@ -1,0 +1,107 @@
+[
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "bash gradlew --no-daemon --max-workers=4 :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:assembleDebugAndroidTest",
+    "exit": 1,
+    "log": "build.log",
+    "note": "Исправлена компиляция двух import Android test API"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "bash gradlew --no-daemon --max-workers=4 :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:verifyDirectRuntime :app:assembleDebugAndroidTest",
+    "exit": 0,
+    "log": "build-final.log",
+    "note": "Успех после исправления imports"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "bash gradlew --offline --no-daemon --max-workers=4 :app:assembleDebug :app:lintDebug :app:verifyDirectRuntime :app:assembleDebugAndroidTest",
+    "exit": 0,
+    "log": "build-package.log",
+    "note": "Успех после добавления icons и backup exclusions"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "bash gradlew --offline --no-daemon --max-workers=4 :app:verifyDirectRuntime :app:dependencies --configuration debugRuntimeClasspath",
+    "exit": 0,
+    "log": "dependencies.log",
+    "note": "Разрешённые transitives и task verification"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "adb -s emulator-5556 install -r app/build/outputs/apk/debug/app-debug.apk",
+    "exit": 0,
+    "log": "install.log",
+    "note": "Первая установка"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "adb -s emulator-5556 install -r app/build/outputs/apk/debug/app-debug.apk",
+    "exit": 130,
+    "log": "install-after-boot.log",
+    "note": "Повтор остановлен SIGINT после зависания; не считать успешным"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "adb -s emulator-5556 shell am start -W -n ru.ffl24.direct.dev/ru.ffl24.direct.MainActivity",
+    "exit": 0,
+    "log": "cold-start.log",
+    "note": "am вернул exit 0 с Error type 3; не считать успешным"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "adb -s emulator-5556 shell am start -W -n ru.ffl24.direct.dev/ru.ffl24.direct.MainActivity",
+    "exit": 0,
+    "log": "cold-start-final.log",
+    "note": "am вернул exit 0 со Status: timeout; wrapper assertion exit 1, не считать успешным"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "bash gradlew --offline --no-daemon --max-workers=2 :app:connectedDebugAndroidTest",
+    "exit": 1,
+    "log": "instrumentation.log",
+    "note": "Не хватило cached UTP; runtime tests ещё не начались"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "bash gradlew --no-daemon --max-workers=2 :app:connectedDebugAndroidTest",
+    "exit": 0,
+    "log": "instrumentation-online.log",
+    "note": "2 реально выполненных Android-теста, 0 failed/skipped; fresh instrumentation-tests.xml"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "python3 docs/direct-rewrite/evidence/p1/verify_p1.py",
+    "exit": 0,
+    "log": "static-validation.log",
+    "note": "Статическая проверка не подтверждает runtime"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "bash /workspace/.ffl/p1-install.sh",
+    "exit": 0,
+    "log": "repeat-setup.log",
+    "note": "Повторяемый setup: SDK уже установлен, сборка и verification прошли; unit task UP-TO-DATE, не считать новым исполнением"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "adb -s emulator-5556 install -r app/build/outputs/apk/debug/app-debug.apk",
+    "exit": 0,
+    "log": "install-verified.log",
+    "note": "Установка после UTP cleanup; installed hash совпал"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "adb -s emulator-5556 shell am start -W -n ru.ffl24.direct.dev/ru.ffl24.direct.MainActivity",
+    "exit": 0,
+    "log": "launch-verified.log",
+    "note": "Status: timeout на software emulator; не считать отдельным PASS. Последующие final-ui.xml и instrumentation proof подтверждают отрисовку/действия"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": "python3 - (валидация instrumentation XML, device hash, final-ui.xml)",
+    "exit": 0,
+    "log": "runtime-validation.json",
+    "note": "2 actual UI tests, 0 failures/errors/skips; hierarchy без EditText/API IP"
+  }
+]

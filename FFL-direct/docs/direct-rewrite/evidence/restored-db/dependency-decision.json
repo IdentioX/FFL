@@ -1,0 +1,16 @@
+{
+  "observed_runtime_before": "1.10.4",
+  "failure": "ArrayIndexOutOfBoundsException in SlotWriter.moveSlotGapTo during lazy composition disposal",
+  "official_pom_versions_checked": {
+    "2026.03.01": "1.10.6",
+    "2026.04.01": "1.11.0",
+    "2026.05.01": "1.11.2",
+    "2026.06.01": "1.11.4",
+    "2026.09.00": "1.12.1"
+  },
+  "selected_bom": "2026.03.01",
+  "selection_reason": "Patch release on existing Compose1.10 branch; coherent runtime/ui/foundation versions; runtime fix requires validation",
+  "source": "https://dl.google.com/dl/android/maven2/androidx/compose/compose-bom/2026.03.01/compose-bom-2026.03.01.pom",
+  "tls_verification_disabled": false,
+  "release_notes_access": "developer.android.com proxy tunnel403"
+}

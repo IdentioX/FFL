@@ -1,0 +1,7 @@
+{
+  "owned_pid": 78638,
+  "signal": "SIGTERM",
+  "private_injected_config_removed": true,
+  "persistent_db_and_volume_retained": true,
+  "unrelated_avds_not_touched": true
+}

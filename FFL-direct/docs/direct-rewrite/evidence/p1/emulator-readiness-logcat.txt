@@ -1,0 +1,21 @@
+--------- beginning of main
+10-16 10:50:13.728   388   446 I adbd    : jdwp connection from 943
+10-16 10:50:13.861   431   500 V C2Store : in ~ComponentModule
+10-16 10:50:13.862   431   500 V C2Store : unloading dll
+10-16 10:50:13.920   533   875 W system_server: Long monitor contention with owner NetworkPolicy (724) at java.lang.String com.android.server.pm.PackageManagerService.getInstantAppPackageName(int)(PackageManagerService.java:7137) waiters=1 in android.content.pm.ApplicationInfo com.android.server.pm.PackageManagerService.getApplicationInfoInternal(java.lang.String, int, int, int) for 209ms
+10-16 10:50:13.923   533   571 W system_server: Long monitor contention with owner NetworkPolicy (724) at java.lang.String com.android.server.pm.PackageManagerService.getInstantAppPackageName(int)(PackageManagerService.java:7137) waiters=0 in com.android.server.pm.parsing.pkg.AndroidPackage com.android.server.pm.PackageManagerService$PackageManagerInternalImpl.getPackage(java.lang.String) for 214ms
+10-16 10:50:13.929   533   533 W system_server: Long monitor contention with owner android.io (571) at boolean com.android.providers.settings.SettingsProvider.mutateSecureSetting(java.lang.String, java.lang.String, java.lang.String, boolean, int, int, boolean, int, boolean)(SettingsProvider.java:1631) waiters=0 in com.android.providers.settings.SettingsState$Setting com.android.providers.settings.SettingsProvider.getGlobalSetting(java.lang.String) for 196ms
+10-16 10:50:13.950   431   500 V C2Store : in init
+--------- beginning of system
+10-16 10:50:13.972   794   794 D SystemUIBootTiming: StartServicescom.android.systemui.util.NotificationChannels took to complete: 503ms
+10-16 10:50:13.894   280   280 D Zygote  : Forked child process 961
+10-16 10:50:14.019   431   500 V C2Store : loading dll
+10-16 10:50:14.040   961   961 W WebViewLoader-: Unexpected CPU variant for X86 using defaults: x86_64
+10-16 10:50:14.049   533   723 W BestClock: java.time.DateTimeException: Missing NTP fix
+10-16 10:50:14.133   388   446 I adbd    : jdwp connection from 961
+10-16 10:50:14.197   533   579 W ActivityManager: Slow operation: 1632ms so far, now at startProcess: returned from zygote!
+10-16 10:50:14.203   533   941 W system_server: Long monitor contention with owner ActivityManager:procStart (579) at android.os.Process$ProcessStartResult android.os.ZygoteProcess.startViaZygote(java.lang.String, java.lang.String, int, int, int[], int, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, int, boolean, long[], java.util.Map, java.util.Map, boolean, boolean, java.lang.String[])(ZygoteProcess.java:795) waiters=0 in android.os.Process$ProcessStartResult android.os.ZygoteProcess.startViaZygote(java.lang.String, java.lang.String, int, int, int[], int, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, int, boolean, long[], java.util.Map, java.util.Map, boolean, boolean, java.lang.String[]) for 459ms
+10-16 10:50:14.233   431   500 I C2SoftVp9Enc: setting temporal layering 0 + 0
+10-16 10:50:14.282   431   500 V C2Store : in ~ComponentModule
+--------- beginning of kernel
+10-16 10:50:14.907     0     0 D logd    : logdr: UID=2000 GID=2000 PID=934 n tail=18 logMask=99 pid=0 start=0ns timeout=0ns

@@ -1,0 +1,31 @@
+{
+  "passed": false,
+  "junit": {
+    "tests": "1",
+    "failures": "1",
+    "errors": "0",
+    "skipped": "0",
+    "time": "55.135"
+  },
+  "public_apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+  "test_apk_sha256": "bc17cc31e80f40da05ae1de03f13a1be5cf80ab9eeae0065e14e3c2bb15a2da5",
+  "command": [
+    "adb",
+    "-s",
+    "emulator-5558",
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "listener",
+    "ru.ffl24.direct.CompletionRunListener",
+    "-e",
+    "class",
+    "ru.ffl24.direct.ConfiguredNotificationTest#realWorkManagerPollsMysqlDeduplicatesAndOpensSecondRoute",
+    "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+  ],
+  "elapsed_seconds": 66.81,
+  "production_accessed": false
+}

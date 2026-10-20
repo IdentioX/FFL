@@ -1,0 +1,10 @@
+{
+  "pid": 78638,
+  "command": [
+    "bash",
+    "-c",
+    "source /workspace/.ffl/env.sh; export ANDROID_AVD_HOME=/workspace/.ffl/avd; export ANDROID_EMULATOR_HOME=/workspace/.ffl/android-user; exec \"$ANDROID_HOME/emulator/emulator\" -avd ffl-p1 -port 5558 -read-only -no-window -no-audio -no-boot-anim -no-snapshot -accel off -gpu swiftshader -feature -Vulkan -cores 2 -memory 2048"
+  ],
+  "owned_by_this_task": true,
+  "read_only": true
+}

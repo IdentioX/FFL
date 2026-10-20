@@ -1,0 +1,125 @@
+[
+  {
+    "TRIGGER_NAME": "den_to_log",
+    "EVENT_OBJECT_TABLE": "reys_den",
+    "ACTION_TIMING": "AFTER",
+    "EVENT_MANIPULATION": "UPDATE",
+    "new_columns_assigned": [],
+    "tables_written": [
+      "`saidmasum91_new`.`reys_log`"
+    ],
+    "code_sha256": "9a1b167fcf46dfd0d6cadf02662a6867ce2abb12c996e7ae27f65b15260a09e2",
+    "new_columns_read": [
+      "id_v"
+    ],
+    "old_columns_read": [
+      "id_v",
+      "name_c",
+      "nomer_z"
+    ]
+  },
+  {
+    "TRIGGER_NAME": "ffl_to_log",
+    "EVENT_OBJECT_TABLE": "reys",
+    "ACTION_TIMING": "AFTER",
+    "EVENT_MANIPULATION": "UPDATE",
+    "new_columns_assigned": [],
+    "tables_written": [
+      "`saidmasum91_new`.`reys_log`"
+    ],
+    "code_sha256": "3257ced36c349989cece263a6971bd96d2be945f9f4f56e60c88f5eb4beea7cb",
+    "new_columns_read": [
+      "id_v"
+    ],
+    "old_columns_read": [
+      "id_v",
+      "name_c",
+      "nomer_z"
+    ]
+  },
+  {
+    "TRIGGER_NAME": "ffl_to_bf_reys",
+    "EVENT_OBJECT_TABLE": "reys",
+    "ACTION_TIMING": "AFTER",
+    "EVENT_MANIPULATION": "UPDATE",
+    "new_columns_assigned": [],
+    "tables_written": [
+      "`saidmasum91_new`.`reys_bf`",
+      "`saidmasum91_new`.`reys_bf`",
+      "`saidmasum91_new`.`reys_bf`"
+    ],
+    "code_sha256": "bbdf1aca4dced341966e10d09e286943731b02993b76f5e6ef680605febeb3ca",
+    "new_columns_read": [
+      "bf_vv",
+      "col",
+      "col_s",
+      "date",
+      "date_att_log",
+      "id_v",
+      "name_c",
+      "nomer_z",
+      "p",
+      "print",
+      "reys_vv",
+      "sort_r",
+      "st_vv",
+      "status",
+      "vremya"
+    ],
+    "old_columns_read": [
+      "id_v"
+    ]
+  },
+  {
+    "TRIGGER_NAME": "bf_to_log",
+    "EVENT_OBJECT_TABLE": "reys_bf",
+    "ACTION_TIMING": "AFTER",
+    "EVENT_MANIPULATION": "UPDATE",
+    "new_columns_assigned": [],
+    "tables_written": [
+      "`saidmasum91_new`.`reys_log`"
+    ],
+    "code_sha256": "21e006de11f511f45c9ae0bab217b22d7edc0e1f31e4ce17864126d985bf8a5f",
+    "new_columns_read": [
+      "id_v"
+    ],
+    "old_columns_read": [
+      "id_v",
+      "name_c",
+      "nomer_z"
+    ]
+  },
+  {
+    "TRIGGER_NAME": "bf_to_ffl_reys",
+    "EVENT_OBJECT_TABLE": "reys_bf",
+    "ACTION_TIMING": "AFTER",
+    "EVENT_MANIPULATION": "UPDATE",
+    "new_columns_assigned": [],
+    "tables_written": [
+      "`saidmasum91_new`.`reys`",
+      "`saidmasum91_new`.`reys`",
+      "`saidmasum91_new`.`reys`"
+    ],
+    "code_sha256": "49b6bd711401da12dd656ce12f680c501e862bfafe7cae2ec262d0bfa1993040",
+    "new_columns_read": [
+      "bf_vv",
+      "col",
+      "col_s",
+      "date",
+      "date_att_log",
+      "id_v",
+      "name_c",
+      "nomer_z",
+      "p",
+      "print",
+      "reys_vv",
+      "sort_r",
+      "st_vv",
+      "status",
+      "vremya"
+    ],
+    "old_columns_read": [
+      "id_v"
+    ]
+  }
+]

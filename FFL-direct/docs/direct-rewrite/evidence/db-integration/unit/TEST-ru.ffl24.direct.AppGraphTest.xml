@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.AppGraphTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-17T08:48:09.066Z" hostname="2a290805ec4d" time="0.056">
+  <properties/>
+  <testcase name="unsupportedModeCannotSelectAnotherTransport" classname="ru.ffl24.direct.AppGraphTest" time="0.004"/>
+  <testcase name="productionGraphStartsWithoutConnectionOrCredentials" classname="ru.ffl24.direct.AppGraphTest" time="0.046"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,27 @@
+{
+  "checked_epoch": 1792163185.699821,
+  "checks": [
+    {
+      "command": [
+        "shell",
+        "service",
+        "check",
+        "activity"
+      ],
+      "exit": 0,
+      "output": "Service activity: found",
+      "error": ""
+    },
+    {
+      "command": [
+        "shell",
+        "service",
+        "check",
+        "package"
+      ],
+      "exit": 0,
+      "output": "Service package: found",
+      "error": ""
+    }
+  ]
+}

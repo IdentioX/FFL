@@ -1,0 +1,41 @@
+{
+  "restored_dump": true,
+  "original_rows_write_target": false,
+  "cases": [
+    {
+      "label": "legacy-parity",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.RestoredDatabaseFlowTest#legacyRecordsMatchSqlDtoOrderAndSummaryWithoutPublishingPersonalData",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "1",
+        "errors": "0",
+        "skipped": "0",
+        "time": "1.26"
+      },
+      "passed": false,
+      "started_unix": 1792414028.9844313,
+      "finished_unix": 1792414041.9685733
+    }
+  ],
+  "runtime_profile": true,
+  "configured_build": false,
+  "production_accessed": false,
+  "exit": 1
+}

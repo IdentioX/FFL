@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/build-tools/36.0.0/apksigner",
+      "verify",
+      "--verbose",
+      "app/build/outputs/apk/debug/app-debug.apk"
+    ],
+    "exit": 0,
+    "log": "signature-final.txt"
+  },
+  {
+    "command": [
+      "/workspace/.ffl/android-sdk/build-tools/36.0.0/aapt",
+      "dump",
+      "badging",
+      "app/build/outputs/apk/debug/app-debug.apk"
+    ],
+    "exit": 0,
+    "log": "apk-badging-final.txt"
+  },
+  {
+    "command": [
+      "apkanalyzer",
+      "manifest",
+      "print",
+      "app/build/outputs/apk/debug/app-debug.apk"
+    ],
+    "exit": 0,
+    "log": "apk-manifest.xml"
+  }
+]

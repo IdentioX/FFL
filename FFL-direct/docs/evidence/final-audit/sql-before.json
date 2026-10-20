@@ -1,0 +1,22 @@
+{
+  "server_version": "10.6.25-MariaDB-ubu2204",
+  "default_isolation": "REPEATABLE-READ",
+  "tls_required": true,
+  "baseline_contact_lookups": {
+    "distinct_numbers": 39,
+    "queries_per_sample": 39,
+    "samples_ms": [
+      8.939273999999386,
+      7.7859669999043035,
+      7.530992999932096,
+      7.595719999926587,
+      8.438360000013745
+    ],
+    "median_ms": 7.7859669999043035,
+    "candidate_rows": 30,
+    "personal_values_published": false
+  },
+  "reproduced_delivery_access_snapshot_bug": true,
+  "controlled_driver_access_restored": true,
+  "writes_to_original_rows": false
+}

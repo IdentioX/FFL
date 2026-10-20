@@ -1,0 +1,12 @@
+{
+  "main_app_changed": false,
+  "run_failed_before_fresh_junit": true,
+  "error_lines": [
+    "INSTRUMENTATION_RESULT: shortMsg=Process crashed."
+  ],
+  "raw_logs_private": true,
+  "linkage_error_lines": [
+    "java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics;",
+    "Caused by: java.lang.ClassNotFoundException: kotlin.jvm.internal.Intrinsics"
+  ]
+}

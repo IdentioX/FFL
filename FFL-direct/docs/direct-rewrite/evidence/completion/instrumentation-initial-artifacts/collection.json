@@ -1,0 +1,30 @@
+{
+  "instrumentation.xml": {
+    "exit": 0,
+    "bytes": 105
+  },
+  "orders-first.png": {
+    "exit": 0,
+    "bytes": 102
+  },
+  "orders-second.png": {
+    "exit": 0,
+    "bytes": 103
+  },
+  "orders-delivered.png": {
+    "exit": 0,
+    "bytes": 106
+  },
+  "directory.png": {
+    "exit": 0,
+    "bytes": 99
+  },
+  "mysql-orders.png": {
+    "exit": 0,
+    "bytes": 102
+  },
+  "mysql-details.png": {
+    "exit": 0,
+    "bytes": 103
+  }
+}

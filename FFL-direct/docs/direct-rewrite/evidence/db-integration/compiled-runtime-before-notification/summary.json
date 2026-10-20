@@ -1,0 +1,98 @@
+{
+  "fixture_only": true,
+  "cases": [
+    {
+      "label": "compiled-login",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.ConfiguredRuntimeTest#freshLoginOrdersDetailsDeliveryAndDirectoryUseCompiledConfiguration",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "93.708"
+      },
+      "passed": true,
+      "started_unix": 1792227101.9657266,
+      "finished_unix": 1792227209.561992
+    },
+    {
+      "label": "cold-restore",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.ConfiguredRuntimeTest#coldProcessRestoresPersistedSessionAndDateThenLogsOut",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "41.422"
+      },
+      "passed": true,
+      "started_unix": 1792227210.3416874,
+      "finished_unix": 1792227263.1953554
+    },
+    {
+      "label": "jdbc-transactions",
+      "command": [
+        "adb",
+        "-s",
+        "emulator-5558",
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "-e",
+        "listener",
+        "ru.ffl24.direct.CompletionRunListener",
+        "-e",
+        "class",
+        "ru.ffl24.direct.DirectDatabaseFlowTest",
+        "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+      ],
+      "exit": 0,
+      "xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "13.213"
+      },
+      "passed": true,
+      "started_unix": 1792227263.2562983,
+      "finished_unix": 1792227286.9671998
+    }
+  ]
+}

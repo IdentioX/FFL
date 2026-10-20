@@ -1,0 +1,13 @@
+{
+  "command": [
+    "bash",
+    "gradlew",
+    "--offline",
+    "--no-daemon",
+    "--max-workers=2",
+    ":app:assembleRelease",
+    ":app:verifyDirectRuntime"
+  ],
+  "exit": 0,
+  "elapsed_seconds": 95.491
+}

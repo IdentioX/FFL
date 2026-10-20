@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.OrderIdentityAndActionsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-19T19:00:34.331Z" hostname="01939dccba12" time="0.01">
+  <properties/>
+  <testcase name="preservesSourceAndLongIdsAndRejectsInjectionAndOverflow" classname="ru.ffl24.direct.OrderIdentityAndActionsTest" time="0.008"/>
+  <testcase name="doesNotGuessAPhoneFromMultipleNumbersOrExecuteServiceCodes" classname="ru.ffl24.direct.OrderIdentityAndActionsTest" time="0.001"/>
+  <testcase name="routesOnlyDispatchSafeAllowlistedUrisAndCompatibleYandexApp" classname="ru.ffl24.direct.OrderIdentityAndActionsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

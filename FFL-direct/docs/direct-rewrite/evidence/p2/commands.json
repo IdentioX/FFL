@@ -1,0 +1,48 @@
+[
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--no-daemon",
+      "--max-workers=4",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      ":app:verifyDirectRuntime",
+      ":app:assembleDebugAndroidTest",
+      ":app:assembleRelease"
+    ],
+    "exit": 0
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "bash",
+      "gradlew",
+      "--no-daemon",
+      "--max-workers=2",
+      ":app:connectedDebugAndroidTest"
+    ],
+    "exit": 0,
+    "evidence": "connected-initial.log; instrumentation-tests.xml"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "python3",
+      "tools/verify_p2_buildconfig.py"
+    ],
+    "exit": 0,
+    "evidence": "buildconfig-injection-commands.json"
+  },
+  {
+    "cwd": "/workspace/FFL-direct",
+    "command": [
+      "python3",
+      "tools/verify_p2.py"
+    ],
+    "exit": 0,
+    "evidence": "static-validation.json"
+  }
+]

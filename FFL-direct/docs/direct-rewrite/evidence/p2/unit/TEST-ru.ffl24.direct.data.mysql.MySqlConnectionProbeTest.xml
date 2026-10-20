@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-16T11:35:29.673Z" hostname="2a290805ec4d" time="0.305">
+  <properties/>
+  <testcase name="queryFailureClosesStatementAndConnection" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.141"/>
+  <testcase name="preparationFailureClosesConnection" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.004"/>
+  <testcase name="actualJdbcScopeRunsOnIoAndClosesInReverseOrder" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.001"/>
+  <testcase name="closeFailureStillClosesOuterResourcesAndDoesNotReportSuccess" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.002"/>
+  <testcase name="malformedCaFailsSafelyBeforeOpeningAnySocket" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.016"/>
+  <testcase name="noAutomaticRetryAfterConnectionFailure" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.003"/>
+  <testcase name="missingAndInvalidNeverOpenConnection" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.001"/>
+  <testcase name="mapperFailureAlsoClosesResultSet" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.001"/>
+  <testcase name="cancellationAfterUninterruptibleOpenClosesLateConnection" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.007"/>
+  <testcase name="callerCancellationIsNotConvertedToUserErrorAndResourcesClose" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.003"/>
+  <testcase name="operationTimeoutInterruptsCooperativeJdbcAndClosesResources" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.104"/>
+  <testcase name="concurrentProbesAreBoundedAndNeverShareConnection" classname="ru.ffl24.direct.data.mysql.MySqlConnectionProbeTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

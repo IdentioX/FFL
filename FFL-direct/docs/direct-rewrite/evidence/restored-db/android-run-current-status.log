@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/FFL-direct/tools/dev_database.py", line 542, in <module>
+    main()
+  File "/workspace/FFL-direct/tools/dev_database.py", line 516, in main
+    result = test_restored(owner, args.serial)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/FFL-direct/tools/dev_database.py", line 457, in test_restored
+    parsed = ET.fromstring(xml)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/xml/etree/ElementTree.py", line 1335, in XML
+    parser.feed(text)
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0

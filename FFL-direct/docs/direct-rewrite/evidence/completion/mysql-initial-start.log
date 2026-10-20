@@ -1,0 +1,29 @@
+2026-10-17 06:59:47+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.11-1.el9 started.
+2026-10-17 06:59:48+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-10-17 06:59:48+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.11-1.el9 started.
+2026-10-17 06:59:48+00:00 [Note] [Entrypoint]: Initializing database files
+2026-10-17 06:59:50+00:00 [Note] [Entrypoint]: Database files initialized
+2026-10-17 06:59:50+00:00 [Note] [Entrypoint]: Starting temporary server
+2026-10-17 06:59:50+00:00 [Note] [Entrypoint]: Temporary server started.
+'/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+2026-10-17 06:59:52+00:00 [Note] [Entrypoint]: Creating database fixture
+2026-10-17 06:59:52+00:00 [Note] [Entrypoint]: Creating user fixture_read
+2026-10-17 06:59:52+00:00 [Note] [Entrypoint]: Giving user fixture_read access to schema fixture
+
+2026-10-17 06:59:52+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/10-fixture.sql
+2026-10-17T06:59:48.250508Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2026-10-17T06:59:48.251796Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.11) initializing of server in progress as process 81
+2026-10-17T06:59:48.257406Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-10-17T06:59:48.384262Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-10-17T06:59:48.834654Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2026-10-17T06:59:50.284390Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2026-10-17T06:59:50.339778Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-10-17T06:59:50.514191Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.11) starting as process 122
+2026-10-17T06:59:50.524869Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-10-17T06:59:50.643950Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-10-17T06:59:50.836030Z 0 [Warning] [MY-010068] [Server] CA certificate /tls/ca.pem is self signed.
+2026-10-17T06:59:50.836078Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-10-17T06:59:50.838118Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2026-10-17T06:59:50.857602Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+2026-10-17T06:59:50.857790Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+/usr/local/bin/docker-entrypoint.sh: line 75: /docker-entrypoint-initdb.d/10-fixture.sql: Permission denied

@@ -1,0 +1,9 @@
+{
+  "pid": 29261,
+  "command": [
+    "bash",
+    "/workspace/.ffl/p1-emulator-start.sh"
+  ],
+  "started_epoch": 1792162629.0554938,
+  "owned_by_phase": "P5"
+}

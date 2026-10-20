@@ -1,0 +1,411 @@
+{
+  "source_sql_sha256": "04e481bdfa30e286e0b568e999763fab8fcf0cc91b192f564f74a039ee9e8c55",
+  "tables": {
+    "__hr_city": {
+      "rows": 68,
+      "unordered_rows_sha256": "8828f84218f605b23dfcc1da8bfae36d2ae4aef5bbc8fccee922c06725ddac67"
+    },
+    "__hr_country": {
+      "rows": 237,
+      "unordered_rows_sha256": "e3a4b2f003901a320cd98ee03382c307ddcd8da9e7ab2162ef6bca8cc715303c"
+    },
+    "__hr_educationlevel": {
+      "rows": 8,
+      "unordered_rows_sha256": "ed56822850b31fe1243f8fb54801addffa176139f59ce73cff4e29689c56dab9"
+    },
+    "__hr_kormandon_vazifa": {
+      "rows": 76,
+      "unordered_rows_sha256": "6d5141714456f44ef4c572184a4c4ca5e76db0ed297b9d77730835dc9393a0dd"
+    },
+    "__hr_language": {
+      "rows": 20,
+      "unordered_rows_sha256": "869597590c59c749d6c3706e06f21bc817f71667a7a0f16fe9561c7ab8ee84de"
+    },
+    "__hr_martialstatus": {
+      "rows": 2,
+      "unordered_rows_sha256": "1e6240b4ef9d45b7745b3d06f0e0b6704cd1315a283782107860efb470e17769"
+    },
+    "__hr_nationality": {
+      "rows": 54,
+      "unordered_rows_sha256": "d475ffbbe17ab652732d7f277b7f77ae3985767932e96a5ac1bd4ccdb0d3c209"
+    },
+    "__hr_role": {
+      "rows": 28,
+      "unordered_rows_sha256": "109d7db16059d65a7707695d148f49797076d1fc236e5147f2e443aedf8236f8"
+    },
+    "__hr_smenaid": {
+      "rows": 14,
+      "unordered_rows_sha256": "3d6179f2b34622078f15234d3a19aa0181fcd6b4911772fcbe037e615bc0afa3"
+    },
+    "__hr_typepos": {
+      "rows": 54,
+      "unordered_rows_sha256": "46dc04be87730fbe7652cbbb3c01f201a3d85a2c2cee4f58200ab18a4891e8cc"
+    },
+    "__hr_typepos_bf": {
+      "rows": 68,
+      "unordered_rows_sha256": "2cf096a70a5c52f402711effdfa4b22ed48efb7c56a58c0ac8b7f251b3cb5f60"
+    },
+    "__hr_typepos_bf_copy": {
+      "rows": 68,
+      "unordered_rows_sha256": "337cbef340d851e6243ce55983314da133f324ffb95eea31a0a9d5b354c13b81"
+    },
+    "__hr_typepos_copy": {
+      "rows": 42,
+      "unordered_rows_sha256": "7256152fabb3ad687abd790c669d0f9dcfe977a9ed07438b0f994379bda79547"
+    },
+    "__hr_village": {
+      "rows": 5,
+      "unordered_rows_sha256": "3927b2d410cb9344ef1aca52df0173b958834aacd2deefd503ab3f5bf1b15e95"
+    },
+    "avto": {
+      "rows": 54,
+      "unordered_rows_sha256": "18fc65e5430fb1d20875d70f99ce218ac06766486e20b373bfabb67a86b5a75f"
+    },
+    "bd": {
+      "rows": 2,
+      "unordered_rows_sha256": "8fa72a8b2af43fa2e59f82ef771559003f4a588575a7fa8543611cbc5f6550d0"
+    },
+    "bf_casyaki": {
+      "rows": 8889,
+      "unordered_rows_sha256": "d5d7ad690350ca69550b07812ffe726f7cf265caad7f08037a038a79194ba8c6"
+    },
+    "bf_contragent": {
+      "rows": 2161,
+      "unordered_rows_sha256": "2136b5612b4599f9fc3040890c8794c64338046773ca0a0ac3eaf873aa94cdd2"
+    },
+    "bf_office": {
+      "rows": 24,
+      "unordered_rows_sha256": "fa6a7a3e56a4cbfc9bc619369694d5de4a6bfc5e3004fac972f3feb271e08c12"
+    },
+    "bf_podarki": {
+      "rows": 0,
+      "unordered_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "bf_podarki_copy_2022": {
+      "rows": 370,
+      "unordered_rows_sha256": "213496a3c996c8d552920e9f46de1f03b4d1df2aa4416910968c5020eeaaee03"
+    },
+    "bozor": {
+      "rows": 27678,
+      "unordered_rows_sha256": "305e3b4975f2550c8a85b02bd283f20e3216866d27fab00b50fdada7379c027a"
+    },
+    "bozor_copy10032025": {
+      "rows": 22572,
+      "unordered_rows_sha256": "7ca5e5cb3cfd41274e9841b0d531c677cd80de1e53131086c3d8873117e62544"
+    },
+    "bozor_copy_09052024": {
+      "rows": 56813,
+      "unordered_rows_sha256": "160bfd2a3ff512759d34d435294f61e9d06de1aeba59541905fb2bb597e21e71"
+    },
+    "certificate": {
+      "rows": 560,
+      "unordered_rows_sha256": "57f9b90ab41ef160c74a99d76bbf288288e1d9132b10fb5d233bfd597f85de55"
+    },
+    "contragent": {
+      "rows": 1208,
+      "unordered_rows_sha256": "4d695dff17c4dab2652d05885abaead8c22782118268330789f0917b804e234a"
+    },
+    "contragent_ffl": {
+      "rows": 1306,
+      "unordered_rows_sha256": "877b51f349d32b6e655fb793c81703247b36e6cf2844d99c3aaca5587786640e"
+    },
+    "fakultet": {
+      "rows": 6,
+      "unordered_rows_sha256": "d9f51353d269d5c5eb37791bbeb1c988ea9f7df3b2b04f2ed69bb786b51bb539"
+    },
+    "ffl_casyaki": {
+      "rows": 3355,
+      "unordered_rows_sha256": "0676211f5ecf5e8340d6dca81c26516b93d5585e8866ec08fc228ca6a1fd7744"
+    },
+    "ffl_doljnost": {
+      "rows": 20,
+      "unordered_rows_sha256": "f385ba980abea07fb831675bf189ff3f059d689713b0f7e8f6c42736badd033e"
+    },
+    "ffl_dom": {
+      "rows": 20,
+      "unordered_rows_sha256": "2109c66af77dbe3abb9e2406335cfec3dd96e0cdc88e4cb422f1d01458f37e6b"
+    },
+    "ffl_imgperson": {
+      "rows": 928,
+      "unordered_rows_sha256": "4fdf7cf005a32d7b8408cecea0da123e391bb9627dd05e866344b9f411673acc"
+    },
+    "ffl_office": {
+      "rows": 11,
+      "unordered_rows_sha256": "c40aaa7e96e42351b47e9b8de4af39184b09c58eceb23519d6f09c8307acf699"
+    },
+    "ffl_organizasiya": {
+      "rows": 7,
+      "unordered_rows_sha256": "d42d80d84571a54d047582478ce21d5621c3f9921dab1a44d328c0896af7cffb"
+    },
+    "ffl_otdel": {
+      "rows": 14,
+      "unordered_rows_sha256": "334f27a10734f0db59dd64140cde5b8cfde132f0d2fbdd6f29ff5b9faef8382c"
+    },
+    "ffl_patent": {
+      "rows": 29,
+      "unordered_rows_sha256": "8151122d634130fbc8039eb6eeda201088490bec1b279d7825822858e63a84d9"
+    },
+    "ffl_podarka": {
+      "rows": 267,
+      "unordered_rows_sha256": "e9e3e4ec1343c773be466bec4ad93265ce89cc469632f9e2da3330a6fb7bb188"
+    },
+    "ffl_podarki": {
+      "rows": 224,
+      "unordered_rows_sha256": "b43c5b1e2002f7d01468be8bea0af87a19f3a44ce66cb55d7faa402045ec425f"
+    },
+    "ffl_podarki_2024": {
+      "rows": 267,
+      "unordered_rows_sha256": "bb9126482455a94c08a7b8eafe20096d2d147d4d0f8554a59d9aeb8bc47be659"
+    },
+    "ffl_podarki_copy_2022": {
+      "rows": 244,
+      "unordered_rows_sha256": "3df256ec6ab6182b9cce67de6428306a0e1425ecad8d2592aa7bbc5d96498eb3"
+    },
+    "ffl_podarki_copy_2023": {
+      "rows": 262,
+      "unordered_rows_sha256": "f7a1bfdac9c7b0ec5599e380a854baae13fda124de217a96579d93ea7a7e260a"
+    },
+    "ffl_reg": {
+      "rows": 2,
+      "unordered_rows_sha256": "8c16a15d54b596a3fb6056e60ca0bfc1d612c71360749586a0ad0b9f2f95e5f0"
+    },
+    "ffl_smena": {
+      "rows": 2,
+      "unordered_rows_sha256": "5eab3301b22320cca0004a770dd819af0ddf39c0fd850f0cdc52b78b95f247f9"
+    },
+    "ffl_stop": {
+      "rows": 4,
+      "unordered_rows_sha256": "ef38c23027962bd31e141deb40ea4dbbc3a43e5e0106443e966cd1417340a279"
+    },
+    "ffl_telegram_access": {
+      "rows": 3,
+      "unordered_rows_sha256": "d2e0ffe1235aa2baeff0033d0faaca65527152111f74c282736825c8fbc216e9"
+    },
+    "ffl_tell": {
+      "rows": 257,
+      "unordered_rows_sha256": "6b896e245a47e7367a1ba53c23c060a207868c544d9d8352284e5fa5da0bb685"
+    },
+    "ffl_typeimage": {
+      "rows": 5,
+      "unordered_rows_sha256": "3d166414e14c75d7212b219fc0d2d5e57e20d90fa0df82b0c31a933844503be2"
+    },
+    "ii": {
+      "rows": 32,
+      "unordered_rows_sha256": "4827e286ca5c94f86292a23cfaf32645b917371578bdc6c6db601da843de5884"
+    },
+    "ip": {
+      "rows": 4,
+      "unordered_rows_sha256": "634b1056099814c12dc7e395a64ae824d5f9bb4e29fc577207c74aadd0e114b6"
+    },
+    "ip_adress": {
+      "rows": 255,
+      "unordered_rows_sha256": "275af9a2801ce50d78c76e7949caaf2c3f5c591fc2571dc823d70be36c1a32ee"
+    },
+    "ip_printer": {
+      "rows": 7,
+      "unordered_rows_sha256": "f8279238893f96616d3be600946c87b740af3f986979cce2a18bf43cd4de8324"
+    },
+    "ip_uis": {
+      "rows": 8,
+      "unordered_rows_sha256": "1d217d7cc5cc97c1862eb1f50c3cf937b50c526f2816dc589c6e49d3dd5f5d56"
+    },
+    "kafedra": {
+      "rows": 34,
+      "unordered_rows_sha256": "c18479b1e52a3de1c3d1134930c8ac1a29e30f437e11341c68c29dd78d08b6cf"
+    },
+    "kalima": {
+      "rows": 25928,
+      "unordered_rows_sha256": "995881345164c74f68b702c8011521b726cde732b81d58bafa38ddb72fc9e418"
+    },
+    "log": {
+      "rows": 26959,
+      "unordered_rows_sha256": "27323f2a0c28280ec10cc1a92089a587aa14230bab79f99175b5d610bc656f0d"
+    },
+    "logins": {
+      "rows": 0,
+      "unordered_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "meneger": {
+      "rows": 10,
+      "unordered_rows_sha256": "4c8e123504b16085629257ee314c1e679f570756da866ce1ec40a78bb468be53"
+    },
+    "meneger_contr": {
+      "rows": 0,
+      "unordered_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "meneger_contr_copy": {
+      "rows": 692,
+      "unordered_rows_sha256": "6b96070383ee53be7ed23ab56052ee141e8fb13ee043ebacb4a9a11382ab8488"
+    },
+    "meneger_contr_ffl": {
+      "rows": 395,
+      "unordered_rows_sha256": "1bb9748d4e06c46ccb8f10f81543f4f8fb9e304f674e3d982df25ba7c02771aa"
+    },
+    "meneger_contr_ffl_copy": {
+      "rows": 1059,
+      "unordered_rows_sha256": "c22da6024b53a3afe8a083051542d34640d594def638c7eda3f4e19046e8e21a"
+    },
+    "meneger_ffl": {
+      "rows": 10,
+      "unordered_rows_sha256": "99c8aadbdfbf65f485de49c1799c0bb9d5abac968015fa962a00e5788f0b7357"
+    },
+    "menu": {
+      "rows": 300,
+      "unordered_rows_sha256": "080f5c65ec048970f640c26951d81603df2b83d0df8338ef6531b9837c2e1c36"
+    },
+    "nastroiki": {
+      "rows": 11,
+      "unordered_rows_sha256": "ceb585db8c41bcfb630afd1f20549a0edf3545d26228f98ebcd32b1231d05dc0"
+    },
+    "oshibka": {
+      "rows": 788,
+      "unordered_rows_sha256": "0b7bd3022a91a459dd030fca90f708d7a72f312342cc3239cf37ab1a219ff896"
+    },
+    "ostatka": {
+      "rows": 1536,
+      "unordered_rows_sha256": "f15176af3ab94c3f3b208afc6b6bf678d677d4465660c2e2c492e4946d71f193"
+    },
+    "peredelka": {
+      "rows": 979,
+      "unordered_rows_sha256": "80417cf0c51a15476ae53c7ca22070aa193b9b7582d6043a9d452a7071598c93"
+    },
+    "person": {
+      "rows": 47,
+      "unordered_rows_sha256": "749904d9d7d4dd88b607fd2fc146dfc266fbbe174c8c34810ed51edfb408998f"
+    },
+    "phone": {
+      "rows": 20,
+      "unordered_rows_sha256": "04cb44e4d34c8d0ae956ca59749833856fab3f98be2391acef9adf0612d48e7c"
+    },
+    "phone_sip": {
+      "rows": 33,
+      "unordered_rows_sha256": "2aa6112da3a79c94b5fc260e7719ce7cc10dc5c87161306ff4846637adef0137"
+    },
+    "pr_contragent": {
+      "rows": 170,
+      "unordered_rows_sha256": "71dfe32913f4f9e7383ca3df7c95fa4a1c012b72b51e5a39b9ce5e06aa5e1a0c"
+    },
+    "pr_postuplenie_tovar": {
+      "rows": 1343,
+      "unordered_rows_sha256": "0ea4c3a7e1de45979802c8e6f58b8ec8676f04ca38f153a799ef7c2f068da89f"
+    },
+    "pr_postuplenie_tovar_i": {
+      "rows": 736,
+      "unordered_rows_sha256": "46959e67e0388de5dd458513d47500b5e6da955b98e073da4e8261f433020951"
+    },
+    "products": {
+      "rows": 688,
+      "unordered_rows_sha256": "ccc8202e2bcb6de519ba83f55add4147501ec51e60bedf860ed79b3fd1c2205f"
+    },
+    "reys": {
+      "rows": 26802,
+      "unordered_rows_sha256": "86f447191ccdef4342d6e6967be6c4dc50317d63fd66b0f6780f110144438b76"
+    },
+    "reys_bf": {
+      "rows": 23855,
+      "unordered_rows_sha256": "994bba9b00f95837bf7a541022616e5b81d6dce16b711b5d448302a7d16f50a3"
+    },
+    "reys_bf_copy": {
+      "rows": 23721,
+      "unordered_rows_sha256": "8f11e0770bdb2131d8c52cea3320095053fbc03d4b14c0865af2ec07dce26bcd"
+    },
+    "reys_copy": {
+      "rows": 21877,
+      "unordered_rows_sha256": "f55fc7006b648fcea6ec1721625b154593bd69ed03b8b3fb363f2b1522771cc6"
+    },
+    "reys_copy23052026": {
+      "rows": 22604,
+      "unordered_rows_sha256": "10d3026c0282fddd7c57a8b89508bf11938a90e8986660015f573093ce9a4b83"
+    },
+    "reys_den": {
+      "rows": 1882,
+      "unordered_rows_sha256": "cb34a4b11b28e39f192f990c289d038abfa218792011100771739fdb7d6d5f10"
+    },
+    "reys_den_1c": {
+      "rows": 2,
+      "unordered_rows_sha256": "f5ee62323816557777b9a6a4eb8406cb2c30158f8c255c5b20c00094f0540a8b"
+    },
+    "reys_den_copy": {
+      "rows": 1020,
+      "unordered_rows_sha256": "99564421e0aed3e00f9c9de8018a440fde6a54e430d668b397a1439fbb13de31"
+    },
+    "reys_log": {
+      "rows": 12206,
+      "unordered_rows_sha256": "98fc36e84cdc6d3d6b3f4879f187277893fd9305da4b53e99d5e0ddc4e155134"
+    },
+    "setting": {
+      "rows": 2,
+      "unordered_rows_sha256": "983eac986aad1979c232e68a7729ad05d541564311f38794c00d2f83a9d3159c"
+    },
+    "shtafi": {
+      "rows": 1,
+      "unordered_rows_sha256": "56e75fbf413523a230a42d8aeeb4f4b8464882919b0934dbdd43d33f44e8923f"
+    },
+    "spisok": {
+      "rows": 500,
+      "unordered_rows_sha256": "20ea02900c402150d0077a6c98f4258a215d202f5710b8f7bc435ac0509ef997"
+    },
+    "st": {
+      "rows": 2,
+      "unordered_rows_sha256": "2d8cb2c08b40bd37340556d7c3ec47b0c8902397f5c937fa87e207d3dab43e64"
+    },
+    "statti": {
+      "rows": 1,
+      "unordered_rows_sha256": "167937e51e87bce6b8c3635d1e6c4a6f92b5c1c469922101e887cae442dcbf67"
+    },
+    "table_name": {
+      "rows": 224,
+      "unordered_rows_sha256": "9a6531949c805e976036d7793b5a1bb79a429f009c52f5f3d9ca7de0a6d17a06"
+    },
+    "telegram_api": {
+      "rows": 3,
+      "unordered_rows_sha256": "567c47a715d55cf69e87b6cbe371199759d93b268f6bbe27b325dfdf6e96c3d7"
+    },
+    "telegram_api_bf": {
+      "rows": 3,
+      "unordered_rows_sha256": "9e1b871c0105a32935e716b609609dcc8c7b5fa9adaf856358f2bba0722302ba"
+    },
+    "tell": {
+      "rows": 98,
+      "unordered_rows_sha256": "9cca9f0b09524f2665c104c2c74bd4964e7d0f588156027c25237b726052c50a"
+    },
+    "type": {
+      "rows": 9,
+      "unordered_rows_sha256": "03e5f26a93fd592bf7842c162be777e736ea05233244cfbe58ec76ae84663d42"
+    },
+    "ugroza": {
+      "rows": 0,
+      "unordered_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "user_role": {
+      "rows": 111,
+      "unordered_rows_sha256": "116a30de99668b19ff3f2de4d2eb527a0ea48e373bd2a3e17b851e846b77d761"
+    },
+    "voditel_status": {
+      "rows": 18965,
+      "unordered_rows_sha256": "8de8f3887105f3650867d762ef6a443579ca8f31790de6103a674e904431de07"
+    },
+    "voditel_status_copy": {
+      "rows": 9598,
+      "unordered_rows_sha256": "6c181cd4b44f2f7fe36996d2bfb9846039d894c6396c5b2eba2aba2ab11782f3"
+    },
+    "vozvrat": {
+      "rows": 3312,
+      "unordered_rows_sha256": "d9892291da1ce793338d160371f7998015b5c7a278ad62cd4d1c502f3b916699"
+    },
+    "vozvrat_copy": {
+      "rows": 370,
+      "unordered_rows_sha256": "ccb7a2c869dcf38fc43cbc11a8da994c7ceb31a8a3f8bf58d4e0e8a6aa2947f8"
+    },
+    "vozvrat_pozitsiya": {
+      "rows": 1966,
+      "unordered_rows_sha256": "05e766e3c30233b9139fc0c8c8d6ec026fa62bf2d0614c695a5472e11f936ba8"
+    },
+    "wifi": {
+      "rows": 54,
+      "unordered_rows_sha256": "8886142e24ddd6c6cf5939b39e0d2be382fc75e96868d414d481ba9eeb815fac"
+    }
+  },
+  "plaintext_rows_published": false,
+  "from_independent_reimport": true
+}

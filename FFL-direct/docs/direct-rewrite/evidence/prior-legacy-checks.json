@@ -1,0 +1,13 @@
+{
+  "lint": {
+    "command": "bash gradlew --no-daemon --max-workers=4 :app:assembleDebug :app:testDebugUnitTest :app:lintDebug",
+    "cwd": "/workspace/FFL",
+    "exit_code": 1,
+    "errors": 4,
+    "warnings": 18,
+    "source_log": "/workspace/.ffl/validation.log",
+    "source_xml": "/workspace/FFL/app/build/reports/lint-results-debug.xml",
+    "rerun_in_p0": false,
+    "classification": "known legacy defects, not a new Direct check"
+  }
+}

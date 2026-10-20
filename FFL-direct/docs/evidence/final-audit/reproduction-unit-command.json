@@ -1,0 +1,7 @@
+{
+  "command": "bash gradlew --offline --no-daemon --max-workers=2 :app:testDebugUnitTest --tests ru.ffl24.direct.data.mysql.WorkspaceSqlTest --tests ru.ffl24.direct.data.mysql.DeliveryTransactionTest",
+  "exit": 1,
+  "tests": 14,
+  "failures": 3,
+  "expected_reproduction": true
+}

@@ -1,0 +1,13 @@
+{
+  "status": "saved",
+  "requires_publish": true,
+  "fields_written": [
+    "start_skill"
+  ],
+  "install_script_changed": false,
+  "network_changed": false,
+  "secrets_added": false,
+  "start_skill_sha256": "6616bf9b4a035568bb89ba92fbcaae3a04a035d773b27a7ff0565e696cc7c145",
+  "publication_executed": false,
+  "fresh_task_restore_tested": false
+}

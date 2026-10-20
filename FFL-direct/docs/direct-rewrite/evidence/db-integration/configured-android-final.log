@@ -1,0 +1,8 @@
+{
+  "fixture_only": true,
+  "configured_main_runtime_cases_passed": 3,
+  "failed": 0,
+  "skipped": 0,
+  "cold_process_restore_tested": true,
+  "graph_injection_in_compiled_cases": false
+}

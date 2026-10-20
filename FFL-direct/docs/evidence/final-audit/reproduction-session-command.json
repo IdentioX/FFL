@@ -1,0 +1,7 @@
+{
+  "command": "bash gradlew --offline --no-daemon --max-workers=2 :app:testDebugUnitTest --tests ru.ffl24.direct.SessionConcurrencyTest",
+  "exit": 1,
+  "tests": 4,
+  "failures": 4,
+  "expected_reproduction": true
+}

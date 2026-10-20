@@ -1,0 +1,21 @@
+org.mariadb.jdbc.Driver: LOADED; refusal handled as SQLException; state=08000
+com.mysql.cj.jdbc.Driver: FAILURE java.lang.ExceptionInInitializerError
+java.lang.ExceptionInInitializerError
+	at com.mysql.cj.Messages.getString(Messages.java:70)
+	at com.mysql.cj.Constants.<clinit>(Constants.java:41)
+	at com.mysql.cj.util.Util.<clinit>(Util.java:60)
+	at com.mysql.cj.util.Util.getInstance(Util.java:178)
+	at com.mysql.cj.conf.ConnectionUrl$Type.getImplementingInstance(ConnectionUrl.java:242)
+	at com.mysql.cj.conf.ConnectionUrl$Type.getConnectionUrlInstance(ConnectionUrl.java:212)
+	at com.mysql.cj.conf.ConnectionUrl.getConnectionUrlInstance(ConnectionUrl.java:282)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:177)
+	at DriverProbe.main(DriverProbe.java:17)
+Caused by: java.lang.RuntimeException: Can't load resource bundle due to underlying exception java.util.MissingResourceException: Can't find bundle for base name com.mysql.cj.LocalizedErrorMessages, locale en_US
+	at com.mysql.cj.Messages.<clinit>(Messages.java:52)
+	... 9 more
+Caused by: java.util.MissingResourceException: Can't find bundle for base name com.mysql.cj.LocalizedErrorMessages, locale en_US
+	at java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:1561)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1384)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:771)
+	at com.mysql.cj.Messages.<clinit>(Messages.java:50)
+	... 9 more

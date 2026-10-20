@@ -1,0 +1,30 @@
+{
+  "command": [
+    "adb",
+    "-s",
+    "emulator-5558",
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "listener",
+    "ru.ffl24.direct.CompletionRunListener",
+    "-e",
+    "class",
+    "ru.ffl24.direct.AuditLayoutTest",
+    "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+  ],
+  "exit": 0,
+  "junit": {
+    "tests": "2",
+    "failures": "1",
+    "errors": "0",
+    "skipped": "0",
+    "time": "27.098"
+  },
+  "started_unix": 1792233140.7663608,
+  "finished_unix": 1792233182.1807775,
+  "pre_fix_reproduction": true
+}

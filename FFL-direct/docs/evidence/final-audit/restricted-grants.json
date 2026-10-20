@@ -1,0 +1,17 @@
+{
+  "application_select_tables": [
+    "__hr_typepos",
+    "meneger_contr_ffl",
+    "meneger_ffl",
+    "nastroiki",
+    "phone",
+    "reys",
+    "reys_den"
+  ],
+  "unrelated_table_read_denied": true,
+  "separate_integrity_reader_works": true,
+  "integrity_reader_update_denied": true,
+  "global_select_removed_from_application": true,
+  "driver_row_isolation_provided": false,
+  "production_accessed": false
+}

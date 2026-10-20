@@ -1,0 +1,31 @@
+[
+  {
+    "command": [
+      "shell",
+      "service",
+      "check",
+      "activity"
+    ],
+    "exit": 0,
+    "output": "Service activity: found"
+  },
+  {
+    "command": [
+      "shell",
+      "service",
+      "check",
+      "package"
+    ],
+    "exit": 0,
+    "output": "Service package: found"
+  },
+  {
+    "command": [
+      "shell",
+      "ps",
+      "-A"
+    ],
+    "exit": 0,
+    "output": "root           1311      1 1833472 171452 0                   0 S zygote\nroot           1325      1 13490308 181720 0                  0 S zygote64\nsystem         1433   1325 13912736 311028 0                  0 S system_server\nwebview_zygote 1920   1311 1841744  68780 0                   0 S webview_zygote\nnetwork_stack  2041   1325 12918816 120364 0                  0 S com.android.networkstack.process"
+  }
+]

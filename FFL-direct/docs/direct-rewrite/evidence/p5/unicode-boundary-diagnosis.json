@@ -1,0 +1,11 @@
+{
+  "python_regex_matches": [
+    true,
+    true
+  ],
+  "java_unicode_word_matches": [
+    false,
+    false
+  ],
+  "issue": "Python word boundaries exclude combining marks and connector punctuation other than underscore"
+}

@@ -1,0 +1,16 @@
+{
+  "cwd": "/workspace/FFL-direct",
+  "command": [
+    "bash",
+    "gradlew",
+    "--no-daemon",
+    "--max-workers=4",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    ":app:verifyDirectRuntime",
+    ":app:assembleDebugAndroidTest",
+    ":app:assembleRelease"
+  ],
+  "exit": 0
+}

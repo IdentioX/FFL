@@ -1,0 +1,14 @@
+{
+  "emulator_api": 30,
+  "software_tcg": true,
+  "minified_release": true,
+  "start_exit": 0,
+  "not_physical_performance_benchmark": true,
+  "not_heap_leak_or_soak_test": true,
+  "Status": "ok",
+  "TotalTime": "6121",
+  "WaitTime": "6286",
+  "total_pss_kb": 32828,
+  "total_rss_kb": 153596,
+  "diagnostic_total_elapsed_seconds": 8.948
+}

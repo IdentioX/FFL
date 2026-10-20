@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ffl24.direct.OrderDetailsRepositoryTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:12:13.967Z" hostname="01939dccba12" time="0.025">
+  <properties/>
+  <testcase name="revokedAccessClearsMemoryAndLocalHint" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.015"/>
+  <testcase name="jdbcErrorIsSafeAndCallerCancellationPropagates" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.002"/>
+  <testcase name="disabledAndNetworkAuthFailuresNeverReadData" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.0"/>
+  <testcase name="loadGetsOnlyCurrentDriverAndPreservesSourceIdentity" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.002"/>
+  <testcase name="storageFailureDuringRevocationDoesNotClaimSuccessfulCleanup" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.0"/>
+  <testcase name="noSessionCannotReadAnOrderOrRoute" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.001"/>
+  <testcase name="logoutAndEvenSameDriverReloginDiscardLateRead" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.005"/>
+  <testcase name="routeValidationUsesOwnerReadAndAuthWithoutLoadingContacts" classname="ru.ffl24.direct.OrderDetailsRepositoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

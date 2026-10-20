@@ -1,0 +1,9 @@
+{
+  "restored_original_records_read": true,
+  "orders_checked": 9,
+  "dto_sql_id_order_parity": true,
+  "summary_parity": true,
+  "details_and_directory": true,
+  "personal_values_published": false,
+  "writes_to_original_records": false
+}

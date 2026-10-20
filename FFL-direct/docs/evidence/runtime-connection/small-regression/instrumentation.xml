@@ -1,0 +1,1 @@
+<testsuite tests="2" failures="0" errors="0" skipped="0" time="59.508"><testcase classname="ru.ffl24.direct.DesignImplementationTest" name="smallScreenLargeFontKeepsFiveActionsCenteredAndReachable"></testcase><testcase classname="ru.ffl24.direct.DesignImplementationTest" name="smallKeyboardLoginCanFinishWithImeAction"></testcase></testsuite>

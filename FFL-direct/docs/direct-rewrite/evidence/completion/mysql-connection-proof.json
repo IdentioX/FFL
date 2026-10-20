@@ -1,0 +1,28 @@
+{
+  "cipher": [
+    "TLS_AES_256_GCM_SHA384",
+    "TLSv1.3",
+    256
+  ],
+  "ca_and_hostname_verified": true,
+  "version": "8.4.11",
+  "require_tls": 1,
+  "engine": "InnoDB",
+  "fixture_grants": [
+    {
+      "Grants for fixture_read@%": "GRANT USAGE ON *.* TO `fixture_read`@`%`"
+    },
+    {
+      "Grants for fixture_read@%": "GRANT SELECT ON `fixture`.* TO `fixture_read`@`%`"
+    },
+    {
+      "Grants for fixture_read@%": "GRANT UPDATE (`date_att_log`, `st_vv`) ON `fixture`.`reys_den` TO `fixture_read`@`%`"
+    },
+    {
+      "Grants for fixture_read@%": "GRANT UPDATE (`date_att_log`, `st_vv`) ON `fixture`.`reys` TO `fixture_read`@`%`"
+    },
+    {
+      "Grants for fixture_read@%": "GRANT EXECUTE ON FUNCTION `fixture`.`name_v` TO `fixture_read`@`%`"
+    }
+  ]
+}

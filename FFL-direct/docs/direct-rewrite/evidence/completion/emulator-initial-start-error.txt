@@ -1,0 +1,1 @@
+Popen of helper path failed before startup: PermissionError errno13; helper is not executable. Corrected by invoking bash explicitly. No emulator started by the failed attempt.

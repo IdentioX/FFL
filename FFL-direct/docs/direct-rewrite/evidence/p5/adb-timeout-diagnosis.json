@@ -1,0 +1,9 @@
+{
+  "observed_property_fetch_seconds": 6.14,
+  "failure": "ShellCommandUnresponsiveException; Unknown API Level before app tests",
+  "inspected_class": "com.android.ddmlib.PropertyFetcher via javap -c -p",
+  "verified_system_property": "ddmlib.getprop.timeout.sec",
+  "default_seconds": 2,
+  "retry_seconds": 30,
+  "application_assertions_changed": false
+}

@@ -1,0 +1,6 @@
+{
+  "checkout_as_state_rejected": true,
+  "exit": 1,
+  "message": "Private state must be outside the checkout and must not contain it.",
+  "no_checkout_deletion": true
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "docker",
+    "create",
+    "--name",
+    "ffl-completion-mysql",
+    "--publish",
+    "127.0.0.1:19065:3306",
+    "--env-file",
+    "/workspace/.ffl/completion-db/env",
+    "--entrypoint",
+    "/bin/bash",
+    "mysql:8.4",
+    "-c",
+    "chown -R mysql:mysql /tls; exec /usr/local/bin/docker-entrypoint.sh mysqld --ssl-ca=/tls/ca.pem --ssl-cert=/tls/valid.pem --ssl-key=/tls/valid.key --require-secure-transport=ON"
+  ],
+  "exit": 0,
+  "container_id": "514b1fdecfca1040932eef299ffe9437108b180e5e4d5b69b15d7e2eea8343ff",
+  "stderr": ""
+}

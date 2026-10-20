@@ -1,0 +1,23 @@
+[
+  {
+    "command": [
+      "shell",
+      "service",
+      "list"
+    ],
+    "exit": 0,
+    "activity": false,
+    "package": false
+  },
+  {
+    "command": [
+      "shell",
+      "pm",
+      "path",
+      "android"
+    ],
+    "exit": 20,
+    "stdout": "",
+    "stderr": "cmd: Can't find service: package"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "command": "adb -s emulator-5556 shell getprop sys.boot_completed",
+    "exit": 0,
+    "output": "1"
+  },
+  {
+    "command": "adb -s emulator-5556 shell getprop dev.bootcomplete",
+    "exit": 0,
+    "output": "1"
+  },
+  {
+    "command": "adb -s emulator-5556 shell dumpsys activity activities",
+    "exit": 0,
+    "output": "mResumedActivity: ActivityRecord{376bd41 u0 com.android.settings/.FallbackHome t3}\n  ResumedActivity: ActivityRecord{376bd41 u0 com.android.settings/.FallbackHome t3}\n  mFocusedApp=ActivityRecord{376bd41 u0 com.android.settings/.FallbackHome t3}"
+  }
+]

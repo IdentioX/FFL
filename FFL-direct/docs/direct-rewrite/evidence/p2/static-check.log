@@ -1,0 +1,42 @@
+{
+  "time_moscow": "2026-10-16T14:51:54.773553+03:00",
+  "static_check": "POSITIVE",
+  "reference_files_unchanged": 104,
+  "unit": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "instrumentation": {
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint_errors": 0,
+  "lint_warnings": [
+    "OldTargetApi",
+    "GradleDependency",
+    "NewerVersionAvailable",
+    "NewerVersionAvailable",
+    "TrustAllX509TrustManager",
+    "TrustAllX509TrustManager",
+    "AutoboxingStateCreation",
+    "NotShrinkingResources"
+  ],
+  "runtime_components": {
+    "debug": 116,
+    "release": 115
+  },
+  "jdbc_sha256": "919b8c1c771d9ee3465811462f242c9543ab401e140c64988ddbf1d8abcb18b2",
+  "apk_sha256": "8b1aebe4620a78d70bb7a79215e33f24c2daa195b7674ee2a1a0c3751f1db185",
+  "apk_size": 12513910,
+  "release_unsigned_sha256": "328b69bc3d61b970399b5694e3d16aadb39e990a70a6150e03cffd3d193e1922",
+  "db_configured": false,
+  "live_mysql_used": false,
+  "fixture_is_database": false,
+  "full_p2_result": "BLOCKED",
+  "physical_device": false,
+  "p3_started": false
+}

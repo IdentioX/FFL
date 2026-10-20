@@ -1,0 +1,204 @@
+{
+  "batch_candidate_ids_equal_to_legacy_individual_queries": true,
+  "distinct_numbers": 39,
+  "before_queries": 39,
+  "after_queries": 1,
+  "batch_samples_ms": [
+    2.948742000171478,
+    2.344301999983145,
+    2.2716510000009293,
+    2.1483960001660307,
+    2.229889000091134
+  ],
+  "batch_median_ms": 2.2716510000009293,
+  "localhost_only_not_wan_latency_measurement": true,
+  "function_name_v_executed": true,
+  "engines": [
+    {
+      "table": "__hr_typepos",
+      "engine": "InnoDB",
+      "collation": "utf8mb3_general_ci"
+    },
+    {
+      "table": "meneger_contr_ffl",
+      "engine": "InnoDB",
+      "collation": "utf8mb3_general_ci"
+    },
+    {
+      "table": "meneger_ffl",
+      "engine": "InnoDB",
+      "collation": "utf8mb3_general_ci"
+    },
+    {
+      "table": "nastroiki",
+      "engine": "InnoDB",
+      "collation": "utf8mb3_general_ci"
+    },
+    {
+      "table": "phone",
+      "engine": "InnoDB",
+      "collation": "utf8mb4_general_ci"
+    },
+    {
+      "table": "reys",
+      "engine": "InnoDB",
+      "collation": "utf8mb3_general_ci"
+    },
+    {
+      "table": "reys_den",
+      "engine": "InnoDB",
+      "collation": "utf8mb3_general_ci"
+    }
+  ],
+  "indexes": [
+    {
+      "table": "meneger_contr_ffl",
+      "index": "nomer_z",
+      "sequence": 1,
+      "column": "nomer_z",
+      "non_unique": 0
+    },
+    {
+      "table": "meneger_contr_ffl",
+      "index": "PRIMARY",
+      "sequence": 1,
+      "column": "id",
+      "non_unique": 0
+    },
+    {
+      "table": "meneger_ffl",
+      "index": "PRIMARY",
+      "sequence": 1,
+      "column": "id",
+      "non_unique": 0
+    },
+    {
+      "table": "phone",
+      "index": "PRIMARY",
+      "sequence": 1,
+      "column": "id",
+      "non_unique": 0
+    },
+    {
+      "table": "reys",
+      "index": "nomer_z",
+      "sequence": 1,
+      "column": "nomer_z",
+      "non_unique": 0
+    },
+    {
+      "table": "reys",
+      "index": "nomer_z",
+      "sequence": 2,
+      "column": "id_v",
+      "non_unique": 0
+    },
+    {
+      "table": "reys",
+      "index": "nomer_z",
+      "sequence": 3,
+      "column": "date",
+      "non_unique": 0
+    },
+    {
+      "table": "reys",
+      "index": "nomer_z",
+      "sequence": 4,
+      "column": "col",
+      "non_unique": 0
+    },
+    {
+      "table": "reys",
+      "index": "PRIMARY",
+      "sequence": 1,
+      "column": "id",
+      "non_unique": 0
+    },
+    {
+      "table": "reys_den",
+      "index": "nomer_z",
+      "sequence": 1,
+      "column": "nomer_z",
+      "non_unique": 0
+    },
+    {
+      "table": "reys_den",
+      "index": "nomer_z",
+      "sequence": 2,
+      "column": "id_v",
+      "non_unique": 0
+    },
+    {
+      "table": "reys_den",
+      "index": "nomer_z",
+      "sequence": 3,
+      "column": "date",
+      "non_unique": 0
+    },
+    {
+      "table": "reys_den",
+      "index": "nomer_z",
+      "sequence": 4,
+      "column": "col",
+      "non_unique": 0
+    },
+    {
+      "table": "reys_den",
+      "index": "nomer_z",
+      "sequence": 5,
+      "column": "name_c",
+      "non_unique": 0
+    },
+    {
+      "table": "reys_den",
+      "index": "PRIMARY",
+      "sequence": 1,
+      "column": "id",
+      "non_unique": 0
+    },
+    {
+      "table": "__hr_typepos",
+      "index": "posTypeName",
+      "sequence": 1,
+      "column": "posTypeName",
+      "non_unique": 0
+    },
+    {
+      "table": "__hr_typepos",
+      "index": "PRIMARY",
+      "sequence": 1,
+      "column": "posTypeId",
+      "non_unique": 0
+    }
+  ],
+  "explain": [
+    {
+      "id": 1,
+      "select_type": "SIMPLE",
+      "table": "reys",
+      "type": "index",
+      "possible_keys": null,
+      "key": "nomer_z",
+      "key_len": "167",
+      "ref": null,
+      "rows": "26607",
+      "Extra": "Using where; Using index"
+    },
+    {
+      "id": 1,
+      "select_type": "SIMPLE",
+      "table": "meneger_contr_ffl",
+      "type": "index",
+      "possible_keys": null,
+      "key": "nomer_z",
+      "key_len": "302",
+      "ref": null,
+      "rows": "395",
+      "Extra": "Using where; Using index"
+    }
+  ],
+  "schema_changed": false,
+  "production_accessed": false,
+  "function_name_v_returns_nullable_for_historical_unknown_driver": true,
+  "function_name_v_controlled_driver_returns_name": true
+}

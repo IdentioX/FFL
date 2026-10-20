@@ -1,0 +1,43 @@
+{
+  "command": [
+    "adb",
+    "-s",
+    "emulator-5558",
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "listener",
+    "ru.ffl24.direct.CompletionRunListener",
+    "-e",
+    "class",
+    "ru.ffl24.direct.StartupTest,ru.ffl24.direct.OrderDetailsUiTest,ru.ffl24.direct.WorkspaceNavigationTest,ru.ffl24.direct.WorkspaceUiTest,ru.ffl24.direct.data.mysql.ConnectionLayerTest,ru.ffl24.direct.AuditLayoutTest,ru.ffl24.direct.AuditPreferencesTest",
+    "ru.ffl24.direct.dev.test/androidx.test.runner.AndroidJUnitRunner"
+  ],
+  "exit": 0,
+  "junit": {
+    "tests": "29",
+    "failures": "2",
+    "errors": "0",
+    "skipped": "0",
+    "time": "303.49"
+  },
+  "class_counts": {
+    "StartupTest": 4,
+    "OrderDetailsUiTest": 6,
+    "WorkspaceNavigationTest": 1,
+    "WorkspaceUiTest": 8,
+    "data.mysql.ConnectionLayerTest": 7,
+    "AuditLayoutTest": 2,
+    "AuditPreferencesTest": 1
+  },
+  "passed": false,
+  "apk_sha256": "50ba99ad838bfd563037896be0a61a1bb42e0a90fdebbafa015dac3061cfa14b",
+  "started_unix": 1792233569.540731,
+  "finished_unix": 1792233891.5293796,
+  "real_database_e2e": false,
+  "reported_file_sha256_after_concurrent_build": "73dc6c1e5b2f9b805c9828405a535ff53470a43da5e0b60ddbb016ea6e4a15c0",
+  "installed_hash_recovered_after_run_before_any_reinstall": true
+}

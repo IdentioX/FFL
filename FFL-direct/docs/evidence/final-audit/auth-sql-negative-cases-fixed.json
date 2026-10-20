@@ -1,0 +1,12 @@
+{
+  "host_prepared_binary_password_sql_matches": {
+    "exact": true,
+    "case_variant": false,
+    "trailing_space": false,
+    "empty": false,
+    "injection": false
+  },
+  "schema_changed": false,
+  "passwords_selected": false,
+  "production_accessed": false
+}

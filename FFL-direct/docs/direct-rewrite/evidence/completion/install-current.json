@@ -1,0 +1,16 @@
+[
+  {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "413bbdc09a289e5621704a46b76b23406abbcdd49eb45d2733f2b5fbf07ee10c",
+    "exit": 0,
+    "stdout": "Performing Streamed Install\nSuccess\n",
+    "stderr": ""
+  },
+  {
+    "path": "app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+    "sha256": "143d5a51ade474b44161c4e85d266e9f509f506eb6ac993317f0cd3b4e1a4206",
+    "exit": 0,
+    "stdout": "Performing Streamed Install\nSuccess\n",
+    "stderr": ""
+  }
+]

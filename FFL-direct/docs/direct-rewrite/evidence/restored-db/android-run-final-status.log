@@ -1,0 +1,11 @@
+{
+  "restored_dump": true,
+  "android_cases_passed": 6,
+  "failed": 0,
+  "skipped": 0,
+  "real_original_data_read_parity": true,
+  "writes_only_to_reserved_records": true,
+  "cold_process_restore": true,
+  "real_worker_notification_tap": true,
+  "paired_legacy_trigger_rollback": true
+}

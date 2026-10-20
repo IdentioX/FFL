@@ -1,0 +1,36 @@
+{
+  "tables": 101,
+  "active_drivers": 27,
+  "real_restored_records_fingerprints": {
+    "__hr_typepos": {
+      "rows": 54,
+      "canonical_rows_sha256": "5b95262e12c864d3f558d334cf82f28db85b455b0d39d82c954d7f98e6851af5"
+    },
+    "reys": {
+      "rows": 26802,
+      "canonical_rows_sha256": "96712652e2fc509f2bb4dd77be2c9e21cdfc660fb2d6ee4a2ffbb47352aca3ce"
+    },
+    "reys_den": {
+      "rows": 1882,
+      "canonical_rows_sha256": "6138d5f24fcf86998396c2bee6563bbf31788830a5a881cc7e19468c89b45808"
+    },
+    "meneger_contr_ffl": {
+      "rows": 395,
+      "canonical_rows_sha256": "ee0781a06cbaf606656dd6fcec2d8c8fd3666b5893eda40d95b6c10670bb3fc0"
+    },
+    "meneger_ffl": {
+      "rows": 10,
+      "canonical_rows_sha256": "4bf8f654b44ea01b3bea140f391cad70edac9d76b2219ad08444b265d66bc6cb"
+    },
+    "phone": {
+      "rows": 20,
+      "canonical_rows_sha256": "587934119188abf261e18a6fc8096e67be9ba74e87f1ca335eca36028d1d25a8"
+    },
+    "nastroiki": {
+      "rows": 11,
+      "canonical_rows_sha256": "b7b651b7913d2e3cbb10172324adcf27ee034bee1e2fdc598ba030454cfb8bf7"
+    }
+  },
+  "name_v_after_local_definer_rebind": true,
+  "rows_not_published": true
+}

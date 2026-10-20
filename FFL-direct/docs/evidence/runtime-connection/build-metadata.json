@@ -1,0 +1,23 @@
+{
+  "jvm": {
+    "tests": 845,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "apk_sha256": "876a19ebeeb0741da62fff9d09cacf63a51528a55f3988e3ffd4362d7042409e",
+  "version": "0.3.1-dev",
+  "version_code": 6,
+  "release_unsigned_sha256": "2a50172d9240895068d0685c933fc5c226da0c2f7303a9f6e0b6b352f0bf43da",
+  "build_commands": [
+    "bash gradlew --offline --no-daemon --max-workers=2 :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:verifyDirectRuntime :app:assembleDebugAndroidTest",
+    "bash gradlew --offline --no-daemon --max-workers=2 :app:assembleRelease"
+  ],
+  "debug_build": "SUCCESS",
+  "release_build": "SUCCESS",
+  "release_runtime": "NOT_TESTED_0.3.1",
+  "lint": {
+    "errors": 0,
+    "warnings": 45
+  }
+}
